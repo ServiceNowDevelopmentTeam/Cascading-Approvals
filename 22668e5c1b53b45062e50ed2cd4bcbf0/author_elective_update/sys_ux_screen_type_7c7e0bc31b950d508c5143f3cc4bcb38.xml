@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="DELETE">
+        <description/>
+        <name>Edit Approvals</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-31 21:45:19</sys_created_on>
+        <sys_id>7c7e0bc31b950d508c5143f3cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Edit Approvals</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_ux_screen_type_7c7e0bc31b950d508c5143f3cc4bcb38</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-01-31 21:45:19</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_ux_screen_type_7c7e0bc31b950d508c5143f3cc4bcb38</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type"><sys_ux_screen_type action="INSERT_OR_UPDATE"><description/><name>Edit Approvals</name><sys_class_name>sys_ux_screen_type</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-01-31 21:45:19</sys_created_on><sys_id>7c7e0bc31b950d508c5143f3cc4bcb38</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Edit Approvals</sys_name><sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package><sys_policy/><sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope><sys_update_name>sys_ux_screen_type_7c7e0bc31b950d508c5143f3cc4bcb38</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-01-31 21:45:19</sys_updated_on></sys_ux_screen_type></record_update>]]></payload>
+        <payload_hash>355242376</payload_hash>
+        <record_name>Edit Approvals</record_name>
+        <reverted_from/>
+        <source>f1467baa1b780d1462e50ed2cd4bcbc1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-31 21:45:19</sys_created_on>
+        <sys_id>787ec30b1b950d508c5143f3cc4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17eb21975150000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-01-31 21:45:19</sys_updated_on>
+        <type>UX Screen Collection</type>
+        <update_guid>707ec30b33950d508995675cc26b1c7d</update_guid>
+        <update_guid_history>707ec30b33950d508995675cc26b1c7d:355242376</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-31 21:51:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_type">sys_ux_screen_type</sys_db_object>
+        <sys_id>25a3768c0f514fa0b8e72374e1706504</sys_id>
+        <sys_metadata>7c7e0bc31b950d508c5143f3cc4bcb38</sys_metadata>
+        <sys_name>Edit Approvals</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_type_7c7e0bc31b950d508c5143f3cc4bcb38</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_type_7c7e0bc31b950d508c5143f3cc4bcb38">787ec30b1b950d508c5143f3cc4bcb7d</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

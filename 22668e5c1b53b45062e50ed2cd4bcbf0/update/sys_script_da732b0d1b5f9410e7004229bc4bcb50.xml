@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_request</collection>
+        <condition>(new global.AssessmentUtils().conditionCheck(current, 'stateCHANGESTO3^approval!=rejected^EQ'))</condition>
+        <description/>
+        <execute_function>true</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto assessment business rule</name>
+        <order>300</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onAfter(){ 
+ (new sn_assessment_core.AssessmentCreation()).conditionTrigger(current, '7d532f0d1b5f9410e7004229bc4bcbf2'); 
+ }]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>ryan.myers1</sys_created_by>
+        <sys_created_on>2020-09-15 15:41:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da732b0d1b5f9410e7004229bc4bcb50</sys_id>
+        <sys_name>Auto assessment business rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_script_da732b0d1b5f9410e7004229bc4bcb50</sys_update_name>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=da732b0d1b5f9410e7004229bc4bcb50"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</claim_owner_scope>
+        <claim_timestamp>17e9d770ddc0000001</claim_timestamp>
+        <metadata_update_name>sys_script_da732b0d1b5f9410e7004229bc4bcb50</metadata_update_name>
+        <previous_claim_app_version>1.1.0</previous_claim_app_version>
+        <previous_claim_name>Cascading Approvals</previous_claim_name>
+        <previous_claim_scope>22668e5c1b53b45062e50ed2cd4bcbf0</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-27 21:35:32</sys_created_on>
+        <sys_id>dad5a6bd1b91c1508c5143f3cc4bcbc7</sys_id>
+    </sys_claim>
+</record_update>

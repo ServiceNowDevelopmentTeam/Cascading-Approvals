@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer decision_table.answer_table="sys_db_object" name="sc_task">3ba86cef1be11010e7004229bc4bcb15</answer>
+        <condition table="var__m_sys_decision_input_b856862f1bad851062e50ed2cd4bcbb9">u_numberLIKESCTASK^EQ<item endquery="false" field="u_number" goto="false" newquery="false" operator="LIKE" or="false" value="SCTASK"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Table Name From Task Number">b856862f1bad851062e50ed2cd4bcbb9</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_b856862f1bad851062e50ed2cd4bcbb9</input_table>
+        <label>Table Name From Task Number_400</label>
+        <order>400</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-02-14 16:06:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa1742af1bad851062e50ed2cd4bcb8c</sys_id>
+        <sys_name>Table Name From Task Number_400</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_decision_question_fa1742af1bad851062e50ed2cd4bcb8c</sys_update_name>
+    </sys_decision_question>
+</record_update>

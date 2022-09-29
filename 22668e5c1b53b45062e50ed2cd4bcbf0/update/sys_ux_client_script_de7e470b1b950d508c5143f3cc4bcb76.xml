@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">cd7ec30b1b950d508c5143f3cc4bcb80</macroponent>
+        <name>Launch Special Handling Notes</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    helpers,
+    event,
+    imports
+}) {
+   const {
+    snHttp,
+    modal,
+    screen
+} = helpers;
+
+    var SHNOutput = api.data.get_special_handling_notes.output.data.GlideSHN_Query;
+    var showModal = SHNOutput && SHNOutput.totalMsg > 0;
+
+    if (api.state.specialHandlingNotesDisplayed)    return;
+
+    if (showModal && api.context.props.screen.isActive) {
+        api.emit('RECORD#OPEN_MODAL', {
+            "route": "shn",
+            "fields": {
+                "confs": SHNOutput,
+                "table": api.context.props.table,
+                "sysId": api.context.props.sysId
+            }
+        });
+        api.setState("specialHandlingNotesDisplayed", true);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-31 21:45:26</sys_created_on>
+        <sys_id>de7e470b1b950d508c5143f3cc4bcb76</sys_id>
+        <sys_name>Launch Special Handling Notes</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_ux_client_script_de7e470b1b950d508c5143f3cc4bcb76</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

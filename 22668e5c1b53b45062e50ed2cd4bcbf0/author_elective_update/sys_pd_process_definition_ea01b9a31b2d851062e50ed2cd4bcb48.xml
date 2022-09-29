@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_process_definition">
+    <sys_pd_process_definition action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <description/>
+        <label>test</label>
+        <name>test</name>
+        <snapshot/>
+        <status>draft</status>
+        <sys_class_name>sys_pd_process_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-02-14 14:29:52</sys_created_on>
+        <sys_id>ea01b9a31b2d851062e50ed2cd4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-02-14 14:29:52</sys_updated_on>
+    </sys_pd_process_definition>
+    <sys_pd_process_definition action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <description/>
+        <label>test</label>
+        <name>test</name>
+        <snapshot/>
+        <status>draft</status>
+        <sys_class_name>sys_pd_process_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-02-14 14:29:52</sys_created_on>
+        <sys_id>ea01b9a31b2d851062e50ed2cd4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-02-14 14:29:52</sys_updated_on>
+    </sys_pd_process_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_process_definition"><sys_pd_process_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><description/><label>test</label><name>test</name><snapshot/><status>draft</status><sys_class_name>sys_pd_process_definition</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-02-14 14:29:52</sys_created_on><sys_id>ea01b9a31b2d851062e50ed2cd4bcb48</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test</sys_name><sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package><sys_policy/><sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope><sys_update_name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-02-14 14:29:52</sys_updated_on></sys_pd_process_definition><sys_pd_process_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><description/><label>test</label><name>test</name><snapshot/><status>draft</status><sys_class_name>sys_pd_process_definition</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-02-14 14:29:52</sys_created_on><sys_id>ea01b9a31b2d851062e50ed2cd4bcb48</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test</sys_name><sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package><sys_policy/><sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope><sys_update_name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-02-14 14:29:52</sys_updated_on></sys_pd_process_definition></record_update>]]></payload>
+        <payload_hash>225382653</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>d440fb2a1b21411062e50ed2cd4bcbea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-02-14 14:29:52</sys_created_on>
+        <sys_id>ee01f5e31b2d851062e50ed2cd4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ef8a3cffc0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-02-14 14:29:52</sys_updated_on>
+        <type>Process Definitions</type>
+        <update_guid>e601f5e3b72d851099b15fa012173083</update_guid>
+        <update_guid_history>e601f5e3b72d851099b15fa012173083:225382653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-02-14 14:30:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_pd_process_definition">sys_pd_process_definition</sys_db_object>
+        <sys_id>3a09b41047e04d07918aa77d5e716619</sys_id>
+        <sys_metadata>ea01b9a31b2d851062e50ed2cd4bcb48</sys_metadata>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
+        <sys_update_name>sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48</sys_update_name>
+        <sys_update_version display_value="sys_pd_process_definition_ea01b9a31b2d851062e50ed2cd4bcb48">ee01f5e31b2d851062e50ed2cd4bcb83</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

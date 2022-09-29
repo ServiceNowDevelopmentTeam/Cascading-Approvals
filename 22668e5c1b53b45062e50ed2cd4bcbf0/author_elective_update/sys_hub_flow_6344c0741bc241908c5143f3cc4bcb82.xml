@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch4-hotfix1a-12-17-2021_01-11-2022_1246.zip</compiler_build>
+        <copied_from>915a8a151be181108c5143f3cc4bcb6f</copied_from>
+        <copied_from_name>Ask All To Approve RITM</copied_from_name>
+        <description/>
+        <internal_name>add_backup_approvers_to_user_query</internal_name>
+        <label_cache>[{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Records","label":"2➛User Records","reference":"sys_user","reference_display":"User Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Count","label":"4➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Table","label":"4➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Records","label":"4➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.user_records","label":"Input➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"39fd87b2-556a-4d65-87d9-3d3e0953c6db","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"188504e6-5985-44c3-a42e-cdc71ad0d283.item","label":"3➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.__dont_treat_as_error__","label":"12➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.__action_status__","label":"12➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.approval_state","label":"12➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.type","label":"Input➛type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e5a0b576-fb3c-4de4-95a9-89354ca958ac"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.approval_state","label":"9➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record.request","label":"Input➛RITM Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.table_name","label":"7➛Request Table","reference":"sc_request","reference_display":"Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.record","label":"7➛Request Record","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record","label":"Input➛RITM Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3e8d24ce-5de3-4810-8e65-4aea73b3f792","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.table_name","label":"5➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.record","label":"5➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record.number","label":"Input➛RITM Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number"},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__.code","label":"9➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__.message","label":"9➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d644233a-6f44-4689-8041-1d5230e3fdc5.context","label":"9➛Context","reference":"sys_flow_context","reference_display":"Context","type":"reference","base_type":"reference","attributes":{}},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__","label":"8➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Records","label":"5➛User Records","reference":"sys_user","reference_display":"User Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Table","label":"5➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6758ba18-2a87-44b6-81f8-a7000a28386d.item","label":"6➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a531c2b0-59b8-446a-86ce-01afb360aa26.context","label":"7➛Context","reference":"sys_flow_context","reference_display":"Context","type":"reference","base_type":"reference","attributes":{}},{"name":"a531c2b0-59b8-446a-86ce-01afb360aa26.backup_approver","label":"7➛Backup Approver","reference":"sys_user","reference_display":"Backup Approver","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cba17f70-a132-4008-81af-cd4e501bac6b"}},{"name":"subflow.ritm_record.cat_item","label":"Input➛RITM Record➛Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"cat_item"},{"name":"subflow.user_query","label":"Input➛Encoded User Query","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d44c7a88-63df-4a0e-a5df-173af409c42d"}},{"name":"subflow.is_catalog_item","label":"Input➛Is Catalog Item","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"247d1ede-6bf4-4c39-ae3a-ee074ddcd871"}},{"name":"subflow.catalog_item","label":"Input➛Catalog Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8ed94869-fd1e-4f10-bfb0-a39a127d3877"}},{"name":"subflow.related_task_number","label":"Input➛Related Task Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b234df8e-0be5-4249-b209-bf22d5f6aa85"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Add Backup Approvers to User Query</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6344c0741bc241908c5143f3cc4bcb82</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Add Backup Approvers to User Query</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_hub_flow_6344c0741bc241908c5143f3cc4bcb82</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:59</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=6344c0741bc241908c5143f3cc4bcb82"/>
+    <sys_variable_value action="DELETE" query="document_key=6344c0741bc241908c5143f3cc4bcb82"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=6344c0741bc241908c5143f3cc4bcb82"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT INeb44c0741bc241908c5143f3cc4bcb83"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>6344c0741bc241908c5143f3cc4bcb82</id>
+        <name>Add Backup Approvers to User Query</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:54</sys_created_on>
+        <sys_id>eb44c0741bc241908c5143f3cc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN650640381bc241908c5143f3cc4bcbb1,7744c0741bc241908c5143f3cc4bcbb5,b50640381bc241908c5143f3cc4bcbbc,f10640381bc241908c5143f3cc4bcbc7"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=247d1ede-6bf4-4c39-ae3a-ee074ddcd871</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>is_catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Is Catalog Item</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>650640381bc241908c5143f3cc4bcbb1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d44c7a88-63df-4a0e-a5df-173af409c42d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_query</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Encoded User Query</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>7744c0741bc241908c5143f3cc4bcbb5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8ed94869-fd1e-4f10-bfb0-a39a127d3877</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_cat_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Catalog Item</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item">sc_cat_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>b50640381bc241908c5143f3cc4bcbbc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b234df8e-0be5-4249-b209-bf22d5f6aa85</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>related_task_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Related Task Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>f10640381bc241908c5143f3cc4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="DELETE" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT INf10640381bc241908c5143f3cc4bcbed"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=494123d9-352c-4cd8-9dd6-ad52d0754f05</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output_user_query</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>User Query</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:26</sys_created_on>
+        <sys_id>f10640381bc241908c5143f3cc4bcbed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="DELETE" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN6536c4381bc241908c5143f3cc4bcb4f,e936c4381bc241908c5143f3cc4bcb38"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <order>5</order>
+        <parent_ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>6536c4381bc241908c5143f3cc4bcb4f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>5f632279-04b6-4689-98b9-1855947c424f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6536c4381bc241908c5143f3cc4bcb4f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6536c4381bc241908c5143f3cc4bcb4f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>ed36c4381bc241908c5143f3cc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=6536c4381bc241908c5143f3cc4bcb4f"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=6536c4381bc241908c5143f3cc4bcb4f^sys_idNOT INa536c4381bc241908c5143f3cc4bcb50"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>6536c4381bc241908c5143f3cc4bcb4f</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"return fd_data.flow_var.user_query;"}}</script>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>a536c4381bc241908c5143f3cc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <order>2</order>
+        <parent_ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:13</sys_created_on>
+        <sys_id>e936c4381bc241908c5143f3cc4bcb38</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>993f33e5-3b67-4741-9eeb-193d01bd4e14</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=e936c4381bc241908c5143f3cc4bcb38"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e936c4381bc241908c5143f3cc4bcb38</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:13</sys_created_on>
+        <sys_id>6536c4381bc241908c5143f3cc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:13</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=e936c4381bc241908c5143f3cc4bcb38"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=e936c4381bc241908c5143f3cc4bcb38^sys_idNOT IN2d36c4381bc241908c5143f3cc4bcb39"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>e936c4381bc241908c5143f3cc4bcb38</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"return fd_data.flow_var.user_query;"}}</script>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:13</sys_created_on>
+        <sys_id>2d36c4381bc241908c5143f3cc4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN885404741bc241908c5143f3cc4bcb46,e136c4381bc241908c5143f3cc4bcb54"/>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <inputs/>
+        <inputs/>
+        <order>10</order>
+        <parent_ui_id>131c2dba-2288-4852-9fab-1d9579227568</parent_ui_id>
+        <subflow display_value="APi Standard Error Handler">11a0eddb1b5c49508c5143f3cc4bcbe4</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>885404741bc241908c5143f3cc4bcb46</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:59</sys_updated_on>
+        <ui_id>d644233a-6f44-4689-8041-1d5230e3fdc5</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=885404741bc241908c5143f3cc4bcb46"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>885404741bc241908c5143f3cc4bcb46</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:57</sys_created_on>
+        <sys_id>405404741bc241908c5143f3cc4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">485404741bc241908c5143f3cc4bcb47</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>885404741bc241908c5143f3cc4bcb46</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>c05404741bc241908c5143f3cc4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <value>SubFlow Failed - Ask All To Approve RITM</value>
+        <variable display_value="Details">a1a0211f1b5c49508c5143f3cc4bcb2e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=885404741bc241908c5143f3cc4bcb46"/>
+    <sys_element_mapping action="DELETE">
+        <field>details</field>
+        <id>885404741bc241908c5143f3cc4bcb46</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>8c5404741bc241908c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>error_code</field>
+        <id>885404741bc241908c5143f3cc4bcb46</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>405404741bc241908c5143f3cc4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
+        <value>{{131c2dba-2288-4852-9fab-1d9579227568.__status__.code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>error_message</field>
+        <id>885404741bc241908c5143f3cc4bcb46</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>085404741bc241908c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
+        <value>{{131c2dba-2288-4852-9fab-1d9579227568.__status__.message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>related_task_number</field>
+        <id>885404741bc241908c5143f3cc4bcb46</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>c85404741bc241908c5143f3cc4bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
+        <value>{{subflow.related_task_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>wait_for_completion</field>
+        <id>885404741bc241908c5143f3cc4bcb46</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:57</sys_created_on>
+        <sys_id>cc5404741bc241908c5143f3cc4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:57</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46^id=885404741bc241908c5143f3cc4bcb46"/>
+    <sys_hub_sub_flow_instance_inputs action="DELETE" query="model=885404741bc241908c5143f3cc4bcb46^sys_idNOT IN485404741bc241908c5143f3cc4bcb47"/>
+    <sys_hub_sub_flow_instance_inputs action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">885404741bc241908c5143f3cc4bcb46</model>
+        <model_id>885404741bc241908c5143f3cc4bcb46</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>485404741bc241908c5143f3cc4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_sub_flow_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <inputs/>
+        <inputs/>
+        <order>7</order>
+        <parent_ui_id>6758ba18-2a87-44b6-81f8-a7000a28386d</parent_ui_id>
+        <subflow display_value="Get Backup Approver">12682c601bcecd508c5143f3cc4bcb96</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>e136c4381bc241908c5143f3cc4bcb54</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>a531c2b0-59b8-446a-86ce-01afb360aa26</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="DELETE" query="document_key=e136c4381bc241908c5143f3cc4bcb54"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>e136c4381bc241908c5143f3cc4bcb54</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>6536c4381bc241908c5143f3cc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Is Catalog Item">ea682c601bcecd508c5143f3cc4bcbbe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>e136c4381bc241908c5143f3cc4bcb54</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>e136c4381bc241908c5143f3cc4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">ad36c4381bc241908c5143f3cc4bcb54</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e136c4381bc241908c5143f3cc4bcb54"/>
+    <sys_element_mapping action="DELETE">
+        <field>catalog_item</field>
+        <id>e136c4381bc241908c5143f3cc4bcb54</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>a936c4381bc241908c5143f3cc4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96</table>
+        <value>{{subflow.catalog_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>is_catalog_item</field>
+        <id>e136c4381bc241908c5143f3cc4bcb54</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>e136c4381bc241908c5143f3cc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96</table>
+        <value>{{subflow.is_catalog_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>original_approver</field>
+        <id>e136c4381bc241908c5143f3cc4bcb54</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>2136c4381bc241908c5143f3cc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96</table>
+        <value>{{6758ba18-2a87-44b6-81f8-a7000a28386d.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>related_task_number</field>
+        <id>e136c4381bc241908c5143f3cc4bcb54</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>6d36c4381bc241908c5143f3cc4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96</table>
+        <value>{{subflow.related_task_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>wait_for_completion</field>
+        <id>e136c4381bc241908c5143f3cc4bcb54</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>6136c4381bc241908c5143f3cc4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54^id=e136c4381bc241908c5143f3cc4bcb54"/>
+    <sys_hub_sub_flow_instance_inputs action="DELETE" query="model=e136c4381bc241908c5143f3cc4bcb54^sys_idNOT INad36c4381bc241908c5143f3cc4bcb54"/>
+    <sys_hub_sub_flow_instance_inputs action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">e136c4381bc241908c5143f3cc4bcb54</model>
+        <model_id>e136c4381bc241908c5143f3cc4bcb54</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>ad36c4381bc241908c5143f3cc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_flow_logic action="DELETE" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN3744c0741bc241908c5143f3cc4bcbcc,3744c0741bc241908c5143f3cc4bcbd0,3f44c0741bc241908c5143f3cc4bcbd3,445404741bc241908c5143f3cc4bcb0d,7344c0741bc241908c5143f3cc4bcbd7,a936c4381bc241908c5143f3cc4bcb51"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">e39304f01bc241908c5143f3cc4bcb80</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>user_query</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>3744c0741bc241908c5143f3cc4bcbcc</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=3744c0741bc241908c5143f3cc4bcbcc"/>
+    <sys_element_mapping action="DELETE" query="id=3744c0741bc241908c5143f3cc4bcbcc"/>
+    <sys_element_mapping action="DELETE">
+        <field>user_query</field>
+        <id>3744c0741bc241908c5143f3cc4bcbcc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>f344c0741bc241908c5143f3cc4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82</table>
+        <value>{{subflow.user_query}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbcc"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">279304f01bc241908c5143f3cc4bcbcf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>3744c0741bc241908c5143f3cc4bcbd0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>188504e6-5985-44c3-a42e-cdc71ad0d283</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=3744c0741bc241908c5143f3cc4bcbd0"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbd0"/>
+    <sys_element_mapping action="DELETE" query="id=3744c0741bc241908c5143f3cc4bcbd0"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>3744c0741bc241908c5143f3cc4bcbd0</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>ff44c0741bc241908c5143f3cc4bcbd2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{993f33e5-3b67-4741-9eeb-193d01bd4e14.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbd0"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">e79304f01bc241908c5143f3cc4bcbd2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variables_assigned>user_query</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>188504e6-5985-44c3-a42e-cdc71ad0d283</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>3f44c0741bc241908c5143f3cc4bcbd3</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>1357a39e-d492-4b66-a31d-c2e006ab99af</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=3f44c0741bc241908c5143f3cc4bcbd3"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=3f44c0741bc241908c5143f3cc4bcbd3"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3f44c0741bc241908c5143f3cc4bcbd3"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=3f44c0741bc241908c5143f3cc4bcbd3^sys_idNOT IN3f44c0741bc241908c5143f3cc4bcbd4"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>user_query</input_name>
+        <instance>3f44c0741bc241908c5143f3cc4bcbd3</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"user_query":{"scriptActive":true,"script":"var userSysId \u003d fd_data._3__for_each.item.sys_id.toString();\n\nvar userQuery \u003d fd_data.flow_var.user_query;\nuserQuery +\u003d userQuery \u003d\u003d \u0027\u0027 ? \u0027sys_id\u003d\u0027 : \u0027^ORsys_id\u003d\u0027;\nuserQuery +\u003d userSysId;\nreturn userQuery;"}}</script>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>3f44c0741bc241908c5143f3cc4bcbd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:03</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">d64b8e951be181108c5143f3cc4bcb9c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>445404741bc241908c5143f3cc4bcb0d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:59</sys_updated_on>
+        <ui_id>131c2dba-2288-4852-9fab-1d9579227568</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=445404741bc241908c5143f3cc4bcb0d"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>445404741bc241908c5143f3cc4bcb0d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>0c5404741bc241908c5143f3cc4bcb10</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:28:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="enabled">dd70187cc36e20105553b740ad40dddc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>445404741bc241908c5143f3cc4bcb0d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:56</sys_created_on>
+        <sys_id>445404741bc241908c5143f3cc4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:56</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f58e354c-6c8f-4c5a-a11f-0bd5f6726ed7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=445404741bc241908c5143f3cc4bcb0d"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=445404741bc241908c5143f3cc4bcb0d"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=445404741bc241908c5143f3cc4bcb0d"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">524b8e951be181108c5143f3cc4bcb82</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Try">07223332de022010ec58424b73829721</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>7344c0741bc241908c5143f3cc4bcbd7</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>d10df7fa-fa62-4f1b-94f8-1afc3206ac35</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=7344c0741bc241908c5143f3cc4bcbd7"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=7344c0741bc241908c5143f3cc4bcbd7"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=7344c0741bc241908c5143f3cc4bcbd7"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">e136c4381bc241908c5143f3cc4bcb51</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>79ba98cb-81e0-4675-bdb4-b6e4616ffa42</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>a936c4381bc241908c5143f3cc4bcb51</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:31:58</sys_updated_on>
+        <ui_id>6758ba18-2a87-44b6-81f8-a7000a28386d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a936c4381bc241908c5143f3cc4bcb51"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=a936c4381bc241908c5143f3cc4bcb51"/>
+    <sys_element_mapping action="DELETE" query="id=a936c4381bc241908c5143f3cc4bcb51"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>a936c4381bc241908c5143f3cc4bcb51</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:11:14</sys_created_on>
+        <sys_id>6136c4381bc241908c5143f3cc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:11:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{5f632279-04b6-4689-98b9-1855947c424f.Records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=a936c4381bc241908c5143f3cc4bcb51"/>
+    <sys_hub_flow_variable action="DELETE" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN2b44c0741bc241908c5143f3cc4bcb8a"/>
+    <sys_hub_flow_variable action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d948a4fd-fd51-4e44-a1d9-ca48f43c0d48</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_query</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>User Query</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Add Backup Approvers to User Query">6344c0741bc241908c5143f3cc4bcb82</model>
+        <model_id>6344c0741bc241908c5143f3cc4bcb82</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:54</sys_created_on>
+        <sys_id>2b44c0741bc241908c5143f3cc4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Query</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_2b44c0741bc241908c5143f3cc4bcb8a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN3744c0741bc241908c5143f3cc4bcbba,3d0640381bc241908c5143f3cc4bcbc5,b10640381bc241908c5143f3cc4bcbcc,fd0640381bc241908c5143f3cc4bcbba"/>
+    <sys_documentation action="DELETE">
+        <element>user_query</element>
+        <help/>
+        <hint/>
+        <label>Encoded User Query</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+        <sys_id>3744c0741bc241908c5143f3cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:02:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>catalog_item</element>
+        <help/>
+        <hint/>
+        <label>Catalog Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>3d0640381bc241908c5143f3cc4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>related_task_number</element>
+        <help/>
+        <hint/>
+        <label>Related Task Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>b10640381bc241908c5143f3cc4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>is_catalog_item</element>
+        <help/>
+        <hint/>
+        <label>Is Catalog Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:25</sys_created_on>
+        <sys_id>fd0640381bc241908c5143f3cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN7744c0741bc241908c5143f3cc4bcba2,3344c0741bc241908c5143f3cc4bcba3"/>
+    <sys_choice action="DELETE" field="type" table="var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>require all</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7744c0741bc241908c5143f3cc4bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-03-02 14:02:55</sys_updated_on>
+            <value>require all</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>require one</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-03-02 14:02:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3344c0741bc241908c5143f3cc4bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-03-02 14:02:55</sys_updated_on>
+            <value>require one</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN310640381bc241908c5143f3cc4bcbf7"/>
+    <sys_documentation action="DELETE">
+        <element>output_user_query</element>
+        <help/>
+        <hint/>
+        <label>User Query</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:10:26</sys_created_on>
+        <sys_id>310640381bc241908c5143f3cc4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:10:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_hub_flow_6344c0741bc241908c5143f3cc4bcb82</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-rome-06-23-2021__patch4-hotfix1a-12-17-2021_01-11-2022_1246.zip&lt;/compiler_build&gt;&lt;copied_from&gt;915a8a151be181108c5143f3cc4bcb6f&lt;/copied_from&gt;&lt;copied_from_name&gt;Ask All To Approve RITM&lt;/copied_from_name&gt;&lt;description/&gt;&lt;internal_name&gt;add_backup_approvers_to_user_query&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993f33e5-3b67-4741-9eeb-193d01bd4e14.Records","label":"2➛User Records","reference":"sys_user","reference_display":"User Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Count","label":"4➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Table","label":"4➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0ce9ada5-36f3-442a-815e-72bbdec67a3a.Records","label":"4➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.user_records","label":"Input➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"39fd87b2-556a-4d65-87d9-3d3e0953c6db","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"188504e6-5985-44c3-a42e-cdc71ad0d283.item","label":"3➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.__dont_treat_as_error__","label":"12➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.__action_status__","label":"12➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c399c51b-d18b-4a72-b6d5-ded6be2b18c3.approval_state","label":"12➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.type","label":"Input➛type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e5a0b576-fb3c-4de4-95a9-89354ca958ac"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad34cae4-84c1-4031-b7d4-1b8be96617f1.approval_state","label":"9➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record.request","label":"Input➛RITM Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.table_name","label":"7➛Request Table","reference":"sc_request","reference_display":"Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ece67416-0dd6-4894-893e-78f5968e3bb1.record","label":"7➛Request Record","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record","label":"Input➛RITM Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3e8d24ce-5de3-4810-8e65-4aea73b3f792","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.table_name","label":"5➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"43bd2113-f9f5-4ef6-ac50-772974e3dd6c.record","label":"5➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm_record.number","label":"Input➛RITM Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number"},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__.code","label":"9➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__.message","label":"9➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d644233a-6f44-4689-8041-1d5230e3fdc5.context","label":"9➛Context","reference":"sys_flow_context","reference_display":"Context","type":"reference","base_type":"reference","attributes":{}},{"name":"131c2dba-2288-4852-9fab-1d9579227568.__status__","label":"8➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Records","label":"5➛User Records","reference":"sys_user","reference_display":"User Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Table","label":"5➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f632279-04b6-4689-98b9-1855947c424f.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6758ba18-2a87-44b6-81f8-a7000a28386d.item","label":"6➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a531c2b0-59b8-446a-86ce-01afb360aa26.context","label":"7➛Context","reference":"sys_flow_context","reference_display":"Context","type":"reference","base_type":"reference","attributes":{}},{"name":"a531c2b0-59b8-446a-86ce-01afb360aa26.backup_approver","label":"7➛Backup Approver","reference":"sys_user","reference_display":"Backup Approver","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cba17f70-a132-4008-81af-cd4e501bac6b"}},{"name":"subflow.ritm_record.cat_item","label":"Input➛RITM Record➛Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"cat_item"},{"name":"subflow.user_query","label":"Input➛Encoded User Query","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d44c7a88-63df-4a0e-a5df-173af409c42d"}},{"name":"subflow.is_catalog_item","label":"Input➛Is Catalog Item","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"247d1ede-6bf4-4c39-ae3a-ee074ddcd871"}},{"name":"subflow.catalog_item","label":"Input➛Catalog Item","reference":"sc_cat_item","reference_display":"Catalog Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8ed94869-fd1e-4f10-bfb0-a39a127d3877"}},{"name":"subflow.related_task_number","label":"Input➛Related Task Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b234df8e-0be5-4249-b209-bf22d5f6aa85"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Add Backup Approvers to User Query&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Add Backup Approvers to User Query&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_6344c0741bc241908c5143f3cc4bcb82&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:59&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6344c0741bc241908c5143f3cc4bcb82"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6344c0741bc241908c5143f3cc4bcb82"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=6344c0741bc241908c5143f3cc4bcb82"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT INeb44c0741bc241908c5143f3cc4bcb83"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/id&gt;&lt;name&gt;Add Backup Approvers to User Query&lt;/name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:54&lt;/sys_created_on&gt;&lt;sys_id&gt;eb44c0741bc241908c5143f3cc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:54&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN650640381bc241908c5143f3cc4bcbb1,7744c0741bc241908c5143f3cc4bcbb5,b50640381bc241908c5143f3cc4bcbbc,f10640381bc241908c5143f3cc4bcbc7"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=247d1ede-6bf4-4c39-ae3a-ee074ddcd871&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;false&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;is_catalog_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Is Catalog Item&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;650640381bc241908c5143f3cc4bcbb1&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d44c7a88-63df-4a0e-a5df-173af409c42d&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;user_query&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Encoded User Query&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7744c0741bc241908c5143f3cc4bcbb5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8ed94869-fd1e-4f10-bfb0-a39a127d3877&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;sc_cat_item&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;catalog_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Catalog Item&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_cat_item"&gt;sc_cat_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;b50640381bc241908c5143f3cc4bcbbc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b234df8e-0be5-4249-b209-bf22d5f6aa85&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;related_task_number&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Related Task Number&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;f10640381bc241908c5143f3cc4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT INf10640381bc241908c5143f3cc4bcbed"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=494123d9-352c-4cd8-9dd6-ad52d0754f05&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;output_user_query&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;User Query&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:26&lt;/sys_created_on&gt;&lt;sys_id&gt;f10640381bc241908c5143f3cc4bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN6536c4381bc241908c5143f3cc4bcb4f,e936c4381bc241908c5143f3cc4bcb38"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6536c4381bc241908c5143f3cc4bcb4f&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;5f632279-04b6-4689-98b9-1855947c424f&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6536c4381bc241908c5143f3cc4bcb4f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;6536c4381bc241908c5143f3cc4bcb4f&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;ed36c4381bc241908c5143f3cc4bcb50&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;value&gt;sys_user&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=6536c4381bc241908c5143f3cc4bcb4f"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=6536c4381bc241908c5143f3cc4bcb4f^sys_idNOT INa536c4381bc241908c5143f3cc4bcb50"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;conditions&lt;/input_name&gt;&lt;instance&gt;6536c4381bc241908c5143f3cc4bcb4f&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"conditions":{"scriptActive":true,"script":"return fd_data.flow_var.user_query;"}}&lt;/script&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;a536c4381bc241908c5143f3cc4bcb50&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:13&lt;/sys_created_on&gt;&lt;sys_id&gt;e936c4381bc241908c5143f3cc4bcb38&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;993f33e5-3b67-4741-9eeb-193d01bd4e14&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e936c4381bc241908c5143f3cc4bcb38"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;e936c4381bc241908c5143f3cc4bcb38&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:13&lt;/sys_created_on&gt;&lt;sys_id&gt;6536c4381bc241908c5143f3cc4bcb3a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:13&lt;/sys_updated_on&gt;&lt;value&gt;sys_user&lt;/value&gt;&lt;variable display_value="Table"&gt;8f400a1587003300663ca1bb36cb0b4b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=e936c4381bc241908c5143f3cc4bcb38"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=e936c4381bc241908c5143f3cc4bcb38^sys_idNOT IN2d36c4381bc241908c5143f3cc4bcb39"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;conditions&lt;/input_name&gt;&lt;instance&gt;e936c4381bc241908c5143f3cc4bcb38&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_action_instance&lt;/referenced_table&gt;&lt;script&gt;{"conditions":{"scriptActive":true,"script":"return fd_data.flow_var.user_query;"}}&lt;/script&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:13&lt;/sys_created_on&gt;&lt;sys_id&gt;2d36c4381bc241908c5143f3cc4bcb39&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:13&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN885404741bc241908c5143f3cc4bcb46,e136c4381bc241908c5143f3cc4bcb54"/&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;10&lt;/order&gt;&lt;parent_ui_id&gt;131c2dba-2288-4852-9fab-1d9579227568&lt;/parent_ui_id&gt;&lt;subflow display_value="APi Standard Error Handler"&gt;11a0eddb1b5c49508c5143f3cc4bcbe4&lt;/subflow&gt;&lt;subflow_instance_inputs/&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;885404741bc241908c5143f3cc4bcb46&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;d644233a-6f44-4689-8041-1d5230e3fdc5&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=885404741bc241908c5143f3cc4bcb46"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_sub_flow_instance&lt;/document&gt;&lt;document_key&gt;885404741bc241908c5143f3cc4bcb46&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:57&lt;/sys_created_on&gt;&lt;sys_id&gt;405404741bc241908c5143f3cc4bcb68&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:57&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="Wait For Completion"&gt;485404741bc241908c5143f3cc4bcb47&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_sub_flow_instance&lt;/document&gt;&lt;document_key&gt;885404741bc241908c5143f3cc4bcb46&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;c05404741bc241908c5143f3cc4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;value&gt;SubFlow Failed - Ask All To Approve RITM&lt;/value&gt;&lt;variable display_value="Details"&gt;a1a0211f1b5c49508c5143f3cc4bcb2e&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=885404741bc241908c5143f3cc4bcb46"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;details&lt;/field&gt;&lt;id&gt;885404741bc241908c5143f3cc4bcb46&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;8c5404741bc241908c5143f3cc4bcb66&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;error_code&lt;/field&gt;&lt;id&gt;885404741bc241908c5143f3cc4bcb46&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;405404741bc241908c5143f3cc4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4&lt;/table&gt;&lt;value&gt;{{131c2dba-2288-4852-9fab-1d9579227568.__status__.code}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;error_message&lt;/field&gt;&lt;id&gt;885404741bc241908c5143f3cc4bcb46&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;085404741bc241908c5143f3cc4bcb66&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4&lt;/table&gt;&lt;value&gt;{{131c2dba-2288-4852-9fab-1d9579227568.__status__.message}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;related_task_number&lt;/field&gt;&lt;id&gt;885404741bc241908c5143f3cc4bcb46&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;c85404741bc241908c5143f3cc4bcb66&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4&lt;/table&gt;&lt;value&gt;{{subflow.related_task_number}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;wait_for_completion&lt;/field&gt;&lt;id&gt;885404741bc241908c5143f3cc4bcb46&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:57&lt;/sys_created_on&gt;&lt;sys_id&gt;cc5404741bc241908c5143f3cc4bcb67&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:57&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46^id=885404741bc241908c5143f3cc4bcb46"/&gt;&lt;sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=885404741bc241908c5143f3cc4bcb46^sys_idNOT IN485404741bc241908c5143f3cc4bcb47"/&gt;&lt;sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;wait_for_completion&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Wait For Completion&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value=""&gt;885404741bc241908c5143f3cc4bcb46&lt;/model&gt;&lt;model_id&gt;885404741bc241908c5143f3cc4bcb46&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_logic_ext_input&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_sub_flow_instance_inputs_885404741bc241908c5143f3cc4bcb46&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance_inputs&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;485404741bc241908c5143f3cc4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_sub_flow_instance_inputs&gt;&lt;sys_hub_sub_flow_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id&gt;6758ba18-2a87-44b6-81f8-a7000a28386d&lt;/parent_ui_id&gt;&lt;subflow display_value="Get Backup Approver"&gt;12682c601bcecd508c5143f3cc4bcb96&lt;/subflow&gt;&lt;subflow_instance_inputs/&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;a531c2b0-59b8-446a-86ce-01afb360aa26&lt;/ui_id&gt;&lt;/sys_hub_sub_flow_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e136c4381bc241908c5143f3cc4bcb54"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_sub_flow_instance&lt;/document&gt;&lt;document_key&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6536c4381bc241908c5143f3cc4bcb78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Is Catalog Item"&gt;ea682c601bcecd508c5143f3cc4bcbbe&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_sub_flow_instance&lt;/document&gt;&lt;document_key&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/document_key&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;e136c4381bc241908c5143f3cc4bcb79&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="Wait For Completion"&gt;ad36c4381bc241908c5143f3cc4bcb54&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e136c4381bc241908c5143f3cc4bcb54"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;catalog_item&lt;/field&gt;&lt;id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;a936c4381bc241908c5143f3cc4bcb77&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96&lt;/table&gt;&lt;value&gt;{{subflow.catalog_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;is_catalog_item&lt;/field&gt;&lt;id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;e136c4381bc241908c5143f3cc4bcb78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96&lt;/table&gt;&lt;value&gt;{{subflow.is_catalog_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;original_approver&lt;/field&gt;&lt;id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;2136c4381bc241908c5143f3cc4bcb78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96&lt;/table&gt;&lt;value&gt;{{6758ba18-2a87-44b6-81f8-a7000a28386d.item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;related_task_number&lt;/field&gt;&lt;id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6d36c4381bc241908c5143f3cc4bcb77&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_input_12682c601bcecd508c5143f3cc4bcb96&lt;/table&gt;&lt;value&gt;{{subflow.related_task_number}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;wait_for_completion&lt;/field&gt;&lt;id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6136c4381bc241908c5143f3cc4bcb79&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54^id=e136c4381bc241908c5143f3cc4bcb54"/&gt;&lt;sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=e136c4381bc241908c5143f3cc4bcb54^sys_idNOT INad36c4381bc241908c5143f3cc4bcb54"/&gt;&lt;sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;wait_for_completion&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Wait For Completion&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value=""&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/model&gt;&lt;model_id&gt;e136c4381bc241908c5143f3cc4bcb54&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_logic_ext_input&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_sub_flow_instance_inputs_e136c4381bc241908c5143f3cc4bcb54&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_sub_flow_instance_inputs&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;ad36c4381bc241908c5143f3cc4bcb54&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_sub_flow_instance_inputs&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN3744c0741bc241908c5143f3cc4bcbcc,3744c0741bc241908c5143f3cc4bcbd0,3f44c0741bc241908c5143f3cc4bcbd3,445404741bc241908c5143f3cc4bcb0d,7344c0741bc241908c5143f3cc4bcbd7,a936c4381bc241908c5143f3cc4bcb51"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;e39304f01bc241908c5143f3cc4bcb80&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned&gt;user_query&lt;/flow_variables_assigned&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3744c0741bc241908c5143f3cc4bcbcc&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3744c0741bc241908c5143f3cc4bcbcc"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=3744c0741bc241908c5143f3cc4bcbcc"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;user_query&lt;/field&gt;&lt;id&gt;3744c0741bc241908c5143f3cc4bcbcc&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;f344c0741bc241908c5143f3cc4bcbcf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:55&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82&lt;/table&gt;&lt;value&gt;{{subflow.user_query}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbcc"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;279304f01bc241908c5143f3cc4bcbcf&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3744c0741bc241908c5143f3cc4bcbd0&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;188504e6-5985-44c3-a42e-cdc71ad0d283&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3744c0741bc241908c5143f3cc4bcbd0"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbd0"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=3744c0741bc241908c5143f3cc4bcbd0"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;items&lt;/field&gt;&lt;id&gt;3744c0741bc241908c5143f3cc4bcbd0&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;ff44c0741bc241908c5143f3cc4bcbd2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:03&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33&lt;/table&gt;&lt;value&gt;{{993f33e5-3b67-4741-9eeb-193d01bd4e14.Records}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3744c0741bc241908c5143f3cc4bcbd0"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;e79304f01bc241908c5143f3cc4bcbd2&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned&gt;user_query&lt;/flow_variables_assigned&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;188504e6-5985-44c3-a42e-cdc71ad0d283&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3f44c0741bc241908c5143f3cc4bcbd3&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;1357a39e-d492-4b66-a31d-c2e006ab99af&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3f44c0741bc241908c5143f3cc4bcbd3"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=3f44c0741bc241908c5143f3cc4bcbd3"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=3f44c0741bc241908c5143f3cc4bcbd3"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=3f44c0741bc241908c5143f3cc4bcbd3^sys_idNOT IN3f44c0741bc241908c5143f3cc4bcbd4"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;input_name&gt;user_query&lt;/input_name&gt;&lt;instance&gt;3f44c0741bc241908c5143f3cc4bcbd3&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_flow_logic&lt;/referenced_table&gt;&lt;script&gt;{"user_query":{"scriptActive":true,"script":"var userSysId \u003d fd_data._3__for_each.item.sys_id.toString();\n\nvar userQuery \u003d fd_data.flow_var.user_query;\nuserQuery +\u003d userQuery \u003d\u003d \u0027\u0027 ? \u0027sys_id\u003d\u0027 : \u0027^ORsys_id\u003d\u0027;\nuserQuery +\u003d userSysId;\nreturn userQuery;"}}&lt;/script&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3f44c0741bc241908c5143f3cc4bcbd4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:03&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;d64b8e951be181108c5143f3cc4bcb9c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Top Level Catch"&gt;35d60003e6022010a5e40cdd1254dd23&lt;/logic_definition&gt;&lt;order&gt;9&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;445404741bc241908c5143f3cc4bcb0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;131c2dba-2288-4852-9fab-1d9579227568&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=445404741bc241908c5143f3cc4bcb0d"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;445404741bc241908c5143f3cc4bcb0d&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;0c5404741bc241908c5143f3cc4bcb10&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:28:28&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value="enabled"&gt;dd70187cc36e20105553b740ad40dddc&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;445404741bc241908c5143f3cc4bcb0d&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:56&lt;/sys_created_on&gt;&lt;sys_id&gt;445404741bc241908c5143f3cc4bcb10&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:56&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"f58e354c-6c8f-4c5a-a11f-0bd5f6726ed7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Error Status"&gt;0f72a5a25b132010b61ea2013781c749&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=445404741bc241908c5143f3cc4bcb0d"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=445404741bc241908c5143f3cc4bcb0d"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=445404741bc241908c5143f3cc4bcb0d"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;524b8e951be181108c5143f3cc4bcb82&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Try"&gt;07223332de022010ec58424b73829721&lt;/logic_definition&gt;&lt;order&gt;8&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7344c0741bc241908c5143f3cc4bcbd7&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;d10df7fa-fa62-4f1b-94f8-1afc3206ac35&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7344c0741bc241908c5143f3cc4bcbd7"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=7344c0741bc241908c5143f3cc4bcbd7"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=7344c0741bc241908c5143f3cc4bcbd7"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;e136c4381bc241908c5143f3cc4bcb51&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id&gt;79ba98cb-81e0-4675-bdb4-b6e4616ffa42&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;a936c4381bc241908c5143f3cc4bcb51&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:31:58&lt;/sys_updated_on&gt;&lt;ui_id&gt;6758ba18-2a87-44b6-81f8-a7000a28386d&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a936c4381bc241908c5143f3cc4bcb51"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82^id=a936c4381bc241908c5143f3cc4bcb51"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a936c4381bc241908c5143f3cc4bcb51"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;items&lt;/field&gt;&lt;id&gt;a936c4381bc241908c5143f3cc4bcb51&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:11:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6136c4381bc241908c5143f3cc4bcb54&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:11:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33&lt;/table&gt;&lt;value&gt;{{5f632279-04b6-4689-98b9-1855947c424f.Records}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^id=a936c4381bc241908c5143f3cc4bcb51"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN2b44c0741bc241908c5143f3cc4bcb8a"/&gt;&lt;sys_hub_flow_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d948a4fd-fd51-4e44-a1d9-ca48f43c0d48&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;user_query&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;User Query&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Add Backup Approvers to User Query"&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model&gt;&lt;model_id&gt;6344c0741bc241908c5143f3cc4bcb82&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_variable_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2b44c0741bc241908c5143f3cc4bcb8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;User Query&lt;/sys_name&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_variable_2b44c0741bc241908c5143f3cc4bcb8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_variable&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN3744c0741bc241908c5143f3cc4bcbba,3d0640381bc241908c5143f3cc4bcbc5,b10640381bc241908c5143f3cc4bcbcc,fd0640381bc241908c5143f3cc4bcbba"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;user_query&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Encoded User Query&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_id&gt;3744c0741bc241908c5143f3cc4bcbba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:55&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;catalog_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Catalog Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;3d0640381bc241908c5143f3cc4bcbc5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;related_task_number&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Related Task Number&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;b10640381bc241908c5143f3cc4bcbcc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;is_catalog_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Is Catalog Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:25&lt;/sys_created_on&gt;&lt;sys_id&gt;fd0640381bc241908c5143f3cc4bcbba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:25&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN7744c0741bc241908c5143f3cc4bcba2,3344c0741bc241908c5143f3cc4bcba3"/&gt;&lt;sys_choice field="type" table="var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82"&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;type&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;require all&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;sequence&gt;0&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7744c0741bc241908c5143f3cc4bcba2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:55&lt;/sys_updated_on&gt;&lt;value&gt;require all&lt;/value&gt;&lt;/sys_choice&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;type&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;require one&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;sequence&gt;1&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:02:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3344c0741bc241908c5143f3cc4bcba3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:02:55&lt;/sys_updated_on&gt;&lt;value&gt;require one&lt;/value&gt;&lt;/sys_choice&gt;&lt;/sys_choice&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82^sys_idNOT IN310640381bc241908c5143f3cc4bcbf7"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;output_user_query&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;User Query&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_6344c0741bc241908c5143f3cc4bcb82&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-02 14:10:26&lt;/sys_created_on&gt;&lt;sys_id&gt;310640381bc241908c5143f3cc4bcbf7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cascading Approvals"&gt;22668e5c1b53b45062e50ed2cd4bcbf0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-02 14:10:26&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-774076758</payload_hash>
+        <record_name>Add Backup Approvers to User Query</record_name>
+        <reverted_from/>
+        <source>2aacfe8a1bf9495062e50ed2cd4bcbe6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 14:32:00</sys_created_on>
+        <sys_id>39fa0c301b0641908c5143f3cc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f4b0b83270000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-02 14:32:00</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>bdfa0c305606419013baf731278beb5b</update_guid>
+        <update_guid_history>bdfa0c305606419013baf731278beb5b:-774076758,96ca4430820641909136be135f9a717f:328086294,dccac03056064190f8f197b3cd3189c8:-1564448481,5a9a8cfc5dc2419011fec86a0c1d0e7b:2038181227,d22a80fc62c241903267f1437855ce8a:-299904943,0df94cbc83c241906ca5cc19d21a8b4a:-196191388,8636c438b8c24190bb0a2244355629e5:2110534797,a8540474dcc2419012674ff01b8242c9:-322931642,a344c07416c24190e53dc81e0f21ed88:547274601</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-02 15:29:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>8106fcf200a7468a98e504f7a2a5d359</sys_id>
+        <sys_metadata>6344c0741bc241908c5143f3cc4bcb82</sys_metadata>
+        <sys_name>Add Backup Approvers to User Query</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_6344c0741bc241908c5143f3cc4bcb82</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_6344c0741bc241908c5143f3cc4bcb82">39fa0c301b0641908c5143f3cc4bcb5c</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

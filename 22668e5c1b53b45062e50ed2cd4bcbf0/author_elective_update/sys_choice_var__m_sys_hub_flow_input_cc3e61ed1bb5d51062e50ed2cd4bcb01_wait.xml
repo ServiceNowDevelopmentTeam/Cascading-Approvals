@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="wait" table="var__m_sys_hub_flow_input_cc3e61ed1bb5d51062e50ed2cd4bcb01" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>wait</element>
+            <name>var__m_sys_hub_flow_input_cc3e61ed1bb5d51062e50ed2cd4bcb01</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>John.Schwab</sys_created_by>
+            <sys_created_on>2022-09-07 15:36:25</sys_created_on>
+            <sys_name>wait</sys_name>
+            <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_flow_input_cc3e61ed1bb5d51062e50ed2cd4bcb01_wait</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_cc3e61ed1bb5d51062e50ed2cd4bcb01</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>John.Schwab</sys_created_by>
+            <sys_created_on>2022-09-07 15:36:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wait</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_cc3e61ed1bb5d51062e50ed2cd4bcb01</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>John.Schwab</sys_created_by>
+            <sys_created_on>2022-09-07 15:36:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>yes</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

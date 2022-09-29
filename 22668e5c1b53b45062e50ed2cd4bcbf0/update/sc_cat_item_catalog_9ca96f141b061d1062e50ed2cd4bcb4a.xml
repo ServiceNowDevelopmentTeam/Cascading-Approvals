@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Requested Item Approval">83792b141b061d1062e50ed2cd4bcb33</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-16 13:39:01</sys_created_on>
+        <sys_id>9ca96f141b061d1062e50ed2cd4bcb4a</sys_id>
+        <sys_name>Service Catalog.Requested Item Approval</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9ca96f141b061d1062e50ed2cd4bcb4a</sys_update_name>
+    </sc_cat_item_catalog>
+</record_update>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Send a 'POST' request to '/api/apig/approval/respond'</description>
+        <display_name>Send REST Request - Inbound</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>12</order>
+        <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:50</sys_created_on>
+        <sys_id>d66836c21b8ed55062e50ed2cd4bcbbe</sys_id>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_atf_step_d66836c21b8ed55062e50ed2cd4bcbbe</sys_update_name>
+        <table/>
+        <test display_value="TC - 279 - Astea Access - Request - Astea Approval - IT">5f8d07381bd50d108c5143f3cc4bcb32</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=d66836c21b8ed55062e50ed2cd4bcbbe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>1cc836061b8ed55062e50ed2cd4bcb92</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2022-09-22 20:19:24</sys_updated_on>
+        <value>{ "sys_id":\"{{Step 11: Record Query.First record}}","Approve Reason":"TEST","action":"approve" }</value>
+        <variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>58c836061b8ed55062e50ed2cd4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <value>post</value>
+        <variable display_value="Method">59877da10b3222000b7da95e93673a56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>90c836061b8ed55062e50ed2cd4bcb93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <value/>
+        <variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>94c836061b8ed55062e50ed2cd4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <value/>
+        <variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>dcc836061b8ed55062e50ed2cd4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <value/>
+        <variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>d66836c21b8ed55062e50ed2cd4bcbbe</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>dcc836061b8ed55062e50ed2cd4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <value>/api/apig/approval/respond</value>
+        <variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d66836c21b8ed55062e50ed2cd4bcbbe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>basic_auth</field>
+        <id>d66836c21b8ed55062e50ed2cd4bcbbe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>5cc836061b8ed55062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>end_point</field>
+        <id>d66836c21b8ed55062e50ed2cd4bcbbe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>98c836061b8ed55062e50ed2cd4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>d66836c21b8ed55062e50ed2cd4bcbbe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>14c836061b8ed55062e50ed2cd4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>d66836c21b8ed55062e50ed2cd4bcbbe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>5cc836061b8ed55062e50ed2cd4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:34:51</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_body</field>
+        <id>d66836c21b8ed55062e50ed2cd4bcbbe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-21 20:34:51</sys_created_on>
+        <sys_id>d4c836061b8ed55062e50ed2cd4bcb91</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-21 20:35:50</sys_updated_on>
+        <table>var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f</table>
+        <value>{ "sys_id":\"{{step['778d07381bd50d108c5143f3cc4bcba6'].first_record}}","Approve Reason":"TEST","action":"approve" }</value>
+    </sys_element_mapping>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</claim_owner_scope>
+        <claim_timestamp>1836a88fc840000001</claim_timestamp>
+        <metadata_update_name>sys_atf_step_d66836c21b8ed55062e50ed2cd4bcbbe</metadata_update_name>
+        <previous_claim_app_version>1.2.8</previous_claim_app_version>
+        <previous_claim_name>Cascading Approvals</previous_claim_name>
+        <previous_claim_scope>22668e5c1b53b45062e50ed2cd4bcbf0</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-23 13:28:25</sys_created_on>
+        <sys_id>515aeba61b4ad95062e50ed2cd4bcb42</sys_id>
+    </sys_claim>
+</record_update>

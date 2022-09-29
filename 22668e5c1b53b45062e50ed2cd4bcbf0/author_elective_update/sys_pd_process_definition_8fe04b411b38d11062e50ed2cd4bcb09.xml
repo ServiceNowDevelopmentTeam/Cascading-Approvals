@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_process_definition">
+    <sys_pd_process_definition action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <description/>
+        <label>Choose a new group</label>
+        <name>choose_a_new_group</name>
+        <snapshot/>
+        <status>draft</status>
+        <sys_class_name>sys_pd_process_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-18 15:18:07</sys_created_on>
+        <sys_id>8fe04b411b38d11062e50ed2cd4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choose a new group</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-18 15:18:07</sys_updated_on>
+    </sys_pd_process_definition>
+    <sys_pd_process_definition action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <description/>
+        <label>Choose a new group</label>
+        <name>choose_a_new_group</name>
+        <snapshot/>
+        <status>draft</status>
+        <sys_class_name>sys_pd_process_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-18 15:18:07</sys_created_on>
+        <sys_id>8fe04b411b38d11062e50ed2cd4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choose a new group</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-18 15:18:07</sys_updated_on>
+    </sys_pd_process_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_process_definition"><sys_pd_process_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><description/><label>Choose a new group</label><name>choose_a_new_group</name><snapshot/><status>draft</status><sys_class_name>sys_pd_process_definition</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-07-18 15:18:07</sys_created_on><sys_id>8fe04b411b38d11062e50ed2cd4bcb09</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Choose a new group</sys_name><sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package><sys_policy/><sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope><sys_update_name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-07-18 15:18:07</sys_updated_on></sys_pd_process_definition><sys_pd_process_definition action="INSERT_OR_UPDATE"><access>public</access><active>true</active><description/><label>Choose a new group</label><name>choose_a_new_group</name><snapshot/><status>draft</status><sys_class_name>sys_pd_process_definition</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2022-07-18 15:18:07</sys_created_on><sys_id>8fe04b411b38d11062e50ed2cd4bcb09</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Choose a new group</sys_name><sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package><sys_policy/><sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope><sys_update_name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2022-07-18 15:18:07</sys_updated_on></sys_pd_process_definition></record_update>]]></payload>
+        <payload_hash>653057725</payload_hash>
+        <record_name>Choose a new group</record_name>
+        <reverted_from/>
+        <source>42252f9c1b98d91062e50ed2cd4bcb20</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-18 15:18:07</sys_created_on>
+        <sys_id>07e04b411b38d11062e50ed2cd4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18211e356610000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-18 15:18:07</sys_updated_on>
+        <type>Process Definitions</type>
+        <update_guid>0fe04b411838d110a82c9d905cbe6d0c</update_guid>
+        <update_guid_history>0fe04b411838d110a82c9d905cbe6d0c:653057725</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-18 15:18:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_pd_process_definition">sys_pd_process_definition</sys_db_object>
+        <sys_id>5e1df297e0e04508a3e9f0cf1149bf24</sys_id>
+        <sys_metadata>8fe04b411b38d11062e50ed2cd4bcb09</sys_metadata>
+        <sys_name>Choose a new group</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
+        <sys_update_name>sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09</sys_update_name>
+        <sys_update_version display_value="sys_pd_process_definition_8fe04b411b38d11062e50ed2cd4bcb09">07e04b411b38d11062e50ed2cd4bcb0d</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

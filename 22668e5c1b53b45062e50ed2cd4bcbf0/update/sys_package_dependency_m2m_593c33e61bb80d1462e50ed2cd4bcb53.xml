@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Service Catalog Platform" source="com.glideapp.servicecatalog.platform">f1a828ef1be11010e7004229bc4bcb50</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-05 15:16:52</sys_created_on>
+        <sys_id>593c33e61bb80d1462e50ed2cd4bcb53</sys_id>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Respond</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var payload = request.body.data;
+
+	isValidUser = function(current) {		
+		return (current.variables.person_leaving.manager == gs.getUserID() || gs.hasRole('admin') || gs.hasRole('approval_admin') || current.variables.manager == gs.getUserID() || current.variables.approving_manager == gs.getUserID());
+	};
+	if(!payload.sys_id || !(payload.action ==='reject' || payload.action === 'approve')) {
+		response.setStatus(400);
+		response.setHeader("CARD-ACTION-STATUS", "Not a valid request");
+		return;
+	}
+
+	var gr = new GlideRecord('sc_req_item');
+	if(!gr.get(payload.sys_id)) {
+		response.setStatus(404);
+		response.setHeader("CARD-ACTION-STATUS", "Invalid Request Item Record");
+		return;
+	}
+
+	if(!isValidUser(gr)) {
+		//not a valid user for approving this record
+		response.setStatus(401);
+		response.setHeader("CARD-ACTION-STATUS", "You are not authorized to modify this request");
+		return;
+	}
+
+	if(gr.state.toString() === 'cancelled') {
+		response.setStatus(200);
+		response.setHeader("CARD-ACTION-STATUS", "The record has been cancelled");
+		return;
+	}
+
+	if(gr.variables.manager_approval.toString() !== '') {
+		response.setStatus(409);
+		response.setHeader("CARD-ACTION-STATUS", "Response already recorded - Please contact support at 651-925-8511 if you need to change your response.");
+		return;
+	}
+
+	if(payload.sys_id || (payload.action ==='reject' || payload.action === 'approve')) {
+		var comment = !gs.nil(payload.Reject_Reason) ? payload.Reject_Reason : '';
+		comment = !gs.nil(payload.Approve_Reason) ? payload.Approve_Reason : comment;
+		gr.variables.manager_approval = payload.action == 'approve' ? 'approved' : 'rejected';
+		gr.variables.manager_approval_comment = comment;
+		try {
+			var inputs = {};
+			inputs['title'] = 'Approver responded via actionable approval email'; // String
+			inputs['body'] = 'Approver Response: ' + payload.action; // HTML 
+			
+			inputs['body'] += !gs.nil(comment) ? '<br>Approver Comment: ' + comment : ''; // HTML 
+			var result = sn_fd.FlowAPI.getRunner().action('global.comment_on_record').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			var html = outputs['html']; // String
+
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+		try {
+			var nudgeInputs = {};
+			nudgeInputs['source_table_name'] = 'sc_req_item'; // String 
+			nudgeInputs['source_record_sys_id'] = payload.sys_id; // String 
+
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var nudgeResult = sn_fd.FlowAPI.getRunner().action('global.nudge_actionabletask_approval_flow_by_record').inForeground().withInputs(nudgeInputs).run();
+		
+		} catch (ex) {
+			var nudgeMessage = ex.getMessage();
+			gs.error(nudgeMessage);
+		}
+
+	}
+	gr.work_notes = '[code]' + html + '[/code]';
+	gr.update();		
+
+	refreshCard = {
+		"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+		"type": "AdaptiveCard",
+		"version": "1.0",
+		"hideOriginalBody": true,
+		"expectedActors": [
+			""
+		],
+		"padding": "None",
+		"originator": "130e10fd-f029-4b15-9afe-080d08b1b932",
+		"body": [
+			{
+				"type": "Container",
+				"id": "60c4a88a-e79d-780e-f6db-716b1a8eb12a",
+				"padding": {
+					"top": "Default",
+					"bottom": "None",
+					"left": "Default",
+					"right": "None"
+				},
+				"items": [
+					{
+						"size": "Medium",
+						"width": "150px",
+						"url": "https://apigroup.service-now.com/images/image-5.png",
+						"type": "Image"
+					}
+				]
+			},
+			{
+				"type": "Container",
+				"padding": {
+					"top": "Default",
+					"bottom": "None",
+					"left": "Default",
+					"right": "None"
+				},
+				"items": [
+					{
+						"type": "TextBlock",
+						"text": "Your response has been received.",
+						"weight": "Bolder",
+						"size": "Medium",
+						"wrap": true
+					},
+					{
+						"type": "TextBlock",
+						"text": "Please contact support at 651-925-8511 if you need to change your response.",
+						"weight": "Bolder",
+						"size": "Medium",
+						"wrap": true
+					}
+				]
+			},
+			{
+				"type": "Container",
+				"bleed": true,
+				"backgroundImage": "https://apigroup.service-now.com/APiBlue.png",
+				"items": [
+					{
+						"type": "ColumnSet",
+						"columns": [
+							{
+								"type": "Column",
+								"width": 50,
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://apigroupdev.service-now.com/BGL_Footer.png",
+										"horizontalAlignment": "Left",
+										"width": "400px"
+									}
+								],
+								"bleed": true,
+								"horizontalAlignment": "Left",
+								"padding": "None"
+							},
+							{
+								"type": "Column",
+								"width": 10,
+								"items": [
+									{
+										"type": "Image",
+										"url": "https://apigroupdev.service-now.com/images/image-6.png",
+										"horizontalAlignment": "Right",
+										"width": "50px",
+										"size": "Medium"
+									}
+								],
+								"padding": "None"
+							}
+						],
+						"spacing": "None",
+						"horizontalAlignment": "Left",
+						"bleed": true,
+						"padding": "None"
+					}
+				],
+				"horizontalAlignment": "Left",
+				"padding": "None"
+			}
+		]
+	};
+
+	response.setStatus(200);
+	response.setContentType("application/json");
+	response.setHeader("CARD-UPDATE-IN-BODY", "true");
+	response.getStreamWriter().writeString(JSON.stringify(refreshCard));
+})(request, response);]]></operation_script>
+        <operation_uri>/api/apig/approval/respond</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/respond</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-07 20:07:25</sys_created_on>
+        <sys_id>712c6ea11bf1191062e50ed2cd4bcbcf</sys_id>
+        <sys_name>Respond</sys_name>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_ws_operation_712c6ea11bf1191062e50ed2cd4bcbcf</sys_update_name>
+        <web_service_definition display_value="Approval">570c6e611bf1191062e50ed2cd4bcb19</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

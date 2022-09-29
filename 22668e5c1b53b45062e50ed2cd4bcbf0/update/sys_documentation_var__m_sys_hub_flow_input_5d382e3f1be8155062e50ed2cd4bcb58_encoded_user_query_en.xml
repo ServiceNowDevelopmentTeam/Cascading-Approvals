@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="encoded_user_query" label="Encoded User Query" language="en" table="var__m_sys_hub_flow_input_5d382e3f1be8155062e50ed2cd4bcb58">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>encoded_user_query</element>
+            <help/>
+            <hint/>
+            <label>Encoded User Query</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_5d382e3f1be8155062e50ed2cd4bcb58</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-07-14 16:17:45</sys_created_on>
+            <sys_name>Encoded User Query</sys_name>
+            <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5d382e3f1be8155062e50ed2cd4bcb58_encoded_user_query_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
