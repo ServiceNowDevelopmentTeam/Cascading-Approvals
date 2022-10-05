@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD909931960892d150c293897580e28406</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>22668e5c1b53b45062e50ed2cd4bcbf0</scope_name>
+        <serialized_content>{"FlowDesigner:FD909931960892d150c293897580e28406":{},"FlowDesigner:FD909931960892d150c293897580e28406.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"eb7c5a2e-a5cc-437e-8e59-69e61ada428a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD909931960892d150c293897580e28406\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-10-04 20:52:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>549931961b92d1508c5143f3cc4bcb06</sys_id>
+        <sys_name>FD909931960892d150c293897580e28406</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_complex_object_549931961b92d1508c5143f3cc4bcb06</sys_update_name>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

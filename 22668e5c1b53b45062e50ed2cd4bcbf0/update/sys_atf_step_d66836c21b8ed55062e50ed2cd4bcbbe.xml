@@ -8,7 +8,7 @@
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>12</order>
+        <order>8</order>
         <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

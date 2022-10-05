@@ -406,7 +406,7 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Trigger Event">df1e239f1b20e850f5a3635bbc4bcb6f</action_type>
+        <action_type display_value="Trigger Event on RITM">df1e239f1b20e850f5a3635bbc4bcb6f</action_type>
         <action_type_parent/>
         <comment>Trigger approved event</comment>
         <display_text/>
@@ -4236,7 +4236,7 @@ Request opened by approver.^state=approved^document_id={{1cad3174-b3f1-4867-b0ec
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_variable_8bdc59871bd895d08c5143f3cc4bcb56</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-29 16:37:23</sys_updated_on>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4937,8 +4937,8 @@ Request opened by approver.^state=approved^document_id={{1cad3174-b3f1-4867-b0ec
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Trigger Event">df1e239f1b20e850f5a3635bbc4bcb6f</action_type>
-        <action_type_parent display_value="Trigger Event">7e2ba79b1b20e850f5a3635bbc4bcb1e</action_type_parent>
+        <action_type display_value="Trigger Event on RITM">df1e239f1b20e850f5a3635bbc4bcb6f</action_type>
+        <action_type_parent display_value="Trigger Event on RITM">7e2ba79b1b20e850f5a3635bbc4bcb1e</action_type_parent>
         <comment>Trigger approved event</comment>
         <display_text/>
         <flow display_value="Cascading Approval - RITM">ec7b8ed81b93b45062e50ed2cd4bcb96</flow>
@@ -8589,7 +8589,7 @@ Request opened by approver.^state=approved^document_id={{1cad3174-b3f1-4867-b0ec
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_variable_16af550f1bd895d08c5143f3cc4bcb8f</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-29 16:49:38</sys_updated_on>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
