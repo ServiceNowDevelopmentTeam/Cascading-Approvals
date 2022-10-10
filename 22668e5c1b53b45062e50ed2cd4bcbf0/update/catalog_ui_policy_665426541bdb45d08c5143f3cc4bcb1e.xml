@@ -6,7 +6,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>set</applies_to>
-        <catalog_conditions>IO:a834ee141bdb45d08c5143f3cc4bcb9a=true^EQ</catalog_conditions>
+        <catalog_conditions>IO:a834ee141bdb45d08c5143f3cc4bcb9a=false^EQ</catalog_conditions>
         <catalog_item/>
         <conditions/>
         <description/>

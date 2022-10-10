@@ -54,7 +54,7 @@
 			var inputs = {};
 			inputs['title'] = 'Approver responded via actionable approval email'; // String
 			inputs['body'] = 'Approver Response: ' + payload.action; // HTML 
-			
+
 			inputs['body'] += !gs.nil(comment) ? '<br>Approver Comment: ' + comment : ''; // HTML 
 			var result = sn_fd.FlowAPI.getRunner().action('global.comment_on_record').inForeground().withInputs(inputs).run();
 			var outputs = result.getOutputs();
@@ -73,7 +73,7 @@
 
 			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
 			var nudgeResult = sn_fd.FlowAPI.getRunner().action('global.nudge_actionabletask_approval_flow_by_record').inForeground().withInputs(nudgeInputs).run();
-		
+
 		} catch (ex) {
 			var nudgeMessage = ex.getMessage();
 			gs.error(nudgeMessage);
@@ -105,8 +105,7 @@
 				},
 				"items": [
 					{
-						"size": "Medium",
-						"width": "150px",
+						"width": "65px",
 						"url": "https://apigroup.service-now.com/images/image-5.png",
 						"type": "Image"
 					}
@@ -153,7 +152,8 @@
 										"type": "Image",
 										"url": "https://apigroupdev.service-now.com/BGL_Footer.png",
 										"horizontalAlignment": "Left",
-										"width": "400px"
+										"width": "300px",
+										"height": "28px"
 									}
 								],
 								"bleed": true,
@@ -168,8 +168,7 @@
 										"type": "Image",
 										"url": "https://apigroupdev.service-now.com/images/image-6.png",
 										"horizontalAlignment": "Right",
-										"width": "50px",
-										"size": "Medium"
+										"width": "54px"
 									}
 								],
 								"padding": "None"
