@@ -11,7 +11,7 @@
 	var payload = request.body.data;
 
 	isValidUser = function(current) {		
-		return (current.variables.person_leaving.manager == gs.getUserID() || gs.hasRole('admin') || gs.hasRole('approval_admin') || current.variables.manager == gs.getUserID() || current.variables.approving_manager == gs.getUserID());
+		return (current.variables.person_leaving.manager.toString() == gs.getUserID() || gs.hasRole('admin') || gs.hasRole('approval_admin') || current.variables.employees_manager.toString() == gs.getUserID() || current.variables.approving_manager.toString() == gs.getUserID());
 	};
 	if(!payload.sys_id || !(payload.action ==='reject' || payload.action === 'approve')) {
 		response.setStatus(400);
@@ -54,7 +54,7 @@
 			var inputs = {};
 			inputs['title'] = 'Approver responded via actionable approval email'; // String
 			inputs['body'] = 'Approver Response: ' + payload.action; // HTML 
-
+			
 			inputs['body'] += !gs.nil(comment) ? '<br>Approver Comment: ' + comment : ''; // HTML 
 			var result = sn_fd.FlowAPI.getRunner().action('global.comment_on_record').inForeground().withInputs(inputs).run();
 			var outputs = result.getOutputs();
@@ -73,7 +73,7 @@
 
 			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
 			var nudgeResult = sn_fd.FlowAPI.getRunner().action('global.nudge_actionabletask_approval_flow_by_record').inForeground().withInputs(nudgeInputs).run();
-
+		
 		} catch (ex) {
 			var nudgeMessage = ex.getMessage();
 			gs.error(nudgeMessage);
@@ -105,7 +105,8 @@
 				},
 				"items": [
 					{
-						"width": "65px",
+						"size": "Medium",
+						"width": "150px",
 						"url": "https://apigroup.service-now.com/images/image-5.png",
 						"type": "Image"
 					}
@@ -152,8 +153,7 @@
 										"type": "Image",
 										"url": "https://apigroupdev.service-now.com/BGL_Footer.png",
 										"horizontalAlignment": "Left",
-										"width": "300px",
-										"height": "28px"
+										"width": "400px"
 									}
 								],
 								"bleed": true,
@@ -168,7 +168,8 @@
 										"type": "Image",
 										"url": "https://apigroupdev.service-now.com/images/image-6.png",
 										"horizontalAlignment": "Right",
-										"width": "54px"
+										"width": "50px",
+										"size": "Medium"
 									}
 								],
 								"padding": "None"

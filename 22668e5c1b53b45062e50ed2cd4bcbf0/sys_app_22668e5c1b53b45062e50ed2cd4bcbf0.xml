@@ -22,7 +22,7 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Approvals in order based on a cascading approval group</short_description>
         <source>22668e5c1b53b45062e50ed2cd4bcbf0</source>
-        <store_correlation_id>REPOAPP0000681971</store_correlation_id>
+        <store_correlation_id>REPOAPP0000686102</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
@@ -35,6 +35,6 @@
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.2.11</version>
+        <version>1.2.13</version>
     </sys_app>
 </record_update>
