@@ -38,7 +38,7 @@
         <label>Group Member Index</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Cascading Approval - RITM">8a7a86581b93b45062e50ed2cd4bcb20</model>
+        <model display_value="Cascading Approval RITM">8a7a86581b93b45062e50ed2cd4bcb20</model>
         <model_id>8a7a86581b93b45062e50ed2cd4bcb20</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_8a7a86581b93b45062e50ed2cd4bcb20</name>
@@ -65,7 +65,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_variable_8bdc59871bd895d08c5143f3cc4bcb56</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
+        <sys_updated_on>2022-06-29 16:37:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
