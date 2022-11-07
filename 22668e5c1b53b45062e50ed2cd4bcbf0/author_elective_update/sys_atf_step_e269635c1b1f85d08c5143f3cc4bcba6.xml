@@ -149,6 +149,7 @@ With a failure timeout of 25 Seconds</description><display_name>Record Query</di
         <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
         <sys_id>e229f1fd28ce439a846f42238357c1f9</sys_id>
         <sys_metadata>e269635c1b1f85d08c5143f3cc4bcba6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Record Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_parent/>
@@ -157,5 +158,7 @@ With a failure timeout of 25 Seconds</description><display_name>Record Query</di
         <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
         <sys_update_name>sys_atf_step_e269635c1b1f85d08c5143f3cc4bcba6</sys_update_name>
         <sys_update_version display_value="sys_atf_step_e269635c1b1f85d08c5143f3cc4bcba6">7718c3641b1fcd9062e50ed2cd4bcb02</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-05-03 13:10:53</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

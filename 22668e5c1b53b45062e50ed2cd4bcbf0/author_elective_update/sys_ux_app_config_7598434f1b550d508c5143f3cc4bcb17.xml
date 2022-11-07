@@ -54,6 +54,7 @@
         <sys_db_object display_value="" name="sys_ux_app_config">sys_ux_app_config</sys_db_object>
         <sys_id>4247aa8d96434fd393d78cc9631f6699</sys_id>
         <sys_metadata>7598434f1b550d508c5143f3cc4bcb17</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Approval Administration</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_parent/>
@@ -62,5 +63,7 @@
         <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
         <sys_update_name>sys_ux_app_config_7598434f1b550d508c5143f3cc4bcb17</sys_update_name>
         <sys_update_version display_value="sys_ux_app_config_7598434f1b550d508c5143f3cc4bcb17">17b8c74f1b550d508c5143f3cc4bcbca</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-01-31 21:21:57</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

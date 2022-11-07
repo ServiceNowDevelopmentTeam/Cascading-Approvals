@@ -62,6 +62,7 @@
         <sys_db_object display_value="" name="sys_data_policy2">sys_data_policy2</sys_db_object>
         <sys_id>23af65ed0ff14390b36ef33f22ee6f59</sys_id>
         <sys_metadata>704d16fe1b95d1508c5143f3cc4bcbe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Make Closure Imposible unless closure notes is correct if approval incident</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_parent display_value="Incident">6e18ecab1be11010e7004229bc4bcb11</sys_parent>
@@ -70,5 +71,7 @@
         <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
         <sys_update_name>sys_data_policy2_704d16fe1b95d1508c5143f3cc4bcbe5</sys_update_name>
         <sys_update_version display_value="sys_data_policy2_704d16fe1b95d1508c5143f3cc4bcbe5">3acd92321bd5d1508c5143f3cc4bcb76</sys_update_version>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2022-08-17 19:49:03</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

@@ -76,6 +76,7 @@
         <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
         <sys_id>2c81c87151794112a1ab61014451e289</sys_id>
         <sys_metadata>4704c3d11bc61d108c5143f3cc4bcbc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Related Record Details</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_parent/>
@@ -84,5 +85,7 @@
         <sys_scope_delete display_value="">5c64241f2f804a209f32955f4b392840</sys_scope_delete>
         <sys_update_name>catalog_script_client_4704c3d11bc61d108c5143f3cc4bcbc7</sys_update_name>
         <sys_update_version display_value="catalog_script_client_4704c3d11bc61d108c5143f3cc4bcbc7">2e344bd11bc61d108c5143f3cc4bcb0b</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-19 14:54:21</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

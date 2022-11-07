@@ -52,6 +52,8 @@
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_dictionary_sc_cat_item_u_is_not_multiple_approver_conditional</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -74,5 +76,8 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-01-08 15:39:24</sys_created_on>
         <sys_id>682e176f1b384d148c5143f3cc4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
     </sys_claim>
 </record_update>

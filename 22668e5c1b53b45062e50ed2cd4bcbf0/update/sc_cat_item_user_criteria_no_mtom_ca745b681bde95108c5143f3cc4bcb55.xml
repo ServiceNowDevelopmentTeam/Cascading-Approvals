@@ -5,11 +5,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-29 17:00:45</sys_created_on>
         <sys_id>ca745b681bde95108c5143f3cc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Requested Item Approval.SNC External</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sc_cat_item_user_criteria_no_mtom_ca745b681bde95108c5143f3cc4bcb55</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
     </sc_cat_item_user_criteria_no_mtom>
 </record_update>

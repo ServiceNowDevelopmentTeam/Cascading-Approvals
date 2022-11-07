@@ -6,11 +6,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-16 13:39:01</sys_created_on>
         <sys_id>18a96f141b061d1062e50ed2cd4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Related Incident or RITM.Requested Item Approval</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>io_set_item_18a96f141b061d1062e50ed2cd4bcb29</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <variable_set display_value="Related Incident or RITM">74c273a43724370090b68cf6c3990ea4</variable_set>
     </io_set_item>
 </record_update>
