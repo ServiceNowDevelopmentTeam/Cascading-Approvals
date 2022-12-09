@@ -241,10 +241,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-11-18 20:41:51</sys_created_on>
         <sys_id>94962db41b139d508c5143f3cc4bcb82</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-18 20:42:21</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-09 21:03:02</sys_updated_on>
         <ui_id>1fd07c0e-7055-4db2-95ef-08bce02c3ce2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=94962db41b139d508c5143f3cc4bcb82"/>
@@ -303,10 +303,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-11-18 20:41:51</sys_created_on>
         <sys_id>9c962db41b139d508c5143f3cc4bcb95</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-18 20:42:21</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-12-09 21:03:02</sys_updated_on>
         <ui_id>843f1b26-b082-4c51-8b05-9eb0da4a1933</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c962db41b139d508c5143f3cc4bcb95"/>
@@ -466,9 +466,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a^sys_idNOT INeba6e1f41b139d508c5143f3cc4bcb4e"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1bd3d88</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"eba6e1f41b139d508c5143f3cc4bcb4e","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="partial approval item approved or rejected">cc962db41b139d508c5143f3cc4bcb4a</plan_id>
-        <snapshot>9ba6a1f41b139d508c5143f3cc4bcb7f</snapshot>
+        <snapshot>97c4bd2f1be799108c5143f3cc4bcb2d</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-11-18 20:42:21</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -945,6 +945,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>cc962db41b139d508c5143f3cc4bcb4a</sys_id>
         <latest_snapshot>9ba6a1f41b139d508c5143f3cc4bcb7f</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch2-09-29-2022_10-07-2022_1443.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch3-10-26-2022_11-03-2022_2313.zip</compiler_build>
     </sys_hub_flow>
 </record_update>
