@@ -555,7 +555,7 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id>b31479c4-8c74-4c22-8014-8c43b7dee08a</parent_ui_id>
-        <subflow display_value="Should User Auto-Approve Task">2a5752c91b0201d062e50ed2cd4bcb17</subflow>
+        <subflow display_value="PROF - Should Auto-Approve Task - R">2a5752c91b0201d062e50ed2cd4bcb17</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -1383,7 +1383,7 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id>b31479c4-8c74-4c22-8014-8c43b7dee08a</parent_ui_id>
-        <subflow display_value="Should User Auto-Approve Task">2a5752c91b0201d062e50ed2cd4bcb17</subflow>
+        <subflow display_value="PROF - Should Auto-Approve Task - R">2a5752c91b0201d062e50ed2cd4bcb17</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
