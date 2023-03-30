@@ -1538,7 +1538,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <inputs/>
         <order>13</order>
         <parent_ui_id>688575ec-931b-46e0-b522-efb4acb370bb</parent_ui_id>
-        <subflow display_value="wait for empty question to change">5c29a5221bde15508c5143f3cc4bcb18</subflow>
+        <subflow display_value="PROF - Wait for Question Change - R">5c29a5221bde15508c5143f3cc4bcb18</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -5545,7 +5545,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <inputs/>
         <order>13</order>
         <parent_ui_id>688575ec-931b-46e0-b522-efb4acb370bb</parent_ui_id>
-        <subflow display_value="wait for empty question to change">5c29a5221bde15508c5143f3cc4bcb18</subflow>
+        <subflow display_value="PROF - Wait for Question Change - R">5c29a5221bde15508c5143f3cc4bcb18</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
