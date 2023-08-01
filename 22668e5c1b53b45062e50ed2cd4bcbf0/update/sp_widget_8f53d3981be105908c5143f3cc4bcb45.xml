@@ -63,7 +63,21 @@
 	var tableName = options.table || $sp.getParameter('table');
 	var sysId = options.sys_id || $sp.getParameter('sys_id');
 	var record = sn_std_tkt_api.TicketConfig.getTicketRecord(tableName, sysId);
-	
+	if (options.taskFields && JSON.parse(options.taskFields.length) > 0) {
+		data.variables = [];
+		//For each field in the taskFields array, add a variable object to the variables array
+        JSON.parse(options.taskFields).forEach(function(field) {
+            data.variables.push({
+                label: record[field].getLabel(),
+                visible_summary: true,
+                multi_row: false,
+                display_value : record[field].toString(),
+                name: "record[field].getED()"
+            });
+		});
+		return;
+	}
+
 	if (record == null)
 		return;
 
@@ -72,7 +86,8 @@
 		return;
 	
 	
-	data.variables = filterVariables(new GlobalServiceCatalogUtil().getVariablesForTask(record, true));
+	//data.variables = filterVariables(new GlobalServiceCatalogUtil().getVariablesForTask(record, true));
+	data.variables = filterVariables(new CustomCatalogUtils().getVariablesForTaskNotNil(record, true));
 	//data.variables = 0;
 	
 	//data.variables = new global.RequestedItemUtils().getFilteredVariables(data.variables);
@@ -95,14 +110,14 @@ function filterVariables(variables) {
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-02-04 19:19:10</sys_created_on>
         <sys_id>8f53d3981be105908c5143f3cc4bcb45</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Variable Summarizer Custom</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sp_widget_8f53d3981be105908c5143f3cc4bcb45</sys_update_name>
-        <sys_updated_by>John.Schwab</sys_updated_by>
-        <sys_updated_on>2022-11-22 16:34:22</sys_updated_on>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-08-01 16:16:03</sys_updated_on>
         <template><![CDATA[<div ng-if="c.data.variables.length > 0" ng-init="c.variable_toggle = c.toggle">
   <button class="btn variables-toggle-btn" aria-expanded="{{c.variable_toggle}}" aria-label="{{data.ariaLabel}}" ng-click="c.variable_toggle = !c.variable_toggle" ng-if="!c.hide_control">
     <span style="font-size: 12px;" class="glyphicon" ng-class="c.variable_toggle ? 'glyphicon-chevron-down' : 'glyphicon-chevron-up'"></span>
