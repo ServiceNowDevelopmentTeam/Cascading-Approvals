@@ -39,7 +39,7 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_da595ed01b1b45d08c5143f3cc4bcb35</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-25 17:24:50</sys_updated_on>
+        <sys_updated_on>2023-05-05 14:24:58</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=da595ed01b1b45d08c5143f3cc4bcb35"/>
@@ -742,10 +742,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:10:45</sys_created_on>
         <sys_id>04dc92d41b5b45d08c5143f3cc4bcbd9</sys_id>
-        <sys_mod_count>680</sys_mod_count>
+        <sys_mod_count>688</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>062b7009-ce2c-4164-a206-3cdbabc10ce0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=04dc92d41b5b45d08c5143f3cc4bcbd9"/>
@@ -816,10 +816,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-10-25 16:47:57</sys_created_on>
         <sys_id>08ea01811bbe99508c5143f3cc4bcb92</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>dadef590-2e89-4137-861d-9f88e3a610d8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=08ea01811bbe99508c5143f3cc4bcb92"/>
@@ -904,10 +904,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:10:44</sys_created_on>
         <sys_id>0cdc92d41b5b45d08c5143f3cc4bcbd1</sys_id>
-        <sys_mod_count>680</sys_mod_count>
+        <sys_mod_count>688</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>8bfd7670-eccb-4301-b37c-f990a525639e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0cdc92d41b5b45d08c5143f3cc4bcbd1"/>
@@ -919,10 +919,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:10:44</sys_created_on>
         <sys_id>04dc92d41b5b45d08c5143f3cc4bcbd4</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-06-23 21:37:48</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798":{"$COCollectionField":[{"URLs_child0":{"Label":"String","Label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"URL":"String","URL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"}},"serializationFormat":"JSON","complexObject":{"name$":"FD12ccc28b205dc9500b06ca565e61a798","$COCollectionField":[{"Label":{"$cv":{"$c":"java.lang.String","$v":""}},"URL":{"$cv":{"$c":"java.lang.String","$v":""}}}]}}</value>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798":{"$COCollectionField":[{"URLs_child0":{"Label":"String","Label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"URL":"String","URL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"}},"complexObject":{"name$":"FD12ccc28b205dc9500b06ca565e61a798","$COCollectionField":[{"Label":{"$cv":{"$c":"java.lang.String","$v":""}},"URL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"serializationFormat":"JSON"}</value>
         <variable display_value="URLs">16ccc28b1b5dc9508c5143f3cc4bcba4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1008,10 +1008,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-03 15:15:12</sys_created_on>
         <sys_id>0f67eba01b9701d062e50ed2cd4bcbe4</sys_id>
-        <sys_mod_count>574</sys_mod_count>
+        <sys_mod_count>582</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>bfb34ff5-3c29-4e2e-abe7-24bc729ad769</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0f67eba01b9701d062e50ed2cd4bcbe4"/>
@@ -1070,10 +1070,10 @@ This subflow will auto-approve on behalf of a manager, via work note, or it will
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:14:56</sys_created_on>
         <sys_id>25cd92981b5b45d08c5143f3cc4bcba4</sys_id>
-        <sys_mod_count>666</sys_mod_count>
+        <sys_mod_count>674</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>eaa576ee-cd8f-45b3-8f72-6192cec1dad8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=25cd92981b5b45d08c5143f3cc4bcba4"/>
@@ -1131,10 +1131,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-03 13:34:20</sys_created_on>
         <sys_id>295097a01bdfcd9062e50ed2cd4bcba2</sys_id>
-        <sys_mod_count>604</sys_mod_count>
+        <sys_mod_count>612</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>a7f53683-9887-45f9-8c6c-255fb4026784</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=295097a01bdfcd9062e50ed2cd4bcba2"/>
@@ -1146,10 +1146,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-03 13:34:20</sys_created_on>
         <sys_id>615097a01bdfcd9062e50ed2cd4bcba5</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-06-23 21:37:48</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798":{"$COCollectionField":[{"URLs_child0":{"Label":"String","Label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"URL":"String","URL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"}},"serializationFormat":"JSON","complexObject":{"name$":"FD12ccc28b205dc9500b06ca565e61a798","$COCollectionField":[{"Label":{"$cv":{"$c":"java.lang.String","$v":""}},"URL":{"$cv":{"$c":"java.lang.String","$v":""}}}]}}</value>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798":{"$COCollectionField":[{"URLs_child0":{"Label":"String","Label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"URL":"String","URL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"}},"complexObject":{"name$":"FD12ccc28b205dc9500b06ca565e61a798","$COCollectionField":[{"Label":{"$cv":{"$c":"java.lang.String","$v":""}},"URL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"serializationFormat":"JSON"}</value>
         <variable display_value="URLs">16ccc28b1b5dc9508c5143f3cc4bcba4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1220,10 +1220,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-03 13:34:20</sys_created_on>
         <sys_id>2d5097a01bdfcd9062e50ed2cd4bcbc2</sys_id>
-        <sys_mod_count>604</sys_mod_count>
+        <sys_mod_count>612</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>0fb8bebb-dc2d-4fe6-abbf-b21844f7ca79</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2d5097a01bdfcd9062e50ed2cd4bcbc2"/>
@@ -1294,10 +1294,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 21:02:46</sys_created_on>
         <sys_id>306d27d81b5f85d08c5143f3cc4bcb68</sys_id>
-        <sys_mod_count>618</sys_mod_count>
+        <sys_mod_count>626</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>0e0306b5-d166-4953-b5cb-8476db102d9e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=306d27d81b5f85d08c5143f3cc4bcb68"/>
@@ -1382,10 +1382,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-15 12:03:14</sys_created_on>
         <sys_id>571ac64c1b4a591062e50ed2cd4bcbbe</sys_id>
-        <sys_mod_count>352</sys_mod_count>
+        <sys_mod_count>360</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>08c59b3e-c477-4962-b7a8-f98bea13e716</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=571ac64c1b4a591062e50ed2cd4bcbbe"/>
@@ -1444,10 +1444,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:53:03</sys_created_on>
         <sys_id>b776e21c1bdb45d08c5143f3cc4bcb75</sys_id>
-        <sys_mod_count>646</sys_mod_count>
+        <sys_mod_count>654</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>dafc1e0d-24fb-4a4f-882b-5447b39f7a6e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b776e21c1bdb45d08c5143f3cc4bcb75"/>
@@ -1505,10 +1505,10 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-13 15:28:03</sys_created_on>
         <sys_id>c8d524eb1bfd151062e50ed2cd4bcb69</sys_id>
-        <sys_mod_count>482</sys_mod_count>
+        <sys_mod_count>490</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-12 13:04:43</sys_updated_on>
+        <sys_updated_on>2023-07-24 13:19:52</sys_updated_on>
         <ui_id>861d0d3c-4709-4c52-abc6-79ca8fd1f703</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c8d524eb1bfd151062e50ed2cd4bcb69"/>
@@ -1603,18 +1603,6 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_on>2022-10-05 15:33:10</sys_updated_on>
         <table>var__m_sys_hub_flow_input_5c29a5221bde15508c5143f3cc4bcb18</table>
         <value>{{subflow.related_ritm_record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>65f9f52a1b9255508c5143f3cc4bcb05</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-10-05 15:33:10</sys_created_on>
-        <sys_id>f5f9f52a1b9255508c5143f3cc4bcb23</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 15:33:10</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_65f9f52a1b9255508c5143f3cc4bcb05</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_65f9f52a1b9255508c5143f3cc4bcb05^id=65f9f52a1b9255508c5143f3cc4bcb05"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=65f9f52a1b9255508c5143f3cc4bcb05^sys_idNOT IN25f9f52a1b9255508c5143f3cc4bcb06"/>
@@ -1749,7 +1737,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-10-25 16:47:58</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"name$":"FD78238d97d89e9d50402c4d3e9c289f76","$COCollectionField":[{"label":{"$cv":{"$c":"java.lang.String","$v":""}},"url":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD78238d97d89e9d50402c4d3e9c289f76":{"$COCollectionField":[{"URL":{"label":"String","label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"url":"String","url.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Custom Header URLs\",\"mandatory\":\"false\",\"child_name\":\"URL\",\"uiUniqueId\":\"09e40878-8d7f-4cf4-ab00-51d993c2d53e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD78238d97d89e9d50402c4d3e9c289f76\",\"child_label\":\"URL\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"57728eee-d9e7-4c9c-8930-8f659a54aaa3\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD78238d97d89e9d50402c4d3e9c289f76.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Custom Header URLs\",\"mandatory\":\"false\",\"child_name\":\"URL\",\"uiUniqueId\":\"09e40878-8d7f-4cf4-ab00-51d993c2d53e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD78238d97d89e9d50402c4d3e9c289f76\",\"child_label\":\"URL\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"57728eee-d9e7-4c9c-8930-8f659a54aaa3\"}"}},"serializationFormat":"JSON"}</value>
-        <variable display_value="Custom Header URLs">09238d971b9e9d5062e50ed2cd4bcb7b</variable>
+        <variable display_value="">09238d971b9e9d5062e50ed2cd4bcb7b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_sub_flow_instance</document>
@@ -1927,18 +1915,6 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_on>2022-10-25 16:47:57</sys_updated_on>
         <table>var__m_sys_hub_flow_input_93a67da51b1a859062e50ed2cd4bcb6e</table>
         <value>{"version":"1.0","complexObject":{"name$":"FDeba67da5d61a8590401a1d999309be6f","$COCollectionField":[{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Submitted By﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Number﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Description﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FDeba67da5d61a8590401a1d999309be6f":{"$COCollectionField":[{"variable":{"variableName":"String","variableName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variableName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"variableValue":"String","variableValue.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].variableValue\\\":\\\"{{subflow.requestor_record.name}}\\\",\\\"[1].variableValue\\\":\\\"{{subflow.related_ritm_record.number}}\\\",\\\"[2].variableValue\\\":\\\"{{subflow.related_ritm_record.short_description}}\\\"}\",\"default_value\":\"\",\"label\":\"variableValue\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Fall Back Email Variables\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"b8a4c895-f02d-4def-a57c-3dabe150a434\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDeba67da5d61a8590401a1d999309be6f\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"b92b964d-176b-4cab-8949-00495b9df81a\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDeba67da5d61a8590401a1d999309be6f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Fall Back Email Variables\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"b8a4c895-f02d-4def-a57c-3dabe150a434\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDeba67da5d61a8590401a1d999309be6f\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"b92b964d-176b-4cab-8949-00495b9df81a\"}"}},"serializationFormat":"JSON"}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>acb353461bbddd108c5143f3cc4bcb12</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-10-05 20:41:56</sys_created_on>
-        <sys_id>e4a0cfee1bde55508c5143f3cc4bcbed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 20:41:56</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_acb353461bbddd108c5143f3cc4bcb12</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_acb353461bbddd108c5143f3cc4bcb12^id=acb353461bbddd108c5143f3cc4bcb12"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=acb353461bbddd108c5143f3cc4bcb12^sys_idNOT IN6cb353461bbddd108c5143f3cc4bcb13"/>
@@ -3431,7 +3407,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:10:44</sys_created_on>
         <sys_id>00dc92d41b5b45d08c5143f3cc4bcbab</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Requestor Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3454,7 +3430,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-09-21 13:07:39</sys_created_on>
         <sys_id>2962d54e1b42d55062e50ed2cd4bcb59</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Header Text(Under Dear User)</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3477,7 +3453,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:10:44</sys_created_on>
         <sys_id>48dc92d41b5b45d08c5143f3cc4bcba0</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approver Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3500,7 +3476,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:13:20</sys_created_on>
         <sys_id>866d92581b5b45d08c5143f3cc4bcbcc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approval Validation Assignment Group</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3523,7 +3499,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-10-05 11:58:25</sys_created_on>
         <sys_id>8cd8cdae1b5a15508c5143f3cc4bcb65</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Body Variable List</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3546,7 +3522,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:10:44</sys_created_on>
         <sys_id>8cdc92d41b5b45d08c5143f3cc4bcbc1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Related RITM Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3569,7 +3545,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-09-15 12:01:04</sys_created_on>
         <sys_id>bf990a0c1b4a591062e50ed2cd4bcbff</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Timeout</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3594,7 +3570,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:12:36</sys_created_on>
         <sys_id>173dda181b5b45d08c5143f3cc4bcb60</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approval State</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -3610,7 +3586,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"16d0e2d01b9b45d08c5143f3cc4bcb40","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Ask for task/actionable approval">da595ed01b1b45d08c5143f3cc4bcb35</plan_id>
-        <snapshot>2c2513a01b04751062e50ed2cd4bcb4b</snapshot>
+        <snapshot>23ab0d6c875071106b4c21b9cebb3583</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-02 15:28:21</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -5249,7 +5225,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-10-25 16:48:08</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"name$":"FD78238d97d89e9d50402c4d3e9c289f76","$COCollectionField":[{"label":{"$cv":{"$c":"java.lang.String","$v":""}},"url":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD78238d97d89e9d50402c4d3e9c289f76":{"$COCollectionField":[{"URL":{"label":"String","label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"url":"String","url.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Custom Header URLs\",\"mandatory\":\"false\",\"child_name\":\"URL\",\"uiUniqueId\":\"09e40878-8d7f-4cf4-ab00-51d993c2d53e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD78238d97d89e9d50402c4d3e9c289f76\",\"child_label\":\"URL\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"57728eee-d9e7-4c9c-8930-8f659a54aaa3\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD78238d97d89e9d50402c4d3e9c289f76.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Custom Header URLs\",\"mandatory\":\"false\",\"child_name\":\"URL\",\"uiUniqueId\":\"09e40878-8d7f-4cf4-ab00-51d993c2d53e\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD78238d97d89e9d50402c4d3e9c289f76\",\"child_label\":\"URL\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"57728eee-d9e7-4c9c-8930-8f659a54aaa3\"}"}},"serializationFormat":"JSON"}</value>
-        <variable display_value="Custom Header URLs">09238d971b9e9d5062e50ed2cd4bcb7b</variable>
+        <variable display_value="">09238d971b9e9d5062e50ed2cd4bcb7b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_sub_flow_instance</document>
@@ -5399,18 +5375,6 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_on>2022-10-25 16:48:08</sys_updated_on>
         <table>var__m_sys_hub_flow_input_93a67da51b1a859062e50ed2cd4bcb6e</table>
         <value>{"version":"1.0","complexObject":{"name$":"FDeba67da5d61a8590401a1d999309be6f","$COCollectionField":[{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Submitted By﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Number﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Description﻿"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FDeba67da5d61a8590401a1d999309be6f":{"$COCollectionField":[{"variable":{"variableName":"String","variableName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variableName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"variableValue":"String","variableValue.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].variableValue\\\":\\\"{{subflow.requestor_record.name}}\\\",\\\"[1].variableValue\\\":\\\"{{subflow.related_ritm_record.number}}\\\",\\\"[2].variableValue\\\":\\\"{{subflow.related_ritm_record.short_description}}\\\"}\",\"default_value\":\"\",\"label\":\"variableValue\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Fall Back Email Variables\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"b8a4c895-f02d-4def-a57c-3dabe150a434\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDeba67da5d61a8590401a1d999309be6f\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"b92b964d-176b-4cab-8949-00495b9df81a\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDeba67da5d61a8590401a1d999309be6f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Fall Back Email Variables\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"b8a4c895-f02d-4def-a57c-3dabe150a434\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDeba67da5d61a8590401a1d999309be6f\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"b92b964d-176b-4cab-8949-00495b9df81a\"}"}},"serializationFormat":"JSON"}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>d5a793421bfddd108c5143f3cc4bcb52</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-10-05 20:42:06</sys_created_on>
-        <sys_id>07a0c3221b1295508c5143f3cc4bcbff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 20:42:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_d5a793421bfddd108c5143f3cc4bcb52</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_d5a793421bfddd108c5143f3cc4bcb52^id=d5a793421bfddd108c5143f3cc4bcb52"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=d5a793421bfddd108c5143f3cc4bcb52^sys_idNOT IN91a793421bfddd108c5143f3cc4bcb53"/>
@@ -5610,18 +5574,6 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_updated_on>2022-10-05 15:33:37</sys_updated_on>
         <table>var__m_sys_hub_flow_input_5c29a5221bde15508c5143f3cc4bcb18</table>
         <value>{{subflow.related_ritm_record}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>dc1a396a1b9255508c5143f3cc4bcbce</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-10-05 15:33:37</sys_created_on>
-        <sys_id>5c1a396a1b9255508c5143f3cc4bcbea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 15:33:37</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_dc1a396a1b9255508c5143f3cc4bcbce</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_dc1a396a1b9255508c5143f3cc4bcbce^id=dc1a396a1b9255508c5143f3cc4bcbce"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=dc1a396a1b9255508c5143f3cc4bcbce^sys_idNOT IN9c1a396a1b9255508c5143f3cc4bcbcf"/>
@@ -7075,7 +7027,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-10-05 14:35:37</sys_created_on>
         <sys_id>2acc216e1bde15508c5143f3cc4bcb19</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Body Variable List</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7098,7 +7050,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:28:18</sys_created_on>
         <sys_id>5dd062d01b9b45d08c5143f3cc4bcb8e</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approver Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7121,7 +7073,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:28:19</sys_created_on>
         <sys_id>61d062d01b9b45d08c5143f3cc4bcbde</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approval Validation Assignment Group</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7144,7 +7096,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:28:18</sys_created_on>
         <sys_id>6dd062d01b9b45d08c5143f3cc4bcba0</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Requestor Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7167,7 +7119,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-09-21 13:07:50</sys_created_on>
         <sys_id>9472d94e1b42d55062e50ed2cd4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Header Text(Under Dear User)</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7190,7 +7142,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:28:19</sys_created_on>
         <sys_id>edd062d01b9b45d08c5143f3cc4bcbb2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Related RITM Record</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7213,7 +7165,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-09-15 12:03:23</sys_created_on>
         <sys_id>fd2aca4c1b4a591062e50ed2cd4bcb5f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Timeout</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
@@ -7238,7 +7190,7 @@ Before closing this task, please set the "Manager Approval" variable value.</val
         <sys_created_on>2022-05-02 15:28:19</sys_created_on>
         <sys_id>61d0a2d01b9b45d08c5143f3cc4bcb25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Approval State</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>

@@ -38,7 +38,7 @@
         <label>Instance Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Ask for task/actionable approval">c2e08aa21b1655508c5143f3cc4bcb80</model>
+        <model display_value="">c2e08aa21b1655508c5143f3cc4bcb80</model>
         <model_id>c2e08aa21b1655508c5143f3cc4bcb80</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_c2e08aa21b1655508c5143f3cc4bcb80</name>

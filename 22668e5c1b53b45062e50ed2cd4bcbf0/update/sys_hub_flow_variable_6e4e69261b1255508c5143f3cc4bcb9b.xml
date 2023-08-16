@@ -38,7 +38,7 @@
         <label>Approval State</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Ask for task/actionable approval">9a4e29261b1255508c5143f3cc4bcbeb</model>
+        <model display_value="">9a4e29261b1255508c5143f3cc4bcbeb</model>
         <model_id>9a4e29261b1255508c5143f3cc4bcbeb</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_9a4e29261b1255508c5143f3cc4bcbeb</name>

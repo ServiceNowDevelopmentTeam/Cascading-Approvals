@@ -2,7 +2,7 @@
     <sys_decision_question action="INSERT_OR_UPDATE">
         <active>true</active>
         <answer>5e901d541b5a5c50e7004229bc4bcb1b</answer>
-        <condition table="var__m_sys_decision_input_108b1b421bfd495062e50ed2cd4bcb28">u_approver=7063d9c91bcdec10e7004229bc4bcbb8^u_is_catalog_item=false^EQ<item display_table="sys_user" display_value="Greg Deutsch" endquery="false" field="u_approver" goto="false" newquery="false" operator="=" or="false" value="7063d9c91bcdec10e7004229bc4bcbb8"/>
+        <condition table="var__m_sys_decision_input_108b1b421bfd495062e50ed2cd4bcb28">u_approver=1a731d811bc5e850df31da49cc4bcb1f^u_is_catalog_item=false^EQ<item display_table="sys_user" display_value="Greg Deutsch" endquery="false" field="u_approver" goto="false" newquery="false" operator="=" or="false" value="1a731d811bc5e850df31da49cc4bcb1f"/>
             <item endquery="false" field="u_is_catalog_item" goto="false" newquery="false" operator="=" or="false" value="false"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>

@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1ef22f141b5bd9508c5143f3cc4bcb6e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Add sys_id to encoded query</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1ef22f141b5bd9508c5143f3cc4bcb6e</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-17 20:41:07</sys_updated_on>
+        <sys_updated_on>2022-11-18 19:56:45</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -167,18 +167,6 @@ outputs.query = userQuery;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=8d7363181b5bd9508c5143f3cc4bcb76"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>8d7363181b5bd9508c5143f3cc4bcb76</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-17 16:30:33</sys_created_on>
-        <sys_id>1d7363181b5bd9508c5143f3cc4bcb89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-17 16:30:33</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>originalQuery</field>
         <id>8d7363181b5bd9508c5143f3cc4bcb76</id>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -201,18 +189,6 @@ outputs.query = userQuery;
         <sys_updated_on>2022-11-17 20:41:04</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_8d7363181b5bd9508c5143f3cc4bcb76</table>
         <value>{{action.record_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>8d7363181b5bd9508c5143f3cc4bcb76</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-17 16:30:33</sys_created_on>
-        <sys_id>d17363181b5bd9508c5143f3cc4bcb8a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-17 16:30:33</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8d7363181b5bd9508c5143f3cc4bcb76^id=8d7363181b5bd9508c5143f3cc4bcb76"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=8d7363181b5bd9508c5143f3cc4bcb76"/>
@@ -482,11 +458,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:33</sys_created_on>
         <sys_id>9d7363181b5bd9508c5143f3cc4bcb85</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_8d7363181b5bd9508c5143f3cc4bcb76_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:33</sys_updated_on>
         <url/>
@@ -949,11 +925,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:32</sys_created_on>
         <sys_id>417363181b5bd9508c5143f3cc4bcb75</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Original Encoded Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1ef22f141b5bd9508c5143f3cc4bcb6e_original_encoded_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:32</sys_updated_on>
         <url/>
@@ -972,11 +948,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:32</sys_created_on>
         <sys_id>c57363181b5bd9508c5143f3cc4bcb71</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record Sys_ID</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1ef22f141b5bd9508c5143f3cc4bcb6e_record_sys_id_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:32</sys_updated_on>
         <url/>
@@ -997,11 +973,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 20:41:05</sys_created_on>
         <sys_id>4bcc5ce81bdfd9508c5143f3cc4bcbdc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1ef22f141b5bd9508c5143f3cc4bcb6e___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 20:41:05</sys_updated_on>
         <url/>
@@ -1020,11 +996,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 20:41:04</sys_created_on>
         <sys_id>87cc5ce81bdfd9508c5143f3cc4bcbd6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1ef22f141b5bd9508c5143f3cc4bcb6e___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 20:41:04</sys_updated_on>
         <url/>
@@ -1043,11 +1019,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:33</sys_created_on>
         <sys_id>d17363181b5bd9508c5143f3cc4bcb92</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Encoded Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1ef22f141b5bd9508c5143f3cc4bcb6e_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:33</sys_updated_on>
         <url/>
@@ -1235,18 +1211,6 @@ outputs.query = userQuery;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a97363181b5bd9508c5143f3cc4bcbd4"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a97363181b5bd9508c5143f3cc4bcbd4</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-17 16:30:34</sys_created_on>
-        <sys_id>297363181b5bd9508c5143f3cc4bcbee</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>originalQuery</field>
         <id>a97363181b5bd9508c5143f3cc4bcbd4</id>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -1269,18 +1233,6 @@ outputs.query = userQuery;
         <sys_updated_on>2022-11-17 20:41:07</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_a97363181b5bd9508c5143f3cc4bcbd4</table>
         <value>{{action.record_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a97363181b5bd9508c5143f3cc4bcbd4</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-17 16:30:34</sys_created_on>
-        <sys_id>e97363181b5bd9508c5143f3cc4bcbee</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a97363181b5bd9508c5143f3cc4bcbd4^id=a97363181b5bd9508c5143f3cc4bcbd4"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a97363181b5bd9508c5143f3cc4bcbd4"/>
@@ -1550,11 +1502,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>6d7363181b5bd9508c5143f3cc4bcbde</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_a97363181b5bd9508c5143f3cc4bcbd4_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2017,11 +1969,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>6d7363181b5bd9508c5143f3cc4bcbd2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Original Encoded Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ed7363181b5bd9508c5143f3cc4bcbc8_original_encoded_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2040,11 +1992,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>e57363181b5bd9508c5143f3cc4bcbcf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record Sys_ID</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_ed7363181b5bd9508c5143f3cc4bcbc8_record_sys_id_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2065,11 +2017,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>2d7363181b5bd9508c5143f3cc4bcbf5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Encoded Query</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7363181b5bd9508c5143f3cc4bcbc8_query_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2088,11 +2040,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>a17363181b5bd9508c5143f3cc4bcbf9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7363181b5bd9508c5143f3cc4bcbc8___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2111,11 +2063,11 @@ outputs.query = userQuery;
         <sys_created_on>2022-11-17 16:30:34</sys_created_on>
         <sys_id>e17363181b5bd9508c5143f3cc4bcbfe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_ed7363181b5bd9508c5143f3cc4bcbc8___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-11-17 16:30:34</sys_updated_on>
         <url/>
@@ -2125,6 +2077,6 @@ outputs.query = userQuery;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1ef22f141b5bd9508c5143f3cc4bcb6e</sys_id>
         <latest_snapshot>ed7363181b5bd9508c5143f3cc4bcbc8</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch2-09-29-2022_10-07-2022_1443.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch0-07-19-2022_07-26-2022_2149.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
