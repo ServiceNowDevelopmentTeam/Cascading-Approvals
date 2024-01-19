@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="hasLabels=true,use_document_viewer=true" audit="true" create_roles="catalog_admin" db_object_id="3ba86cef1be11010e7004229bc4bcb15" extends="task" label="Catalog Task" max_length="40" name="sc_task" text_index="true" type="collection">
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;return current.request_item.approval;  // return the calculated value&#10;})(current);" label="RITM Approval" max_length="40" name="u_ritm_approval" read_only="true" type="string" virtual="true"/>
-    </element>
-</database>
