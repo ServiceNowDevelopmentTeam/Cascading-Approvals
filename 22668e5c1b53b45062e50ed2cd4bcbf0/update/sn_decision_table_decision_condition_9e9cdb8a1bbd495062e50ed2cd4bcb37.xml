@@ -9,6 +9,7 @@
         <field_parent_table/>
         <label>Approver</label>
         <order>100</order>
+        <parent/>
         <reference display_value="User" name="sys_user">dc74a8231b211010e7004229bc4bcb5d</reference>
         <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
     <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
-        <action_group_record display_value="APi Approvals action group">b450c0931b10f9908c5143f3cc4bcb8d</action_group_record>
+        <action_group_record display_value="Approvals action group">07a847e753e70110cca8ddeeff7b12b1</action_group_record>
         <active>true</active>
         <additional_conditions/>
         <common_info_fields>sysapproval.number,sys_created_on,state</common_info_fields>
@@ -20,14 +20,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-08-01 18:21:53</sys_created_on>
         <sys_id>358d1b871b10b9908c5143f3cc4bcbf7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Invoice</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sn_ex_sp_task_configuration_358d1b871b10b9908c5143f3cc4bcbf7</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-08-01 21:04:53</sys_updated_on>
+        <sys_updated_on>2023-08-01 18:32:10</sys_updated_on>
         <table>sysapproval_approver</table>
         <title/>
         <title_custom>Approval request for {reference_table.number}</title_custom>

@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>a4128d321b6a1d108c5143f3cc4bcbe1</copied_from>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_cc962db41b139d508c5143f3cc4bcb4a</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-04-07 15:49:38</sys_updated_on>
+        <sys_updated_on>2024-01-31 16:47:48</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=cc962db41b139d508c5143f3cc4bcb4a"/>
@@ -141,6 +142,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=14962db41b139d508c5143f3cc4bcb72"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -224,6 +226,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=44962db41b139d508c5143f3cc4bcb6c"/>
     <sys_hub_flow_output action="delete_multiple" query="model=cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=cc962db41b139d508c5143f3cc4bcb4a^sys_idNOT IN94962db41b139d508c5143f3cc4bcb82,9c962db41b139d508c5143f3cc4bcb95"/>
@@ -232,6 +235,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="partial approval item approved or rejected">cc962db41b139d508c5143f3cc4bcb4a</flow>
@@ -241,10 +245,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-11-18 20:41:51</sys_created_on>
         <sys_id>94962db41b139d508c5143f3cc4bcb82</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-24 14:29:25</sys_updated_on>
+        <sys_updated_on>2023-06-16 15:03:39</sys_updated_on>
         <ui_id>1fd07c0e-7055-4db2-95ef-08bce02c3ce2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=94962db41b139d508c5143f3cc4bcb82"/>
@@ -294,6 +298,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="partial approval item approved or rejected">cc962db41b139d508c5143f3cc4bcb4a</flow>
@@ -303,10 +308,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-11-18 20:41:51</sys_created_on>
         <sys_id>9c962db41b139d508c5143f3cc4bcb95</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-07-24 14:29:25</sys_updated_on>
+        <sys_updated_on>2023-06-16 15:03:39</sys_updated_on>
         <ui_id>843f1b26-b082-4c51-8b05-9eb0da4a1933</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c962db41b139d508c5143f3cc4bcb95"/>
@@ -366,6 +371,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cc962db41b139d508c5143f3cc4bcb4a^sys_idNOT IN1c962db41b139d508c5143f3cc4bcb78"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">054381361b6a1d108c5143f3cc4bcba5</block>
         <comment/>
         <connected_to/>
@@ -463,28 +469,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_cc962db41b139d508c5143f3cc4bcb4a"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cc962db41b139d508c5143f3cc4bcb4a"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a^sys_idNOT INeba6e1f41b139d508c5143f3cc4bcb4e"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"eba6e1f41b139d508c5143f3cc4bcb4e","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="partial approval item approved or rejected">cc962db41b139d508c5143f3cc4bcb4a</plan_id>
-        <snapshot>f29bdde4975871102e853cf3a253af7e</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-11-18 20:42:21</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>eba6e1f41b139d508c5143f3cc4bcb4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-18 20:42:21</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -620,6 +610,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97a6a1f41b139d508c5143f3cc4bcbd4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -703,6 +694,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ba6a1f41b139d508c5143f3cc4bcb81"/>
     <sys_hub_flow_output action="delete_multiple" query="model=9ba6a1f41b139d508c5143f3cc4bcb7f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ba6a1f41b139d508c5143f3cc4bcb7f"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=9ba6a1f41b139d508c5143f3cc4bcb7f^sys_idNOT INa7a6a1f41b139d508c5143f3cc4bcbf7,afa6e1f41b139d508c5143f3cc4bcb17"/>
@@ -711,6 +703,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="partial approval item approved or rejected">9ba6a1f41b139d508c5143f3cc4bcb7f</flow>
@@ -773,6 +766,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="partial approval item approved or rejected">9ba6a1f41b139d508c5143f3cc4bcb7f</flow>
@@ -845,6 +839,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9ba6a1f41b139d508c5143f3cc4bcb7f"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=9ba6a1f41b139d508c5143f3cc4bcb7f^sys_idNOT IN2ba6a1f41b139d508c5143f3cc4bcbed"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">054381361b6a1d108c5143f3cc4bcba5</block>
         <comment/>
         <connected_to/>
@@ -945,6 +940,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>cc962db41b139d508c5143f3cc4bcb4a</sys_id>
         <latest_snapshot>9ba6a1f41b139d508c5143f3cc4bcb7f</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cc962db41b139d508c5143f3cc4bcb4a^sys_idNOT INeba6e1f41b139d508c5143f3cc4bcb4e"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"eba6e1f41b139d508c5143f3cc4bcb4e","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="partial approval item approved or rejected">cc962db41b139d508c5143f3cc4bcb4a</plan_id>
+        <snapshot>e10779181bef69108c5143f3cc4bcb13</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-11-18 20:42:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eba6e1f41b139d508c5143f3cc4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-11-18 20:42:21</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

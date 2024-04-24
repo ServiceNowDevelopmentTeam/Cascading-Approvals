@@ -17,6 +17,7 @@
         <messages/>
         <name>Get RITM Variables</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
 //Call script include
 	var ga = new GlideAjax('global.generateCatItemVariables');   //Scriptinclude
@@ -48,6 +49,7 @@
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

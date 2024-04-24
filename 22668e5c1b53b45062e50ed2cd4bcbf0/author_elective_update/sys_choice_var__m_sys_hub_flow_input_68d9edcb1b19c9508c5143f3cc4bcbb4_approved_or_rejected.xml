@@ -5,15 +5,15 @@
             <name>var__m_sys_hub_flow_input_68d9edcb1b19c9508c5143f3cc4bcbb4</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>Terry.Lillo</sys_created_by>
-            <sys_created_on>2022-01-31 21:59:32</sys_created_on>
+            <sys_created_on>2022-03-24 20:48:19</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>approved_or_rejected</sys_name>
             <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
             <sys_policy/>
             <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-            <sys_update_name/>
+            <sys_update_name>sys_choice_var__m_sys_hub_flow_input_68d9edcb1b19c9508c5143f3cc4bcbb4_approved_or_rejected</sys_update_name>
             <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2022-01-31 21:59:32</sys_updated_on>
+            <sys_updated_on>2022-03-24 20:48:19</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>7563d2b61b1ec1d062e50ed2cd4bcb10</copied_from>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_733165351b0a555062e50ed2cd4bcbce</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 19:29:14</sys_updated_on>
+        <sys_updated_on>2024-01-31 16:46:42</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=733165351b0a555062e50ed2cd4bcbce"/>
@@ -178,6 +179,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=804165351b0a555062e50ed2cd4bcbe1"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -261,6 +263,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c44165351b0a555062e50ed2cd4bcbda"/>
     <sys_hub_flow_output action="delete_multiple" query="model=733165351b0a555062e50ed2cd4bcbce"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=733165351b0a555062e50ed2cd4bcbce"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=733165351b0a555062e50ed2cd4bcbce^sys_idNOT IN3441a5351b0a555062e50ed2cd4bcb53,a041a5351b0a555062e50ed2cd4bcb30,b69332d21b0a595062e50ed2cd4bcb2e,b841a5351b0a555062e50ed2cd4bcb4c,dbf5e57d1b0a555062e50ed2cd4bcb29,e84165351b0a555062e50ed2cd4bcbf1,f441a5351b0a555062e50ed2cd4bcb44,f841a5351b0a555062e50ed2cd4bcb3c"/>
@@ -269,6 +272,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Close this response ritm</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -278,10 +282,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>3441a5351b0a555062e50ed2cd4bcb53</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>0e25efe5-7dfa-43bc-930d-445d8f103536</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3441a5351b0a555062e50ed2cd4bcb53"/>
@@ -357,6 +361,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up target ritm</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -366,10 +371,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>a041a5351b0a555062e50ed2cd4bcb30</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>2ceb2a58-cf9b-43a5-b228-01701601f914</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a041a5351b0a555062e50ed2cd4bcb30"/>
@@ -419,6 +424,7 @@
         <action_inputs/>
         <action_type display_value="Set Catalog Item Variable">ffc4527a1b1ec1d062e50ed2cd4bcb6d</action_type>
         <action_type_parent display_value="Set Catalog Item Variable">47f352b61b1ec1d062e50ed2cd4bcb0e</action_type_parent>
+        <attributes/>
         <comment>Set approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -428,10 +434,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-22 14:50:50</sys_created_on>
         <sys_id>b69332d21b0a595062e50ed2cd4bcb2e</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>9cc9e85b-cbe4-4524-9ea9-817f9213eebb</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b69332d21b0a595062e50ed2cd4bcb2e"/>
@@ -493,6 +499,7 @@
         <action_inputs/>
         <action_type display_value="Set Catalog Item Variable">ffc4527a1b1ec1d062e50ed2cd4bcb6d</action_type>
         <action_type_parent display_value="Set Catalog Item Variable">47f352b61b1ec1d062e50ed2cd4bcb0e</action_type_parent>
+        <attributes/>
         <comment>Set approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -502,10 +509,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>b841a5351b0a555062e50ed2cd4bcb4c</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>6e549661-d705-41c7-a8d0-6c27378a00fa</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b841a5351b0a555062e50ed2cd4bcb4c"/>
@@ -567,6 +574,7 @@
         <action_inputs/>
         <action_type display_value="Nudge Actionable/Task Approval Flow by Record">d645253d1b0a555062e50ed2cd4bcb40</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Nudge flow to evaluate approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -576,10 +584,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:54:45</sys_created_on>
         <sys_id>dbf5e57d1b0a555062e50ed2cd4bcb29</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>0b80e6ad-f895-45c1-a68d-cb2fe34e478c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dbf5e57d1b0a555062e50ed2cd4bcb29"/>
@@ -629,6 +637,7 @@
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
         <comment>Get source variables</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -638,10 +647,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:05</sys_created_on>
         <sys_id>e84165351b0a555062e50ed2cd4bcbf1</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>04784088-f3cc-46ad-b92b-e04be044927e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e84165351b0a555062e50ed2cd4bcbf1"/>
@@ -717,6 +726,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Work note about approval</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -726,10 +736,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>f441a5351b0a555062e50ed2cd4bcb44</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>01813e0a-4dd2-42b3-b20d-8aa1e1494c9a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f441a5351b0a555062e50ed2cd4bcb44"/>
@@ -791,6 +801,7 @@
         <action_inputs/>
         <action_type display_value="Build HTML Card">92ccc28b1b5dc9508c5143f3cc4bcb94</action_type>
         <action_type_parent display_value="Build HTML Card">72244e4b1b1dc9508c5143f3cc4bcb72</action_type_parent>
+        <attributes/>
         <comment>Build card for work note</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">733165351b0a555062e50ed2cd4bcbce</flow>
@@ -800,10 +811,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>f841a5351b0a555062e50ed2cd4bcb3c</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <ui_id>92c650e8-b96d-48e3-91b6-836290102d82</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f841a5351b0a555062e50ed2cd4bcb3c"/>
@@ -843,9 +854,9 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:34:06</sys_created_on>
         <sys_id>b841a5351b0a555062e50ed2cd4bcb3e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-08-02 19:03:45</sys_updated_on>
+        <sys_updated_on>2022-10-05 16:28:45</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"name$":"FD12ccc28b205dc9500b06ca565e61a798","$COCollectionField":[{"Label":{"$cv":{"$c":"java.lang.String","$v":""}},"URL":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798":{"$COCollectionField":[{"URLs_child0":{"Label":"String","Label.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Label\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"URL":"String","URL.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"URL\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD12ccc28b205dc9500b06ca565e61a798.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"URLs\",\"mandatory\":\"false\",\"child_name\":\"URLs_child0\",\"uiUniqueId\":\"10f959b9-7acf-41b8-bf76-de780544216a\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD12ccc28b205dc9500b06ca565e61a798\",\"child_label\":\"URLs_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"807b21ed-d3fe-4280-b43f-fdce460bcb45\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="URLs">16ccc28b1b5dc9508c5143f3cc4bcba4</variable>
     </sys_variable_value>
@@ -891,6 +902,7 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=733165351b0a555062e50ed2cd4bcbce"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=733165351b0a555062e50ed2cd4bcbce^sys_idNOT IN0595ba561b0a595062e50ed2cd4bcb3e,8595ba561b0a595062e50ed2cd4bcb35,cd95ba561b0a595062e50ed2cd4bcb39"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4d95ba561b0a595062e50ed2cd4bcb3d</block>
         <comment>Set HTML Card Body</comment>
         <connected_to/>
@@ -938,6 +950,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0595ba561b0a595062e50ed2cd4bcb3e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=0595ba561b0a595062e50ed2cd4bcb3e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">c995ba561b0a595062e50ed2cd4bcb34</block>
         <comment>Set HTML Card Body</comment>
         <connected_to/>
@@ -984,6 +997,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8595ba561b0a595062e50ed2cd4bcb35"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8595ba561b0a595062e50ed2cd4bcb35"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">0995ba561b0a595062e50ed2cd4bcb39</block>
         <comment/>
         <connected_to/>
@@ -1242,30 +1256,12 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_733165351b0a555062e50ed2cd4bcbce"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_733165351b0a555062e50ed2cd4bcbce"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_733165351b0a555062e50ed2cd4bcbce"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=733165351b0a555062e50ed2cd4bcbce^sys_idNOT IN32b165751b0a555062e50ed2cd4bcb3f"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"32b165751b0a555062e50ed2cd4bcb3f","name":"plan","plan_signature":null}}</plan>
-        <plan_id>733165351b0a555062e50ed2cd4bcbce</plan_id>
-        <snapshot>7cb03cef97dcb5502e853cf3a253afa6</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-09-20 19:36:10</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>32b165751b0a555062e50ed2cd4bcb3f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-09-20 19:45:05</sys_updated_on>
-        <trigger display_value="">f6b165751b0a555062e50ed2cd4bcb3e</trigger>
-    </sys_flow_trigger_plan>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=733165351b0a555062e50ed2cd4bcbce"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -1420,6 +1416,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=56b125751b0a555062e50ed2cd4bcb85"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1503,6 +1500,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=86b1e1751b0a555062e50ed2cd4bcbca"/>
     <sys_hub_flow_output action="delete_multiple" query="model=8eb1e1751b0a555062e50ed2cd4bcbc7"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=8eb1e1751b0a555062e50ed2cd4bcbc7"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=8eb1e1751b0a555062e50ed2cd4bcbc7^sys_idNOT IN1ab125751b0a555062e50ed2cd4bcbad,26b125751b0a555062e50ed2cd4bcbbe,52957e561b0a595062e50ed2cd4bcb48,52b125751b0a555062e50ed2cd4bcb98,66b125751b0a555062e50ed2cd4bcbb5,92b125751b0a555062e50ed2cd4bcba3,a6b125751b0a555062e50ed2cd4bcbc4,ee56e1bd1b0a555062e50ed2cd4bcb78"/>
@@ -1511,6 +1509,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Build HTML Card">92ccc28b1b5dc9508c5143f3cc4bcb94</action_type>
         <action_type_parent display_value="Build HTML Card">72244e4b1b1dc9508c5143f3cc4bcb72</action_type_parent>
+        <attributes/>
         <comment>Build card for work note</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1613,6 +1612,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Set Catalog Item Variable">ffc4527a1b1ec1d062e50ed2cd4bcb6d</action_type>
         <action_type_parent display_value="Set Catalog Item Variable">47f352b61b1ec1d062e50ed2cd4bcb0e</action_type_parent>
+        <attributes/>
         <comment>Set approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1687,6 +1687,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Set Catalog Item Variable">ffc4527a1b1ec1d062e50ed2cd4bcb6d</action_type>
         <action_type_parent display_value="Set Catalog Item Variable">47f352b61b1ec1d062e50ed2cd4bcb0e</action_type_parent>
+        <attributes/>
         <comment>Set approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1761,6 +1762,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
         <comment>Get source variables</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1849,6 +1851,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Work note about approval</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1923,6 +1926,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up target ritm</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -1985,6 +1989,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Close this response ritm</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -2073,6 +2078,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
         <action_inputs/>
         <action_type display_value="Nudge Actionable/Task Approval Flow by Record">d645253d1b0a555062e50ed2cd4bcb40</action_type>
         <action_type_parent display_value="Nudge Actionable/Task Approval Flow by Record">3654edb91b0a555062e50ed2cd4bcb43</action_type_parent>
+        <attributes/>
         <comment>Nudge flow to evaluate approval variable</comment>
         <display_text/>
         <flow display_value="Actionable/Task Approval Response">8eb1e1751b0a555062e50ed2cd4bcbc7</flow>
@@ -2133,6 +2139,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=8eb1e1751b0a555062e50ed2cd4bcbc7"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=8eb1e1751b0a555062e50ed2cd4bcbc7^sys_idNOT IN66957e561b0a595062e50ed2cd4bcb56,96957e561b0a595062e50ed2cd4bcb4e,a6957e561b0a595062e50ed2cd4bcb52"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">4d95ba561b0a595062e50ed2cd4bcb3d</block>
         <comment>Set HTML Card Body</comment>
         <connected_to/>
@@ -2180,6 +2187,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=66957e561b0a595062e50ed2cd4bcb56"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=66957e561b0a595062e50ed2cd4bcb56"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">c995ba561b0a595062e50ed2cd4bcb34</block>
         <comment>Set HTML Card Body</comment>
         <connected_to/>
@@ -2226,6 +2234,7 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=96957e561b0a595062e50ed2cd4bcb4e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=96957e561b0a595062e50ed2cd4bcb4e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">0995ba561b0a595062e50ed2cd4bcb39</block>
         <comment/>
         <connected_to/>
@@ -2487,6 +2496,25 @@ Approval Comment: {{04784088-f3cc-46ad-b92b-e04be044927e.approval_comment}}﻿</
     <sys_hub_flow action="UPDATE">
         <sys_id>733165351b0a555062e50ed2cd4bcbce</sys_id>
         <latest_snapshot>8eb1e1751b0a555062e50ed2cd4bcbc7</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch0-07-19-2022_07-26-2022_2149.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=733165351b0a555062e50ed2cd4bcbce^sys_idNOT IN32b165751b0a555062e50ed2cd4bcb3f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"32b165751b0a555062e50ed2cd4bcb3f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>733165351b0a555062e50ed2cd4bcbce</plan_id>
+        <snapshot>3fa64eaa1b5655508c5143f3cc4bcbf8</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-20 19:36:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32b165751b0a555062e50ed2cd4bcb3f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-20 19:45:05</sys_updated_on>
+        <trigger display_value="">f6b165751b0a555062e50ed2cd4bcb3e</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=733165351b0a555062e50ed2cd4bcbce"/>
 </record_update>

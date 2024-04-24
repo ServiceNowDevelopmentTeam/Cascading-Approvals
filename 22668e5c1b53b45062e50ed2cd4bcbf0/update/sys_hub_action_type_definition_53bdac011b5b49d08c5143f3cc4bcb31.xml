@@ -35,7 +35,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_53bdac011b5b49d08c5143f3cc4bcb31</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-11-07 16:11:14</sys_updated_on>
+        <sys_updated_on>2024-01-31 16:45:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -706,6 +706,29 @@ date.addDaysUTC(inputs.Days.toString());
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ca6ea0411b5b49d08c5143f3cc4bcb70"/>
     <sys_hub_action_output action="delete_multiple" query="model=53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT IN2fbdac011b5b49d08c5143f3cc4bcb61,a7bdac011b5b49d08c5143f3cc4bcb59,a7bdac011b5b49d08c5143f3cc4bcb69"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5bbdac010c5b49d0135b171e30654656</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4630a8861ba9851062e50ed2cd4bcb61</scope_name>
+        <serialized_content>{"FlowDesigner:FD5bbdac010c5b49d0135b171e30654656":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD5bbdac010c5b49d0135b171e30654656.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"ee8ce041-2f5e-4dfd-b615-052df8df8a78\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD5bbdac010c5b49d0135b171e30654656\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-04 15:00:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5fbdac011b5b49d08c5143f3cc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5bbdac010c5b49d0135b171e30654656</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_complex_object_5fbdac011b5b49d08c5143f3cc4bcb56</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1964,6 +1987,29 @@ date.addDaysUTC(inputs.Days.toString());
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a26ea8411b5b49d08c5143f3cc4bcb30"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=a26ea8411b5b49d08c5143f3cc4bcb30"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDae6ea841655b49d047dacfde0aa7891d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4630a8861ba9851062e50ed2cd4bcb61</scope_name>
+        <serialized_content>{"FlowDesigner:FDae6ea841655b49d047dacfde0aa7891d":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDae6ea841655b49d047dacfde0aa7891d.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"ee8ce041-2f5e-4dfd-b615-052df8df8a78\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDae6ea841655b49d047dacfde0aa7891d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-05-04 15:03:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>626ea8411b5b49d08c5143f3cc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDae6ea841655b49d047dacfde0aa7891d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_complex_object_626ea8411b5b49d08c5143f3cc4bcb1e</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2185,6 +2231,6 @@ date.addDaysUTC(inputs.Days.toString());
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>53bdac011b5b49d08c5143f3cc4bcb31</sys_id>
         <latest_snapshot>166e68411b5b49d08c5143f3cc4bcbe9</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch0-07-19-2022_07-26-2022_2149.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch5-12-01-2023_12-11-2023_2006.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

@@ -34,7 +34,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3654edb91b0a555062e50ed2cd4bcb43</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-05 19:28:32</sys_updated_on>
+        <sys_updated_on>2024-01-31 16:45:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -590,6 +590,29 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4754edb91b0a555062e50ed2cd4bcb8e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4754edb91b0a555062e50ed2cd4bcb8e"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4754edb94a0a5550a21fd2b14074b075</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>22668e5c1b53b45062e50ed2cd4bcbf0</scope_name>
+        <serialized_content>{"FlowDesigner:FD4754edb94a0a5550a21fd2b14074b075":{},"FlowDesigner:FD4754edb94a0a5550a21fd2b14074b075.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"eb7c5a2e-a5cc-437e-8e59-69e61ada428a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD4754edb94a0a5550a21fd2b14074b075\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-20 19:47:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b54edb91b0a555062e50ed2cd4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD4754edb94a0a5550a21fd2b14074b075</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_complex_object_0b54edb91b0a555062e50ed2cd4bcb75</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -789,7 +812,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Nudge Actionable/Task Approval Flow by Record">3654edb91b0a555062e50ed2cd4bcb43</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"b645253d1b0a555062e50ed2cd4bcbdf","name":"plan","plan_signature":null}}</plan>
-        <snapshot>3e27bc2487dc31106b4c21b9cebb3532</snapshot>
+        <snapshot>a9f413aa1b2be55062e50ed2cd4bcbfb</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:51:43</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -1389,6 +1412,29 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6a45253d1b0a555062e50ed2cd4bcb84"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6a45253d1b0a555062e50ed2cd4bcb84"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD2e45253dc60a5550a7f10226dcf30f78</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>22668e5c1b53b45062e50ed2cd4bcbf0</scope_name>
+        <serialized_content>{"FlowDesigner:FD2e45253dc60a5550a7f10226dcf30f78":{},"FlowDesigner:FD2e45253dc60a5550a7f10226dcf30f78.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"eb7c5a2e-a5cc-437e-8e59-69e61ada428a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2e45253dc60a5550a7f10226dcf30f78\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-09-20 19:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee45253d1b0a555062e50ed2cd4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD2e45253dc60a5550a7f10226dcf30f78</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_update_name>sys_complex_object_ee45253d1b0a555062e50ed2cd4bcb78</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1587,6 +1633,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>3654edb91b0a555062e50ed2cd4bcb43</sys_id>
         <latest_snapshot>d645253d1b0a555062e50ed2cd4bcb40</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

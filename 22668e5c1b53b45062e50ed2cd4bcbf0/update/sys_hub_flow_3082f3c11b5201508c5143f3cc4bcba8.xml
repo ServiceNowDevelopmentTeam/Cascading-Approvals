@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_3082f3c11b5201508c5143f3cc4bcba8</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-30 16:50:37</sys_updated_on>
+        <sys_updated_on>2023-12-11 15:58:07</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=3082f3c11b5201508c5143f3cc4bcba8"/>
@@ -141,6 +142,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=12f3b38d1b5201508c5143f3cc4bcb10"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -224,6 +226,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e084b7411b9201508c5143f3cc4bcbec"/>
     <sys_hub_flow_output action="delete_multiple" query="model=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT INfdd2b3451b5201508c5143f3cc4bcbe5"/>
@@ -232,6 +235,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>A query to filter down the approvals you'd ike to show in the comment card</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</flow>
@@ -305,6 +309,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fdd2b3451b5201508c5143f3cc4bcbe5"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT INf5d2b3451b5201508c5143f3cc4bcbe9"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment>Partial approval - this will add a comment including the Item(thing that was approved) and the name/state of the approval records provided</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</flow>
@@ -595,28 +600,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3082f3c11b5201508c5143f3cc4bcba8"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3082f3c11b5201508c5143f3cc4bcba8"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT IN0c3373091b5201508c5143f3cc4bcb4d"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@258d8a</plan>
-        <plan_id display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</plan_id>
-        <snapshot>9f23ffc51b5201508c5143f3cc4bcb22</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-03-16 12:20:47</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>0c3373091b5201508c5143f3cc4bcb4d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-03-16 12:26:42</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -752,6 +741,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7584bb411b9201508c5143f3cc4bcb8b"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -835,6 +825,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc443bcd1b5201508c5143f3cc4bcbdf"/>
     <sys_hub_flow_output action="delete_multiple" query="model=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT INe723ffc51b5201508c5143f3cc4bcb45"/>
@@ -843,6 +834,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment>A query to filter down the approvals you'd ike to show in the comment card</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">9f23ffc51b5201508c5143f3cc4bcb22</flow>
@@ -916,6 +908,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e723ffc51b5201508c5143f3cc4bcb45"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT INe323ffc51b5201508c5143f3cc4bcb48"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment>Partial approval - this will add a comment including the Item(thing that was approved) and the name/state of the approval records provided</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">9f23ffc51b5201508c5143f3cc4bcb22</flow>
@@ -1211,4 +1204,21 @@
         <latest_snapshot>9f23ffc51b5201508c5143f3cc4bcb22</latest_snapshot>
         <compiler_build/>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3082f3c11b5201508c5143f3cc4bcba8"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT IN0c3373091b5201508c5143f3cc4bcb4d"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@258d8a</plan>
+        <plan_id display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</plan_id>
+        <snapshot>9f23ffc51b5201508c5143f3cc4bcb22</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-16 12:20:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c3373091b5201508c5143f3cc4bcb4d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-16 12:26:42</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

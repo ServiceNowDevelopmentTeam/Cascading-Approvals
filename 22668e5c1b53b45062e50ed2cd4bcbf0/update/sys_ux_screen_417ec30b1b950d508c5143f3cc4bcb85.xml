@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="Approval Administration Configuration">9ebb0b831b950d508c5143f3cc4bcbe8</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ {
   "eventMappingId" : "ckzddiiffwhhiaaaahhdddpiiggffiikddpeeddz",
   "isConfiguration" : false,

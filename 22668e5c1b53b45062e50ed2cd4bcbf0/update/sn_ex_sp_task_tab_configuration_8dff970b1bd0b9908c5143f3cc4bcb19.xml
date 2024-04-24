@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
     <sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE">
         <active>true</active>
+        <advanced>false</advanced>
         <child_table/>
         <fields/>
+        <multiline_script><![CDATA[/**    * `answer` should be returned in JSON array in below format    * The `current` object refers to the current Task(extension) record     * returns JSON of following format    * {     selectable: true,     columns: ['column_ref_name'],     lineItemsData: [{       isExpanded: false,       selectable: true,       defaultSelected: true,       sys_id,       rowData: {        column_ref_name: {         label, value, color: (bg - success / bg - info / bg - warning)        },       },       additionalData: [{ label, value }       ]     }],     filterConfig: {      column: 'column_ref_name',      values: [{       label,       value      }]     }    }    **/    (function (current) {         // write your code here      return {};        })(current);]]></multiline_script>
         <name>Additional Details</name>
         <order>100</order>
         <script>false</script>
