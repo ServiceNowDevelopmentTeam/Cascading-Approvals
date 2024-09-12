@@ -4,14 +4,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=edge,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=60975143000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=edge,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=68326712000,viewActivatedIn=naturalLanguage</attributes>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>68d9edcb1b19c9508c5143f3cc4bcbb4</copied_from>
         <copied_from_name>RITM Approved or Rejected or Not</copied_from_name>
         <description/>
         <internal_name>task_approved_or_rejected_or_not_required</internal_name>
-        <label_cache>[{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.approver.name","label":"34 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.sys_id","label":"34 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.state","label":"34 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"8019d670-4a65-4685-9487-6ca8aa502d80.Records","label":"33 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b393d447-9a76-496c-99f8-2f617520a5ae","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.related_ritm.request","label":"Flow Variables➛Related RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"8f42938b-905f-4087-a364-7e40a66feb20.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e160a9a-0c84-492d-90fb-8ff34181b318.html","label":"37 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.comment_html","label":"Flow Variables➛Comment HTML","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b1fcdf3b-36c4-4a96-a5d1-fc04158de697"}},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.sys_id","label":"8 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.approver.name","label":"8 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.state","label":"8 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"flow_variable.comment","label":"Flow Variables➛Comment","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed03e1b9-42c9-4683-b8af-bed6806a074b"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Records","label":"6 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90a8e1af-0367-4921-8bc1-d0aad45cdba1.html","label":"11 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.ritm_number","label":"Flow Variables➛RITM Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9152878b-fa6e-4e39-973f-f0aa3dfcf4f5"}},{"name":"subflow.approved_or_rejected","label":"Input➛Approved or Rejected","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Approved","value":"approved","order":1.0},{"label":"Rejected","value":"rejected","order":2.0},{"label":"Not Required","value":"not_required","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed24c2f6-91fa-427b-8a11-ca5bf495e4d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.is_partial_approval","label":"Input➛Is Partial Approval","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9d1a27a-8608-4121-ad29-05092da75ef7"}},{"name":"subflow.partial_approval_approval_records","label":"Input➛Partial Approval - Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"068b8648-98fe-4417-a026-dd1d9ec105ce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.state","label":"29 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.sys_id","label":"29 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.approver.name","label":"29 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"subflow.partially_approved_item4","label":"Input➛Partially Approved - Item Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0e93bd52-c9f1-469c-b8e5-7ab70d959467","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.number","label":"Input➛Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"flow_variable.task_type","label":"Flow Variables➛Task Type","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"109766b0-10b0-4975-b93c-53adcfd91a58"}},{"name":"flow_variable.related_ritm","label":"Flow Variables➛Related RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0480f63-a59d-41e9-90fc-35556b79bc6c"}},{"name":"ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22.Record","label":"15 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"f093425b-cb75-4b21-86bd-97d3dd87996b.Record.request.order_guide","label":"26 - Look Up Record➛Requested Item Record➛Request➛Order guide","reference":"sc_cat_item_guide","reference_display":"Order guide","type":"reference","base_type":"reference","parent_table_name":"sc_request","column_name":"order_guide"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.approver.name","label":"36 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.sys_id","label":"36 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.state","label":"36 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"8019d670-4a65-4685-9487-6ca8aa502d80.Records","label":"35 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b393d447-9a76-496c-99f8-2f617520a5ae","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.related_ritm.request","label":"Flow Variables➛Related RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"8f42938b-905f-4087-a364-7e40a66feb20.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e160a9a-0c84-492d-90fb-8ff34181b318.html","label":"39 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.comment_html","label":"Flow Variables➛Comment HTML","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b1fcdf3b-36c4-4a96-a5d1-fc04158de697"}},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.sys_id","label":"8 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.approver.name","label":"8 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.state","label":"8 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"flow_variable.comment","label":"Flow Variables➛Comment","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed03e1b9-42c9-4683-b8af-bed6806a074b"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Records","label":"6 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90a8e1af-0367-4921-8bc1-d0aad45cdba1.html","label":"11 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.ritm_number","label":"Flow Variables➛RITM Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9152878b-fa6e-4e39-973f-f0aa3dfcf4f5"}},{"name":"subflow.approved_or_rejected","label":"Input➛Approved or Rejected","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Approved","value":"approved","order":1.0},{"label":"Rejected","value":"rejected","order":2.0},{"label":"Not Required","value":"not_required","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed24c2f6-91fa-427b-8a11-ca5bf495e4d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.is_partial_approval","label":"Input➛Is Partial Approval","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9d1a27a-8608-4121-ad29-05092da75ef7"}},{"name":"subflow.partial_approval_approval_records","label":"Input➛Partial Approval - Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"068b8648-98fe-4417-a026-dd1d9ec105ce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.state","label":"31 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.sys_id","label":"31 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.approver.name","label":"31 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"subflow.partially_approved_item4","label":"Input➛Partially Approved - Item Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0e93bd52-c9f1-469c-b8e5-7ab70d959467","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.number","label":"Input➛Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"flow_variable.task_type","label":"Flow Variables➛Task Type","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"109766b0-10b0-4975-b93c-53adcfd91a58"}},{"name":"flow_variable.related_ritm","label":"Flow Variables➛Related RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0480f63-a59d-41e9-90fc-35556b79bc6c"}},{"name":"ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22.Record","label":"15 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>82d3eb7f1b60555062e50ed2cd4bcbe0</master_snapshot>
         <name>Task Approved or Rejected or Not Required</name>
         <natlang/>
@@ -30,15 +30,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>06cd53371b60555062e50ed2cd4bcb7e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Task Approved or Rejected or Not Required</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_06cd53371b60555062e50ed2cd4bcb7e</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:37</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=06cd53371b60555062e50ed2cd4bcb7e"/>
@@ -402,14 +402,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>5acd53371b60555062e50ed2cd4bcbe0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -509,7 +509,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dacd53371b60555062e50ed2cd4bcbcf"/>
     <sys_hub_flow_output action="delete_multiple" query="model=06cd53371b60555062e50ed2cd4bcb7e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=06cd53371b60555062e50ed2cd4bcb7e"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=06cd53371b60555062e50ed2cd4bcb7e^sys_idNOT IN26cd93371b60555062e50ed2cd4bcb4e,2acd93371b60555062e50ed2cd4bcb86,62cd93371b60555062e50ed2cd4bcb7a,6ecd93371b60555062e50ed2cd4bcb2d,6ecd93371b60555062e50ed2cd4bcb8c,733cfc861b5b959062e50ed2cd4bcbde,7f45bd471b7e061062e50ed2cd4bcb08,9c5267fb1b60555062e50ed2cd4bcb78,b5a2effb1b60555062e50ed2cd4bcb58,b871d1391bbc951062e50ed2cd4bcb59,d85267fb1b60555062e50ed2cd4bcb8a,e2cd93371b60555062e50ed2cd4bcb47,f1a2effb1b60555062e50ed2cd4bcb33,f6cd93371b60555062e50ed2cd4bcb9b,fdd06f3b1b60555062e50ed2cd4bcbb3"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=06cd53371b60555062e50ed2cd4bcb7e^sys_idNOT IN26cd93371b60555062e50ed2cd4bcb4e,2acd93371b60555062e50ed2cd4bcb86,62cd93371b60555062e50ed2cd4bcb7a,6ecd93371b60555062e50ed2cd4bcb2d,6ecd93371b60555062e50ed2cd4bcb8c,733cfc861b5b959062e50ed2cd4bcbde,7f45bd471b7e061062e50ed2cd4bcb08,9c5267fb1b60555062e50ed2cd4bcb78,b5a2effb1b60555062e50ed2cd4bcb58,b871d1391bbc951062e50ed2cd4bcb59,d1530ce6332096109b1810919e5c7b48,d85267fb1b60555062e50ed2cd4bcb8a,e2cd93371b60555062e50ed2cd4bcb47,f1a2effb1b60555062e50ed2cd4bcb33,f6cd93371b60555062e50ed2cd4bcb9b,fdd06f3b1b60555062e50ed2cd4bcbb3"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -525,10 +525,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>26cd93371b60555062e50ed2cd4bcb4e</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>fc81ae6c-698a-485f-8b90-290d36b1edb7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=26cd93371b60555062e50ed2cd4bcb4e"/>
@@ -600,10 +600,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>2acd93371b60555062e50ed2cd4bcb86</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>f38cba72-289c-44e8-a9f9-b31c5459ee0f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2acd93371b60555062e50ed2cd4bcb86"/>
@@ -689,10 +689,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>62cd93371b60555062e50ed2cd4bcb7a</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>6b0cd660-bccf-4372-8893-d86712705825</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=62cd93371b60555062e50ed2cd4bcb7a"/>
@@ -778,10 +778,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>6ecd93371b60555062e50ed2cd4bcb2d</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>d8fc37b4-25d3-460c-88da-09b45b873077</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6ecd93371b60555062e50ed2cd4bcb2d"/>
@@ -835,16 +835,16 @@
         <comment>Set request rejected values</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
-        <order>26</order>
-        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <order>28</order>
+        <parent_ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:51</sys_created_on>
         <sys_id>6ecd93371b60555062e50ed2cd4bcb8c</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>0a22aa2c-8bc8-44b6-86bf-aabee227da2b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6ecd93371b60555062e50ed2cd4bcb8c"/>
@@ -930,10 +930,10 @@
         <sys_created_by>John.Schwab</sys_created_by>
         <sys_created_on>2022-11-22 14:49:21</sys_created_on>
         <sys_id>733cfc861b5b959062e50ed2cd4bcbde</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>881f94ef-c3a6-4340-8d5d-a015ebf82cc0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=733cfc861b5b959062e50ed2cd4bcbde"/>
@@ -1013,16 +1013,16 @@
         <comment>Get approval records</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
-        <order>33</order>
+        <order>35</order>
         <parent_ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:34:40</sys_created_on>
         <sys_id>7f45bd471b7e061062e50ed2cd4bcb08</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>8019d670-4a65-4685-9487-6ca8aa502d80</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7f45bd471b7e061062e50ed2cd4bcb08"/>
@@ -1082,10 +1082,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:31:37</sys_created_on>
         <sys_id>9c5267fb1b60555062e50ed2cd4bcb78</sys_id>
-        <sys_mod_count>156</sys_mod_count>
+        <sys_mod_count>172</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>9f8b323a-97b3-4634-8e57-7b5a587ef8fe</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c5267fb1b60555062e50ed2cd4bcb78"/>
@@ -1151,16 +1151,16 @@
         <comment>Add approval comment to task</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
-        <order>39</order>
+        <order>41</order>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:33:05</sys_created_on>
         <sys_id>b5a2effb1b60555062e50ed2cd4bcb58</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>170</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>f745726c-c4e5-423d-b4cc-846741b2d3d7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b5a2effb1b60555062e50ed2cd4bcb58"/>
@@ -1232,10 +1232,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-20 15:06:32</sys_created_on>
         <sys_id>b871d1391bbc951062e50ed2cd4bcb59</sys_id>
-        <sys_mod_count>110</sys_mod_count>
+        <sys_mod_count>126</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b871d1391bbc951062e50ed2cd4bcb59"/>
@@ -1283,6 +1283,69 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
+        <order>26</order>
+        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>d1530ce6332096109b1810919e5c7b48</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
+        <ui_id>f093425b-cb75-4b21-86bd-97d3dd87996b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d1530ce6332096109b1810919e5c7b48"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d1530ce6332096109b1810919e5c7b48</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>1d530ce6332096109b1810919e5c7b4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:49:36</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d1530ce6332096109b1810919e5c7b48"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>d1530ce6332096109b1810919e5c7b48</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>d1530ce6332096109b1810919e5c7b4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:49:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.task_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>d1530ce6332096109b1810919e5c7b48</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>99530ce6332096109b1810919e5c7b4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:49:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1530ce6332096109b1810919e5c7b48"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d1530ce6332096109b1810919e5c7b48"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
@@ -1295,10 +1358,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:31:37</sys_created_on>
         <sys_id>d85267fb1b60555062e50ed2cd4bcb8a</sys_id>
-        <sys_mod_count>156</sys_mod_count>
+        <sys_mod_count>172</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>7f94a432-3b0b-44a6-ac3e-646499c6f943</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d85267fb1b60555062e50ed2cd4bcb8a"/>
@@ -1370,10 +1433,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>e2cd93371b60555062e50ed2cd4bcb47</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>90a8e1af-0367-4921-8bc1-d0aad45cdba1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e2cd93371b60555062e50ed2cd4bcb47"/>
@@ -1453,16 +1516,16 @@
         <comment>Set RITM rejected stage</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
-        <order>27</order>
-        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <order>29</order>
+        <parent_ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:33:05</sys_created_on>
         <sys_id>f1a2effb1b60555062e50ed2cd4bcb33</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>170</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>2f6e1caa-3a7e-4f08-9011-6c013e8864d5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f1a2effb1b60555062e50ed2cd4bcb33"/>
@@ -1542,16 +1605,16 @@
         <comment>Build approval comment card</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
-        <order>37</order>
+        <order>39</order>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:51</sys_created_on>
         <sys_id>f6cd93371b60555062e50ed2cd4bcb9b</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>6e160a9a-0c84-492d-90fb-8ff34181b318</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f6cd93371b60555062e50ed2cd4bcb9b"/>
@@ -1637,10 +1700,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:25:10</sys_created_on>
         <sys_id>fdd06f3b1b60555062e50ed2cd4bcbb3</sys_id>
-        <sys_mod_count>164</sys_mod_count>
+        <sys_mod_count>180</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:54:56</sys_updated_on>
         <ui_id>8f42938b-905f-4087-a364-7e40a66feb20</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fdd06f3b1b60555062e50ed2cd4bcbb3"/>
@@ -1686,7 +1749,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=fdd06f3b1b60555062e50ed2cd4bcbb3"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fdd06f3b1b60555062e50ed2cd4bcbb3"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=06cd53371b60555062e50ed2cd4bcb7e"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=06cd53371b60555062e50ed2cd4bcb7e^sys_idNOT IN06d06f3b1b60555062e50ed2cd4bcbf0,16cd53371b60555062e50ed2cd4bcbf8,1acd53371b60555062e50ed2cd4bcbff,1ecd93371b60555062e50ed2cd4bcb1b,3f45bd471b7e061062e50ed2cd4bcb0f,5241eb7b1b60555062e50ed2cd4bcb12,56cd53371b60555062e50ed2cd4bcbf4,5ecd53371b60555062e50ed2cd4bcbfb,92cd93371b60555062e50ed2cd4bcb07,96cd93371b60555062e50ed2cd4bcb0a,9acd53371b60555062e50ed2cd4bcbef,9acd93371b60555062e50ed2cd4bcb03,9ec16bbb1b60555062e50ed2cd4bcb11,9ecd93371b60555062e50ed2cd4bcb11,9ecd93371b60555062e50ed2cd4bcb14,a2cd93371b60555062e50ed2cd4bcb23,a641eb7b1b60555062e50ed2cd4bcb82,aecd93371b60555062e50ed2cd4bcb1f,c455bd471b7e061062e50ed2cd4bcb14,d6cd93371b60555062e50ed2cd4bcb18,decd93371b60555062e50ed2cd4bcb0d,f1d06f3b1b60555062e50ed2cd4bcba9,f3457d471b7e061062e50ed2cd4bcbfe,ff45bd471b7e061062e50ed2cd4bcb0b"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=06cd53371b60555062e50ed2cd4bcb7e^sys_idNOT IN06d06f3b1b60555062e50ed2cd4bcbf0,16cd53371b60555062e50ed2cd4bcbf8,1acd53371b60555062e50ed2cd4bcbff,1ecd93371b60555062e50ed2cd4bcb1b,3f45bd471b7e061062e50ed2cd4bcb0f,5241eb7b1b60555062e50ed2cd4bcb12,56cd53371b60555062e50ed2cd4bcbf4,5ecd53371b60555062e50ed2cd4bcbfb,92cd93371b60555062e50ed2cd4bcb07,96cd93371b60555062e50ed2cd4bcb0a,9acd53371b60555062e50ed2cd4bcbef,9acd93371b60555062e50ed2cd4bcb03,9ec16bbb1b60555062e50ed2cd4bcb11,9ecd93371b60555062e50ed2cd4bcb11,9ecd93371b60555062e50ed2cd4bcb14,a2cd93371b60555062e50ed2cd4bcb23,a641eb7b1b60555062e50ed2cd4bcb82,aecd93371b60555062e50ed2cd4bcb1f,c455bd471b7e061062e50ed2cd4bcb14,d6cd93371b60555062e50ed2cd4bcb18,dd530ce6332096109b1810919e5c7b4b,decd93371b60555062e50ed2cd4bcb0d,f1d06f3b1b60555062e50ed2cd4bcba9,f3457d471b7e061062e50ed2cd4bcbfe,ff45bd471b7e061062e50ed2cd4bcb0b"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">63457d471b7e061062e50ed2cd4bcba4</block>
@@ -1710,10 +1773,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:25:11</sys_created_on>
         <sys_id>06d06f3b1b60555062e50ed2cd4bcbf0</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>f6ff84a0-9998-4820-8fd7-f0355fb7e578</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1784,10 +1847,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>16cd53371b60555062e50ed2cd4bcbf8</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <ui_id>039ceaf8-961a-4716-9475-6d3fb881d3bd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1858,10 +1921,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>1acd53371b60555062e50ed2cd4bcbff</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>5aef744d-61ec-4373-a263-d78044406c2f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1921,7 +1984,7 @@
         <flow_variables_assigned>state1,document_id,approver_name</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>30</order>
+        <order>32</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</parent_ui_id>
@@ -1929,10 +1992,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>1ecd93371b60555062e50ed2cd4bcb1b</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>7fc08dcd-7069-49a4-b21b-f5775992e84a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1992,7 +2055,7 @@
         <flow_variables_assigned>state1,document_id,approver_name</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>35</order>
+        <order>37</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</parent_ui_id>
@@ -2000,10 +2063,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:34:40</sys_created_on>
         <sys_id>3f45bd471b7e061062e50ed2cd4bcb0f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:37</sys_updated_on>
         <ui_id>54f6a0ea-a5a3-4c65-aa4b-fd1b3bdde844</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2071,10 +2134,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:27:07</sys_created_on>
         <sys_id>5241eb7b1b60555062e50ed2cd4bcb12</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <ui_id>85db2ea0-2ef4-4367-ae85-6149ffb7be34</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2118,10 +2181,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>56cd53371b60555062e50ed2cd4bcbf4</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <ui_id>fee4f8f9-08c9-42c0-9dd5-680d2a825a2d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2192,10 +2255,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>5ecd53371b60555062e50ed2cd4bcbfb</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>2a5c9fa6-f034-4c94-8464-12428e25812d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2240,10 +2303,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>92cd93371b60555062e50ed2cd4bcb07</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>0c828ba2-e74e-41a6-a0db-90bb5afdfca4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2287,10 +2350,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>96cd93371b60555062e50ed2cd4bcb0a</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>d5f93d43-98fe-40ad-90aa-b00bc0f2b488</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2335,10 +2398,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>9acd53371b60555062e50ed2cd4bcbef</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <ui_id>1bc94939-843b-4a9b-a62e-a104eab3c79d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2406,10 +2469,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>9acd93371b60555062e50ed2cd4bcb03</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>07fdfc42-6d1e-4a7f-9e16-49999a4462f4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2454,10 +2517,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:29:18</sys_created_on>
         <sys_id>9ec16bbb1b60555062e50ed2cd4bcb11</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2527,10 +2590,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>9ecd93371b60555062e50ed2cd4bcb11</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>12ac6607-1256-442b-a1ab-431cb08eb993</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2554,7 +2617,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>28</order>
+        <order>30</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -2562,10 +2625,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>9ecd93371b60555062e50ed2cd4bcb14</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2602,7 +2665,7 @@
         <flow_variables_assigned>comment_html</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>38</order>
+        <order>40</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -2610,10 +2673,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>a2cd93371b60555062e50ed2cd4bcb23</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:37</sys_updated_on>
         <ui_id>5118d15d-0df7-42dc-8497-27f8bcdcd4f5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2657,10 +2720,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:27:07</sys_created_on>
         <sys_id>a641eb7b1b60555062e50ed2cd4bcb82</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>9990da27-6b78-40ed-8d66-7cc44bfacd4c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2722,7 +2785,7 @@
         <flow_variables_assigned>comment</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>31</order>
+        <order>33</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</parent_ui_id>
@@ -2730,10 +2793,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>aecd93371b60555062e50ed2cd4bcb1f</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>7c201dba-ec53-4d55-8735-e1fa22eb58da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2769,7 +2832,7 @@
         <flow_variables_assigned>comment</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>36</order>
+        <order>38</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</parent_ui_id>
@@ -2777,10 +2840,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:34:40</sys_created_on>
         <sys_id>c455bd471b7e061062e50ed2cd4bcb14</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:37</sys_updated_on>
         <ui_id>41d3bd14-dd26-434b-b908-06d110330cdb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2817,7 +2880,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>29</order>
+        <order>31</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -2825,10 +2888,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:50</sys_created_on>
         <sys_id>d6cd93371b60555062e50ed2cd4bcb18</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2852,6 +2915,54 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=d6cd93371b60555062e50ed2cd4bcb18"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
+        <block display_value="">d5530ce6332096109b1810919e5c7b4b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>27</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>dd530ce6332096109b1810919e5c7b4b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
+        <ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dd530ce6332096109b1810919e5c7b4b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_06cd53371b60555062e50ed2cd4bcb7e^id=dd530ce6332096109b1810919e5c7b4b"/>
+    <sys_element_mapping action="delete_multiple" query="id=dd530ce6332096109b1810919e5c7b4b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>dd530ce6332096109b1810919e5c7b4b</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:49:36</sys_created_on>
+        <sys_id>91530ce6332096109b1810919e5c7b4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:49:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f093425b-cb75-4b21-86bd-97d3dd87996b.Record.request.order_guide}}!=</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=dd530ce6332096109b1810919e5c7b4b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dd530ce6332096109b1810919e5c7b4b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">af457d471b7e061062e50ed2cd4bcbaf</block>
         <comment/>
         <connected_to>d5f93d43-98fe-40ad-90aa-b00bc0f2b488</connected_to>
@@ -2873,10 +2984,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:11:49</sys_created_on>
         <sys_id>decd93371b60555062e50ed2cd4bcb0d</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:34</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>94ff8714-9b3f-4b9d-aaff-4b8f5a8d6589</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2921,10 +3032,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:25:10</sys_created_on>
         <sys_id>f1d06f3b1b60555062e50ed2cd4bcba9</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:33</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
         <ui_id>8540506a-6b62-4311-9085-b6f64b612b09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2987,7 +3098,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>32</order>
+        <order>34</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -2995,10 +3106,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:34:39</sys_created_on>
         <sys_id>f3457d471b7e061062e50ed2cd4bcbfe</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:36</sys_updated_on>
         <ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3061,7 +3172,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>34</order>
+        <order>36</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</parent_ui_id>
@@ -3069,10 +3180,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:34:40</sys_created_on>
         <sys_id>ff45bd471b7e061062e50ed2cd4bcb0b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:35</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:37</sys_updated_on>
         <ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4041,7 +4152,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>task_approved_or_rejected_or_not_required</internal_name>
-        <label_cache>[{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.approver.name","label":"34 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.sys_id","label":"34 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.state","label":"34 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"8019d670-4a65-4685-9487-6ca8aa502d80.Records","label":"33 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b393d447-9a76-496c-99f8-2f617520a5ae","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.related_ritm.request","label":"Flow Variables➛Related RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"8f42938b-905f-4087-a364-7e40a66feb20.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e160a9a-0c84-492d-90fb-8ff34181b318.html","label":"37 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.comment_html","label":"Flow Variables➛Comment HTML","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b1fcdf3b-36c4-4a96-a5d1-fc04158de697"}},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.sys_id","label":"8 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.approver.name","label":"8 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.state","label":"8 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"flow_variable.comment","label":"Flow Variables➛Comment","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed03e1b9-42c9-4683-b8af-bed6806a074b"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Records","label":"6 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90a8e1af-0367-4921-8bc1-d0aad45cdba1.html","label":"11 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.ritm_number","label":"Flow Variables➛RITM Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9152878b-fa6e-4e39-973f-f0aa3dfcf4f5"}},{"name":"subflow.approved_or_rejected","label":"Input➛Approved or Rejected","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Approved","value":"approved","order":1.0},{"label":"Rejected","value":"rejected","order":2.0},{"label":"Not Required","value":"not_required","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed24c2f6-91fa-427b-8a11-ca5bf495e4d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.is_partial_approval","label":"Input➛Is Partial Approval","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9d1a27a-8608-4121-ad29-05092da75ef7"}},{"name":"subflow.partial_approval_approval_records","label":"Input➛Partial Approval - Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"068b8648-98fe-4417-a026-dd1d9ec105ce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.state","label":"29 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"label":"Not Yet Requested","used":false,"reference":false,"image":"","rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"label":"Requested","used":false,"reference":false,"image":"","rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"label":"Approved","used":false,"reference":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"label":"Rejected","used":false,"reference":false,"image":"","rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"label":"Cancelled","used":false,"reference":false,"image":"","rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"label":"No Longer Required","used":false,"reference":false,"image":"","rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.sys_id","label":"29 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.approver.name","label":"29 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"subflow.partially_approved_item4","label":"Input➛Partially Approved - Item Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0e93bd52-c9f1-469c-b8e5-7ab70d959467","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.number","label":"Input➛Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"flow_variable.task_type","label":"Flow Variables➛Task Type","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"109766b0-10b0-4975-b93c-53adcfd91a58"}},{"name":"flow_variable.related_ritm","label":"Flow Variables➛Related RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0480f63-a59d-41e9-90fc-35556b79bc6c"}},{"name":"ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22.Record","label":"15 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"f093425b-cb75-4b21-86bd-97d3dd87996b.Record.request.order_guide","label":"26 - Look Up Record➛Requested Item Record➛Request➛Order guide","reference":"sc_cat_item_guide","reference_display":"Order guide","type":"reference","base_type":"reference","parent_table_name":"sc_request","column_name":"order_guide"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.approver.name","label":"36 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.sys_id","label":"36 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"70595c90-89f9-4741-b294-2c2ece4e399d.item.state","label":"36 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"8019d670-4a65-4685-9487-6ca8aa502d80.Records","label":"35 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b393d447-9a76-496c-99f8-2f617520a5ae","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.related_ritm.request","label":"Flow Variables➛Related RITM➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"8f42938b-905f-4087-a364-7e40a66feb20.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e160a9a-0c84-492d-90fb-8ff34181b318.html","label":"39 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.comment_html","label":"Flow Variables➛Comment HTML","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b1fcdf3b-36c4-4a96-a5d1-fc04158de697"}},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.sys_id","label":"8 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.approver.name","label":"8 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"2a5c9fa6-f034-4c94-8464-12428e25812d.item.state","label":"8 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"flow_variable.comment","label":"Flow Variables➛Comment","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed03e1b9-42c9-4683-b8af-bed6806a074b"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Records","label":"6 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8fc37b4-25d3-460c-88da-09b45b873077.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90a8e1af-0367-4921-8bc1-d0aad45cdba1.html","label":"11 - Build HTML Card➛HTML","reference_display":"HTML","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"049d15bc-c0db-4c45-8c18-e73e04b52a2c"}},{"name":"flow_variable.ritm_number","label":"Flow Variables➛RITM Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9152878b-fa6e-4e39-973f-f0aa3dfcf4f5"}},{"name":"subflow.approved_or_rejected","label":"Input➛Approved or Rejected","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Approved","value":"approved","order":1.0},{"label":"Rejected","value":"rejected","order":2.0},{"label":"Not Required","value":"not_required","order":3.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ed24c2f6-91fa-427b-8a11-ca5bf495e4d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.is_partial_approval","label":"Input➛Is Partial Approval","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a9d1a27a-8608-4121-ad29-05092da75ef7"}},{"name":"subflow.partial_approval_approval_records","label":"Input➛Partial Approval - Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","column_name":"","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"068b8648-98fe-4417-a026-dd1d9ec105ce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.state","label":"31 - For Each➛Approval Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sysapproval_approver","column_name":"state","choices":[{"image":"","reference":false,"label":"Not Yet Requested","used":false,"rawLabel":"Not Yet Requested","selected":false,"missing":false,"value":"not requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Requested","used":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Approved","used":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Rejected","used":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"Cancelled","used":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"sysapproval_approver"}},{"image":"","reference":false,"label":"No Longer Required","used":false,"rawLabel":"No Longer Required","selected":false,"missing":false,"value":"not_required","parameters":{"name":"sysapproval_approver"}}]},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.sys_id","label":"31 - For Each➛Approval Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sysapproval_approver","column_name":"sys_id"},{"name":"721a3950-33cb-4542-b475-a227ef73ee7f.item.approver.name","label":"31 - For Each➛Approval Record➛Approver➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"subflow.partially_approved_item4","label":"Input➛Partially Approved - Item Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0e93bd52-c9f1-469c-b8e5-7ab70d959467","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.number","label":"Input➛Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"flow_variable.task_type","label":"Flow Variables➛Task Type","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"109766b0-10b0-4975-b93c-53adcfd91a58"}},{"name":"flow_variable.related_ritm","label":"Flow Variables➛Related RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0480f63-a59d-41e9-90fc-35556b79bc6c"}},{"name":"ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22.Record","label":"15 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Task Approved or Rejected or Not Required</name>
         <natlang/>
@@ -4058,15 +4169,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>82d3eb7f1b60555062e50ed2cd4bcbe0</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:32</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=82d3eb7f1b60555062e50ed2cd4bcbe0"/>
@@ -4318,14 +4429,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:18</sys_created_on>
         <sys_id>5ad32f7f1b60555062e50ed2cd4bcb62</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4509,7 +4620,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ded32f7f1b60555062e50ed2cd4bcb37"/>
     <sys_hub_flow_output action="delete_multiple" query="model=82d3eb7f1b60555062e50ed2cd4bcbe0"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=82d3eb7f1b60555062e50ed2cd4bcbe0"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=82d3eb7f1b60555062e50ed2cd4bcbe0^sys_idNOT IN02877d0b1b7e061062e50ed2cd4bcb1e,0fd36f7f1b60555062e50ed2cd4bcb60,4371d5391bbc951062e50ed2cd4bcb3a,47d36f7f1b60555062e50ed2cd4bcb73,76d36f7f1b60555062e50ed2cd4bcb34,810c34861b5b959062e50ed2cd4bcb8e,83d36f7f1b60555062e50ed2cd4bcb82,8bd36f7f1b60555062e50ed2cd4bcb79,8fd36f7f1b60555062e50ed2cd4bcb66,8fd36f7f1b60555062e50ed2cd4bcb94,b6d36f7f1b60555062e50ed2cd4bcb28,c3d36f7f1b60555062e50ed2cd4bcb6d,c7d36f7f1b60555062e50ed2cd4bcb5a,cbd36f7f1b60555062e50ed2cd4bcb4b,cfd36f7f1b60555062e50ed2cd4bcb53"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=82d3eb7f1b60555062e50ed2cd4bcbe0^sys_idNOT IN02877d0b1b7e061062e50ed2cd4bcb1e,0fd36f7f1b60555062e50ed2cd4bcb60,4283c42a332096109b1810919e5c7b21,4371d5391bbc951062e50ed2cd4bcb3a,47d36f7f1b60555062e50ed2cd4bcb73,76d36f7f1b60555062e50ed2cd4bcb34,810c34861b5b959062e50ed2cd4bcb8e,83d36f7f1b60555062e50ed2cd4bcb82,8bd36f7f1b60555062e50ed2cd4bcb79,8fd36f7f1b60555062e50ed2cd4bcb66,8fd36f7f1b60555062e50ed2cd4bcb94,b6d36f7f1b60555062e50ed2cd4bcb28,c3d36f7f1b60555062e50ed2cd4bcb6d,c7d36f7f1b60555062e50ed2cd4bcb5a,cbd36f7f1b60555062e50ed2cd4bcb4b,cfd36f7f1b60555062e50ed2cd4bcb53"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -4519,16 +4630,16 @@
         <comment>Get approval records</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
-        <order>33</order>
+        <order>35</order>
         <parent_ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:44:22</sys_created_on>
         <sys_id>02877d0b1b7e061062e50ed2cd4bcb1e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>8019d670-4a65-4685-9487-6ca8aa502d80</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=02877d0b1b7e061062e50ed2cd4bcb1e"/>
@@ -4588,10 +4699,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>0fd36f7f1b60555062e50ed2cd4bcb60</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>9f8b323a-97b3-4634-8e57-7b5a587ef8fe</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0fd36f7f1b60555062e50ed2cd4bcb60"/>
@@ -4654,6 +4765,69 @@
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
+        <order>26</order>
+        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:28</sys_created_on>
+        <sys_id>4283c42a332096109b1810919e5c7b21</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
+        <ui_id>f093425b-cb75-4b21-86bd-97d3dd87996b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4283c42a332096109b1810919e5c7b21"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4283c42a332096109b1810919e5c7b21</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:28</sys_created_on>
+        <sys_id>4e83c42a332096109b1810919e5c7b22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:28</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4283c42a332096109b1810919e5c7b21"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>4283c42a332096109b1810919e5c7b21</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:28</sys_created_on>
+        <sys_id>0a83c42a332096109b1810919e5c7b22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.task_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4283c42a332096109b1810919e5c7b21</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:28</sys_created_on>
+        <sys_id>ca83c42a332096109b1810919e5c7b22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4283c42a332096109b1810919e5c7b21"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4283c42a332096109b1810919e5c7b21"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up RITM</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
@@ -4663,10 +4837,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-20 15:06:42</sys_created_on>
         <sys_id>4371d5391bbc951062e50ed2cd4bcb3a</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>ac4c4069-1c99-4c5f-b0a1-7a14f6cb9f22</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4371d5391bbc951062e50ed2cd4bcb3a"/>
@@ -4720,16 +4894,16 @@
         <comment>Set request rejected values</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
-        <order>26</order>
-        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <order>28</order>
+        <parent_ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:22</sys_created_on>
         <sys_id>47d36f7f1b60555062e50ed2cd4bcb73</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>0a22aa2c-8bc8-44b6-86bf-aabee227da2b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=47d36f7f1b60555062e50ed2cd4bcb73"/>
@@ -4815,10 +4989,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>76d36f7f1b60555062e50ed2cd4bcb34</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>8f42938b-905f-4087-a364-7e40a66feb20</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=76d36f7f1b60555062e50ed2cd4bcb34"/>
@@ -4878,10 +5052,10 @@
         <sys_created_by>John.Schwab</sys_created_by>
         <sys_created_on>2022-11-22 14:48:20</sys_created_on>
         <sys_id>810c34861b5b959062e50ed2cd4bcb8e</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>881f94ef-c3a6-4340-8d5d-a015ebf82cc0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=810c34861b5b959062e50ed2cd4bcb8e"/>
@@ -4961,16 +5135,16 @@
         <comment>Build approval comment card</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
-        <order>37</order>
+        <order>39</order>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:22</sys_created_on>
         <sys_id>83d36f7f1b60555062e50ed2cd4bcb82</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>6e160a9a-0c84-492d-90fb-8ff34181b318</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=83d36f7f1b60555062e50ed2cd4bcb82"/>
@@ -5050,16 +5224,16 @@
         <comment>Set RITM rejected stage</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
-        <order>27</order>
-        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <order>29</order>
+        <parent_ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:22</sys_created_on>
         <sys_id>8bd36f7f1b60555062e50ed2cd4bcb79</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>2f6e1caa-3a7e-4f08-9011-6c013e8864d5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8bd36f7f1b60555062e50ed2cd4bcb79"/>
@@ -5145,10 +5319,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>8fd36f7f1b60555062e50ed2cd4bcb66</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>f38cba72-289c-44e8-a9f9-b31c5459ee0f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8fd36f7f1b60555062e50ed2cd4bcb66"/>
@@ -5228,16 +5402,16 @@
         <comment>Add approval comment to task</comment>
         <display_text/>
         <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
-        <order>39</order>
+        <order>41</order>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:22</sys_created_on>
         <sys_id>8fd36f7f1b60555062e50ed2cd4bcb94</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:32</sys_updated_on>
         <ui_id>f745726c-c4e5-423d-b4cc-846741b2d3d7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8fd36f7f1b60555062e50ed2cd4bcb94"/>
@@ -5309,10 +5483,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>b6d36f7f1b60555062e50ed2cd4bcb28</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>d8fc37b4-25d3-460c-88da-09b45b873077</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b6d36f7f1b60555062e50ed2cd4bcb28"/>
@@ -5372,10 +5546,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:22</sys_created_on>
         <sys_id>c3d36f7f1b60555062e50ed2cd4bcb6d</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>7f94a432-3b0b-44a6-ac3e-646499c6f943</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c3d36f7f1b60555062e50ed2cd4bcb6d"/>
@@ -5447,10 +5621,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>c7d36f7f1b60555062e50ed2cd4bcb5a</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>6b0cd660-bccf-4372-8893-d86712705825</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c7d36f7f1b60555062e50ed2cd4bcb5a"/>
@@ -5536,10 +5710,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>cbd36f7f1b60555062e50ed2cd4bcb4b</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>90a8e1af-0367-4921-8bc1-d0aad45cdba1</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cbd36f7f1b60555062e50ed2cd4bcb4b"/>
@@ -5625,10 +5799,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:21</sys_created_on>
         <sys_id>cfd36f7f1b60555062e50ed2cd4bcb53</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>fc81ae6c-698a-485f-8b90-290d36b1edb7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cfd36f7f1b60555062e50ed2cd4bcb53"/>
@@ -5686,7 +5860,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=cfd36f7f1b60555062e50ed2cd4bcb53"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=cfd36f7f1b60555062e50ed2cd4bcb53"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=82d3eb7f1b60555062e50ed2cd4bcbe0"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=82d3eb7f1b60555062e50ed2cd4bcbe0^sys_idNOT IN22d32f7f1b60555062e50ed2cd4bcbc2,26877d0b1b7e061062e50ed2cd4bcbf9,2ad32f7f1b60555062e50ed2cd4bcbc6,2ed32f7f1b60555062e50ed2cd4bcbbb,36d32f7f1b60555062e50ed2cd4bcbe3,3ed32f7f1b60555062e50ed2cd4bcbdf,52877d0b1b7e061062e50ed2cd4bcbec,66d32f7f1b60555062e50ed2cd4bcbd5,6a877d0b1b7e061062e50ed2cd4bcbf0,6ad32f7f1b60555062e50ed2cd4bcbcd,72d36f7f1b60555062e50ed2cd4bcb1d,76d32f7f1b60555062e50ed2cd4bcbeb,76d32f7f1b60555062e50ed2cd4bcbf2,7ad32f7f1b60555062e50ed2cd4bcbdc,a6d32f7f1b60555062e50ed2cd4bcbd9,b2d32f7f1b60555062e50ed2cd4bcbe7,bed36f7f1b60555062e50ed2cd4bcb19,e6877d0b1b7e061062e50ed2cd4bcbf4,e6d32f7f1b60555062e50ed2cd4bcbd1,ead32f7f1b60555062e50ed2cd4bcbc9,f2d32f7f1b60555062e50ed2cd4bcbef,f2d32f7f1b60555062e50ed2cd4bcbf6,fad32f7f1b60555062e50ed2cd4bcbf9,fed32f7f1b60555062e50ed2cd4bcbfc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=82d3eb7f1b60555062e50ed2cd4bcbe0^sys_idNOT IN22d32f7f1b60555062e50ed2cd4bcbc2,26877d0b1b7e061062e50ed2cd4bcbf9,2ad32f7f1b60555062e50ed2cd4bcbc6,2ed32f7f1b60555062e50ed2cd4bcbbb,36d32f7f1b60555062e50ed2cd4bcbe3,3ed32f7f1b60555062e50ed2cd4bcbdf,5283c42a332096109b1810919e5c7ba2,52877d0b1b7e061062e50ed2cd4bcbec,66d32f7f1b60555062e50ed2cd4bcbd5,6a877d0b1b7e061062e50ed2cd4bcbf0,6ad32f7f1b60555062e50ed2cd4bcbcd,72d36f7f1b60555062e50ed2cd4bcb1d,76d32f7f1b60555062e50ed2cd4bcbeb,76d32f7f1b60555062e50ed2cd4bcbf2,7ad32f7f1b60555062e50ed2cd4bcbdc,a6d32f7f1b60555062e50ed2cd4bcbd9,b2d32f7f1b60555062e50ed2cd4bcbe7,bed36f7f1b60555062e50ed2cd4bcb19,e6877d0b1b7e061062e50ed2cd4bcbf4,e6d32f7f1b60555062e50ed2cd4bcbd1,ead32f7f1b60555062e50ed2cd4bcbc9,f2d32f7f1b60555062e50ed2cd4bcbef,f2d32f7f1b60555062e50ed2cd4bcbf6,fad32f7f1b60555062e50ed2cd4bcbf9,fed32f7f1b60555062e50ed2cd4bcbfc"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">5b457d471b7e061062e50ed2cd4bcb64</block>
@@ -5710,10 +5884,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>22d32f7f1b60555062e50ed2cd4bcbc2</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>8540506a-6b62-4311-9085-b6f64b612b09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5775,7 +5949,7 @@
         <flow_variables_assigned>comment</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>36</order>
+        <order>38</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</parent_ui_id>
@@ -5783,10 +5957,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:44:24</sys_created_on>
         <sys_id>26877d0b1b7e061062e50ed2cd4bcbf9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>41d3bd14-dd26-434b-b908-06d110330cdb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5831,10 +6005,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>2ad32f7f1b60555062e50ed2cd4bcbc6</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>85db2ea0-2ef4-4367-ae85-6149ffb7be34</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5878,10 +6052,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:19</sys_created_on>
         <sys_id>2ed32f7f1b60555062e50ed2cd4bcbbb</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>1bc94939-843b-4a9b-a62e-a104eab3c79d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5950,10 +6124,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>36d32f7f1b60555062e50ed2cd4bcbe3</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>f6ff84a0-9998-4820-8fd7-f0355fb7e578</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6024,10 +6198,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>3ed32f7f1b60555062e50ed2cd4bcbdf</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>d5f93d43-98fe-40ad-90aa-b00bc0f2b488</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6051,6 +6225,54 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=3ed32f7f1b60555062e50ed2cd4bcbdf"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
+        <block display_value="">d5530ce6332096109b1810919e5c7b4b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Task Approved or Rejected or Not Required">82d3eb7f1b60555062e50ed2cd4bcbe0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>27</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:29</sys_created_on>
+        <sys_id>5283c42a332096109b1810919e5c7ba2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
+        <ui_id>20e0f4e2-82d3-4cc3-b09d-9cd878751a1c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5283c42a332096109b1810919e5c7ba2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_82d3eb7f1b60555062e50ed2cd4bcbe0^id=5283c42a332096109b1810919e5c7ba2"/>
+    <sys_element_mapping action="delete_multiple" query="id=5283c42a332096109b1810919e5c7ba2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5283c42a332096109b1810919e5c7ba2</id>
+        <sys_created_by>John.Schwab</sys_created_by>
+        <sys_created_on>2024-09-12 15:50:29</sys_created_on>
+        <sys_id>1283c42a332096109b1810919e5c7ba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f093425b-cb75-4b21-86bd-97d3dd87996b.Record.request.order_guide}}!=</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5283c42a332096109b1810919e5c7ba2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5283c42a332096109b1810919e5c7ba2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">3f457d471b7e061062e50ed2cd4bcbfd</block>
         <comment/>
         <connected_to/>
@@ -6064,7 +6286,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>32</order>
+        <order>34</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -6072,10 +6294,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:44:23</sys_created_on>
         <sys_id>52877d0b1b7e061062e50ed2cd4bcbec</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6146,10 +6368,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>66d32f7f1b60555062e50ed2cd4bcbd5</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>5aef744d-61ec-4373-a263-d78044406c2f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6209,7 +6431,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>34</order>
+        <order>36</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>5f2947a8-943f-45d8-936f-d681b19f8ff5</parent_ui_id>
@@ -6217,10 +6439,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:44:24</sys_created_on>
         <sys_id>6a877d0b1b7e061062e50ed2cd4bcbf0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6265,10 +6487,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>6ad32f7f1b60555062e50ed2cd4bcbcd</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>039ceaf8-961a-4716-9475-6d3fb881d3bd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6331,7 +6553,7 @@
         <flow_variables_assigned>comment_html</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>38</order>
+        <order>40</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -6339,10 +6561,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>72d36f7f1b60555062e50ed2cd4bcb1d</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:32</sys_updated_on>
         <ui_id>5118d15d-0df7-42dc-8497-27f8bcdcd4f5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6386,10 +6608,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>76d32f7f1b60555062e50ed2cd4bcbeb</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>9990da27-6b78-40ed-8d66-7cc44bfacd4c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6460,10 +6682,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>76d32f7f1b60555062e50ed2cd4bcbf2</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>5599ff3f-c7c4-4050-95a2-87f423b695eb</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6534,10 +6756,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>7ad32f7f1b60555062e50ed2cd4bcbdc</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>0c828ba2-e74e-41a6-a0db-90bb5afdfca4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6580,10 +6802,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>a6d32f7f1b60555062e50ed2cd4bcbd9</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>07fdfc42-6d1e-4a7f-9e16-49999a4462f4</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6628,10 +6850,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>b2d32f7f1b60555062e50ed2cd4bcbe7</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>94ff8714-9b3f-4b9d-aaff-4b8f5a8d6589</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6667,7 +6889,7 @@
         <flow_variables_assigned>comment</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>31</order>
+        <order>33</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</parent_ui_id>
@@ -6675,10 +6897,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>bed36f7f1b60555062e50ed2cd4bcb19</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>7c201dba-ec53-4d55-8735-e1fa22eb58da</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6715,7 +6937,7 @@
         <flow_variables_assigned>state1,document_id,approver_name</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>35</order>
+        <order>37</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>70595c90-89f9-4741-b294-2c2ece4e399d</parent_ui_id>
@@ -6723,10 +6945,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2024-06-19 13:44:24</sys_created_on>
         <sys_id>e6877d0b1b7e061062e50ed2cd4bcbf4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:27</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>54f6a0ea-a5a3-4c65-aa4b-fd1b3bdde844</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6794,10 +7016,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>e6d32f7f1b60555062e50ed2cd4bcbd1</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>2a5c9fa6-f034-4c94-8464-12428e25812d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6842,10 +7064,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>ead32f7f1b60555062e50ed2cd4bcbc9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:25</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
         <ui_id>fee4f8f9-08c9-42c0-9dd5-680d2a825a2d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6915,10 +7137,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>f2d32f7f1b60555062e50ed2cd4bcbef</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>12ac6607-1256-442b-a1ab-431cb08eb993</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6942,7 +7164,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>28</order>
+        <order>30</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -6950,10 +7172,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>f2d32f7f1b60555062e50ed2cd4bcbf6</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -6990,7 +7212,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>29</order>
+        <order>31</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>679c6e32-79e5-4541-aa6c-e1fb1b22aad9</parent_ui_id>
@@ -6998,10 +7220,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>fad32f7f1b60555062e50ed2cd4bcbf9</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -7038,7 +7260,7 @@
         <flow_variables_assigned>state1,document_id,approver_name</flow_variables_assigned>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>30</order>
+        <order>32</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>721a3950-33cb-4542-b475-a227ef73ee7f</parent_ui_id>
@@ -7046,10 +7268,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:20</sys_created_on>
         <sys_id>fed32f7f1b60555062e50ed2cd4bcbfc</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:26</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:31</sys_updated_on>
         <ui_id>7fc08dcd-7069-49a4-b21b-f5775992e84a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -7961,9 +8183,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>16d32f7f1b60555062e50ed2cd4bcb3d</sys_id>
-            <sys_mod_count>25</sys_mod_count>
-            <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+            <sys_mod_count>27</sys_mod_count>
+            <sys_updated_by>John.Schwab</sys_updated_by>
+            <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
             <value/>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -7981,9 +8203,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>16d32f7f1b60555062e50ed2cd4bcb3f</sys_id>
-            <sys_mod_count>25</sys_mod_count>
-            <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+            <sys_mod_count>27</sys_mod_count>
+            <sys_updated_by>John.Schwab</sys_updated_by>
+            <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
             <value>approved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -8001,9 +8223,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>96d32f7f1b60555062e50ed2cd4bcb40</sys_id>
-            <sys_mod_count>25</sys_mod_count>
-            <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+            <sys_mod_count>27</sys_mod_count>
+            <sys_updated_by>John.Schwab</sys_updated_by>
+            <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
             <value>rejected</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -8021,9 +8243,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1ad32f7f1b60555062e50ed2cd4bcb41</sys_id>
-            <sys_mod_count>25</sys_mod_count>
-            <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2024-06-19 13:44:24</sys_updated_on>
+            <sys_mod_count>27</sys_mod_count>
+            <sys_updated_by>John.Schwab</sys_updated_by>
+            <sys_updated_on>2024-09-12 15:50:30</sys_updated_on>
             <value>not_required</value>
         </sys_choice>
     </sys_choice>
@@ -8032,23 +8254,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>06cd53371b60555062e50ed2cd4bcb7e</sys_id>
         <latest_snapshot>82d3eb7f1b60555062e50ed2cd4bcbe0</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch9-05-02-2024_05-14-2024_2249.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch10-hotfix2-08-01-2024_08-12-2024_1557.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=06cd53371b60555062e50ed2cd4bcb7e"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=06cd53371b60555062e50ed2cd4bcb7e^sys_idNOT INf7d3af7f1b60555062e50ed2cd4bcb94"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@401899</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"f7d3af7f1b60555062e50ed2cd4bcb94","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Task Approved or Rejected or Not Required">06cd53371b60555062e50ed2cd4bcb7e</plan_id>
-        <snapshot>82d3eb7f1b60555062e50ed2cd4bcbe0</snapshot>
+        <snapshot>8b84802e332096109b1810919e5c7bec</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-14 20:38:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7d3af7f1b60555062e50ed2cd4bcb94</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:44:32</sys_updated_on>
+        <sys_updated_by>John.Schwab</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:50:35</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

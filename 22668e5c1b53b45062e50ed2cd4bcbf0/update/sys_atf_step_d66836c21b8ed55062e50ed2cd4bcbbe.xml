@@ -8,20 +8,20 @@
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>11</order>
+        <order>10</order>
         <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-21 20:34:50</sys_created_on>
         <sys_id>d66836c21b8ed55062e50ed2cd4bcbbe</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Send REST Request - Inbound</sys_name>
         <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_atf_step_d66836c21b8ed55062e50ed2cd4bcbbe</sys_update_name>
         <sys_updated_by>John.Schwab</sys_updated_by>
-        <sys_updated_on>2023-02-08 18:39:08</sys_updated_on>
+        <sys_updated_on>2024-06-19 17:29:22</sys_updated_on>
         <table/>
         <test display_value="TC - 279 - Astea Access - Request - Astea Approval - IT">5f8d07381bd50d108c5143f3cc4bcb32</test>
         <timeout/>
