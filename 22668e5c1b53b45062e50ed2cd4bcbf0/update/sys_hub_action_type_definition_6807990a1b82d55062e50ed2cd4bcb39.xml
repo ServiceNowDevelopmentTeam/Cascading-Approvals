@@ -35,7 +35,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_6807990a1b82d55062e50ed2cd4bcb39</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-01-31 16:46:00</sys_updated_on>
+        <sys_updated_on>2024-05-03 13:41:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1400,6 +1400,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>6807990a1b82d55062e50ed2cd4bcb39</sys_id>
         <latest_snapshot>a24819ca1b82d55062e50ed2cd4bcb81</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch5-12-01-2023_12-11-2023_2006.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-hotfix1-03-05-2024_03-06-2024_1225.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

@@ -38,7 +38,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_flow_68d9edcb1b19c9508c5143f3cc4bcbb4</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-01-31 16:46:36</sys_updated_on>
+        <sys_updated_on>2024-09-12 16:25:43</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=68d9edcb1b19c9508c5143f3cc4bcbb4"/>
@@ -3562,14 +3562,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>68d9edcb1b19c9508c5143f3cc4bcbb4</sys_id>
         <latest_snapshot>05faa1cf1b19c9508c5143f3cc4bcb70</latest_snapshot>
-        <compiler_build>glide-vancouver-07-06-2023__patch9-05-02-2024_05-14-2024_2249.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch10-hotfix2-08-01-2024_08-12-2024_1557.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=68d9edcb1b19c9508c5143f3cc4bcbb4"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=68d9edcb1b19c9508c5143f3cc4bcbb4^sys_idNOT INadfaa1cf1b19c9508c5143f3cc4bcbff"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"adfaa1cf1b19c9508c5143f3cc4bcbff","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="(Retired) RITM Approved or Rejected or Not Required">68d9edcb1b19c9508c5143f3cc4bcbb4</plan_id>
-        <snapshot>1bc893591bc7ce1062e50ed2cd4bcbdc</snapshot>
+        <snapshot>8120729997b012102e853cf3a253afff</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-01-31 14:30:39</sys_created_on>
         <sys_domain>global</sys_domain>

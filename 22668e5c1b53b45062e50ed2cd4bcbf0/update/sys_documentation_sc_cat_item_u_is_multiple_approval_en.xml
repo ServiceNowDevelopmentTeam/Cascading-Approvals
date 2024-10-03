@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_is_multiple_approval" label="Approvals Require Multiple Approvers" language="en" table="sc_cat_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_is_multiple_approval</element>
+            <help/>
+            <hint/>
+            <label>Approvals Require Multiple Approvers</label>
+            <language>en</language>
+            <name>sc_cat_item</name>
+            <plural>Approvals Require Multiple Approvers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-01-06 21:48:01</sys_created_on>
+            <sys_id>dee3b6bfdb5acd106be415ce3b961955</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approvals Require Multiple Approvers</sys_name>
+            <sys_package display_value="Cascading Approvals" source="22668e5c1b53b45062e50ed2cd4bcbf0">22668e5c1b53b45062e50ed2cd4bcbf0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
+            <sys_update_name>sys_documentation_sc_cat_item_u_is_multiple_approval_en</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

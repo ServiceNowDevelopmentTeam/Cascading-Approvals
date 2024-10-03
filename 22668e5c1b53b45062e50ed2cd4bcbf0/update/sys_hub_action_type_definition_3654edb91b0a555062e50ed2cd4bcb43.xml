@@ -34,7 +34,7 @@
         <sys_scope display_value="Cascading Approvals">22668e5c1b53b45062e50ed2cd4bcbf0</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_3654edb91b0a555062e50ed2cd4bcb43</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-01-31 16:45:54</sys_updated_on>
+        <sys_updated_on>2024-05-03 13:41:04</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -812,7 +812,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Nudge Actionable/Task Approval Flow by Record">3654edb91b0a555062e50ed2cd4bcb43</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"b645253d1b0a555062e50ed2cd4bcbdf","name":"plan","plan_signature":null}}</plan>
-        <snapshot>a9f413aa1b2be55062e50ed2cd4bcbfb</snapshot>
+        <snapshot>40c7a46d1b1e821046b60ed5604bcbe6</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-09-20 19:51:43</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -1633,6 +1633,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>3654edb91b0a555062e50ed2cd4bcb43</sys_id>
         <latest_snapshot>d645253d1b0a555062e50ed2cd4bcb40</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-hotfix2a-04-03-2024_04-09-2024_1017.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
