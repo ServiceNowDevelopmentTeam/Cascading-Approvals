@@ -24,7 +24,7 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Approvals in order based on a cascading approval group</short_description>
         <source>22668e5c1b53b45062e50ed2cd4bcbf0</source>
-        <store_correlation_id>REPOAPP0001894006</store_correlation_id>
+        <store_correlation_id>REPOAPP0001894090</store_correlation_id>
         <store_url/>
         <subscription_entitlement/>
         <sys_class_name>sys_app</sys_class_name>
@@ -32,15 +32,15 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-24 20:47:24</sys_created_on>
         <sys_id>22668e5c1b53b45062e50ed2cd4bcbf0</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>128</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-11-13 14:29:52</sys_updated_on>
+        <sys_updated_on>2024-11-13 15:21:44</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor>API Group Inc</vendor>
         <vendor_prefix/>
-        <version>1.3.7</version>
+        <version>1.3.8</version>
     </sys_app>
 </record_update>
