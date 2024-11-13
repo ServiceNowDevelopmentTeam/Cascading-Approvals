@@ -6,15 +6,19 @@
         <action_template/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>d9a2f7cb1b5ec5d062e50ed2cd4bcb8d</copied_from>
         <copied_from_name>Get Current DateTime</copied_from_name>
         <description/>
+        <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>add_days_to_datetime</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.variable1}}","label":"action➛variable1","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date_time}}","label":"action➛Date/Time","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.days}}","label":"action➛Days","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c111efdf-e6f9-4ddf-83a4-59a6614f8b81].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c111efdf-e6f9-4ddf-83a4-59a6614f8b81].datetimevalue}}","label":"step➛Script step➛DateTimeValue","type":"step","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>166e68411b5b49d08c5143f3cc4bcbe9</master_snapshot>
+        <master_snapshot_digest/>
         <name>Add Days to DateTime</name>
         <natlang/>
         <outputs/>
@@ -1143,11 +1147,14 @@ date.addDaysUTC(inputs.Days.toString());
         <action_status/>
         <action_template/>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>add_days_to_datetime</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.variable1}}","label":"action➛variable1","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date_time}}","label":"action➛Date/Time","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.days}}","label":"action➛Days","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c111efdf-e6f9-4ddf-83a4-59a6614f8b81].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[c111efdf-e6f9-4ddf-83a4-59a6614f8b81].datetimevalue}}","label":"step➛Script step➛DateTimeValue","type":"step","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>

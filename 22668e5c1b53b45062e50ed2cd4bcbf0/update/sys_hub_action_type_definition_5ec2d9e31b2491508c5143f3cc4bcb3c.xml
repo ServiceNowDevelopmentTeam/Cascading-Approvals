@@ -6,15 +6,19 @@
         <action_template/>
         <active>true</active>
         <annotation>Gets the number of milliseconds since January 1, 1970, 00:00:00 GMT</annotation>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Gets the number of milliseconds since January 1, 1970, 00:00:00 GMT</description>
+        <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>get_numeric_value_of_datetime</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date_time}}","label":"action➛Date/TIme","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"glide_date_time","uiUniqueId":"1684ea10-7b90-4699-9e03-c26de70788d1"}},{"name":"{{step[e76668c9-88e3-48bb-ae43-133440de09ef].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e76668c9-88e3-48bb-ae43-133440de09ef].gdtms}}","label":"step➛Script step➛gdtMS","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"integer","uiUniqueId":"07cf3f6b-7814-4a7a-84c5-4b05fa74f106"}}]</label_cache>
         <master_snapshot>3073dd671b2491508c5143f3cc4bcb18</master_snapshot>
+        <master_snapshot_digest/>
         <name>Get Numeric Value of Date/Time</name>
         <natlang/>
         <outputs/>
@@ -886,11 +890,14 @@ var dateTime = inputs.dateTime.toString();
         <action_status/>
         <action_template/>
         <annotation>Gets the number of milliseconds since January 1, 1970, 00:00:00 GMT</annotation>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Gets the number of milliseconds since January 1, 1970, 00:00:00 GMT</description>
+        <flow_priority/>
         <internal_name>get_numeric_value_of_datetime</internal_name>
         <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"glide_date_time","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.date_time}}","label":"action➛Date/TIme","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Date/Time","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"glide_date_time","uiUniqueId":"1684ea10-7b90-4699-9e03-c26de70788d1"}},{"name":"{{step[e76668c9-88e3-48bb-ae43-133440de09ef].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e76668c9-88e3-48bb-ae43-133440de09ef].gdtms}}","label":"step➛Script step➛gdtMS","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"integer","uiUniqueId":"07cf3f6b-7814-4a7a-84c5-4b05fa74f106"}}]</label_cache>
         <master>true</master>

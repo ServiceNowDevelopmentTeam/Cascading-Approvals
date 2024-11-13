@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_data_definition">
     <sys_flow_data_definition action="INSERT_OR_UPDATE">
         <name>Specify A Group</name>
+        <process_definition/>
+        <process_snapshot/>
         <sys_class_name>sys_flow_data_definition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-18 15:50:12</sys_created_on>

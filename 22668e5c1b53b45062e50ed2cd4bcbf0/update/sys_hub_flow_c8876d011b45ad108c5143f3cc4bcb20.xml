@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>prof__wait_for_approval_creation__r</internal_name>
         <label_cache>[{"name":"flow_variable.loop_count","label":"Flow Variables➛Loop Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"44920791-e468-46e8-b908-0113f8ae1985"}},{"name":"d50f3b0d-959e-4156-8536-e14eb28ccc13.Records","label":"9 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.break_out_of_loop","label":"Flow Variables➛Break Out of Loop","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3376f6c5-dfb9-45d3-9340-02ca9916a2b1"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d123fc81-d7eb-4949-82ea-db08dc15eddf","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"d50f3b0d-959e-4156-8536-e14eb28ccc13.Count","label":"9 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d2362db-2a99-4217-85c7-88b1e797d0d4.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d2362db-2a99-4217-85c7-88b1e797d0d4.Records","label":"2 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>1e8921c51b45ad108c5143f3cc4bcb2f</master_snapshot>
+        <master_snapshot_digest/>
         <name>PROF - Wait For Approval Creation - R</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-02-14 15:14:17</sys_created_on>
@@ -40,11 +46,11 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2024-05-03 13:43:21</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_variable_value action="delete_multiple" query="document_key=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c8876d011b45ad108c5143f3cc4bcb20^id=c8876d011b45ad108c5143f3cc4bcb20"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=c8876d011b45ad108c5143f3cc4bcb20^sys_idNOT INcc872dc11b45ad108c5143f3cc4bcbbd"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -181,6 +187,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="Records">records</internal_type>
         <label>Approval Records</label>
         <mandatory>false</mandatory>
@@ -230,6 +237,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4e8ed451b45ad108c5143f3cc4bcb2a"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c8876d011b45ad108c5143f3cc4bcb20"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20^sys_idNOT IN0de8ed451b45ad108c5143f3cc4bcb47,d00a21091b45ad108c5143f3cc4bcbc9"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -240,6 +248,7 @@
         <comment>Look up approval records</comment>
         <display_text/>
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
+        <generation_source/>
         <order>9</order>
         <parent_ui_id>28cbd246-8bea-4a5e-9590-898f1dd846a0</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -303,6 +312,7 @@
         <comment>Look up approval records</comment>
         <display_text/>
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -357,7 +367,6 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d00a21091b45ad108c5143f3cc4bcbc9"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d00a21091b45ad108c5143f3cc4bcbc9"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20^sys_idNOT IN600a21091b45ad108c5143f3cc4bcbcd,74e8ed451b45ad108c5143f3cc4bcb33,81e8ed451b45ad108c5143f3cc4bcb4f,a40a21091b45ad108c5143f3cc4bcbd4,b4e8ed451b45ad108c5143f3cc4bcb3b,b589ed851b45ad108c5143f3cc4bcbc5,b8e8ed451b45ad108c5143f3cc4bcb36,c9e8ed451b45ad108c5143f3cc4bcb51,cde8ed451b45ad108c5143f3cc4bcb4a,e00a21091b45ad108c5143f3cc4bcbd1,f189ed851b45ad108c5143f3cc4bcba1"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -371,6 +380,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -446,6 +456,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned>break_out_of_loop,loop_count</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
@@ -495,6 +506,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>11</order>
@@ -543,6 +555,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>5</order>
@@ -578,6 +591,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
         <order>8</order>
@@ -642,6 +656,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>13</order>
@@ -677,6 +692,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
@@ -752,6 +768,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned>break_out_of_loop</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>12</order>
@@ -801,6 +818,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -876,6 +894,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">c8876d011b45ad108c5143f3cc4bcb20</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
@@ -925,6 +944,7 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>loop_count</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -974,6 +994,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_c8876d011b45ad108c5143f3cc4bcb20^id=f189ed851b45ad108c5143f3cc4bcba1"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f189ed851b45ad108c5143f3cc4bcba1"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f189ed851b45ad108c5143f3cc4bcba1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c8876d011b45ad108c5143f3cc4bcb20"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=c8876d011b45ad108c5143f3cc4bcb20^sys_idNOT INb189ed851b45ad108c5143f3cc4bcbca,f989ed851b45ad108c5143f3cc4bcbc9"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>c8876d011b45ad108c5143f3cc4bcb20</attached_to>
@@ -1232,11 +1253,13 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>prof__wait_for_approval_creation__r</internal_name>
         <label_cache>[{"name":"flow_variable.loop_count","label":"Flow Variables➛Loop Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"44920791-e468-46e8-b908-0113f8ae1985"}},{"name":"d50f3b0d-959e-4156-8536-e14eb28ccc13.Records","label":"9 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.break_out_of_loop","label":"Flow Variables➛Break Out of Loop","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3376f6c5-dfb9-45d3-9340-02ca9916a2b1"}},{"name":"subflow.task_record","label":"Input➛Task Record","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d123fc81-d7eb-4949-82ea-db08dc15eddf","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.task_record.sys_id","label":"Input➛Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id"},{"name":"d50f3b0d-959e-4156-8536-e14eb28ccc13.Count","label":"9 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d2362db-2a99-4217-85c7-88b1e797d0d4.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d2362db-2a99-4217-85c7-88b1e797d0d4.Records","label":"2 - Look Up Records➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
@@ -1265,11 +1288,11 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-02-14 15:25:22</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_variable_value action="delete_multiple" query="document_key=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1e8921c51b45ad108c5143f3cc4bcb2f^id=1e8921c51b45ad108c5143f3cc4bcb2f"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=1e8921c51b45ad108c5143f3cc4bcb2f^sys_idNOT IN968921c51b45ad108c5143f3cc4bcb30"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -1406,6 +1429,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="Records">records</internal_type>
         <label>Approval Records</label>
         <mandatory>false</mandatory>
@@ -1455,6 +1479,7 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=968921c51b45ad108c5143f3cc4bcb65"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e8921c51b45ad108c5143f3cc4bcb2f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f^sys_idNOT IN368921c51b45ad108c5143f3cc4bcbdb,bd0aa1091b45ad108c5143f3cc4bcbcd"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1465,6 +1490,7 @@
         <comment>Look up approval records</comment>
         <display_text/>
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
+        <generation_source/>
         <order>9</order>
         <parent_ui_id>28cbd246-8bea-4a5e-9590-898f1dd846a0</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1528,6 +1554,7 @@
         <comment>Look up approval records</comment>
         <display_text/>
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
+        <generation_source/>
         <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1582,7 +1609,6 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=bd0aa1091b45ad108c5143f3cc4bcbcd"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd0aa1091b45ad108c5143f3cc4bcbcd"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f^sys_idNOT IN228921c51b45ad108c5143f3cc4bcbca,2a8921c51b45ad108c5143f3cc4bcbcd,390aa1091b45ad108c5143f3cc4bcbd8,6a8921c51b45ad108c5143f3cc4bcbd0,6e8921c51b45ad108c5143f3cc4bcbb6,710aa1091b45ad108c5143f3cc4bcbe0,a68921c51b45ad108c5143f3cc4bcbbb,aa8921c51b45ad108c5143f3cc4bcbb2,ae8921c51b45ad108c5143f3cc4bcbc5,b90aa1091b45ad108c5143f3cc4bcbdc,e68921c51b45ad108c5143f3cc4bcbbe"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -1596,6 +1622,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>11</order>
@@ -1644,6 +1671,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned>break_out_of_loop</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>12</order>
@@ -1693,6 +1721,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1768,6 +1797,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>13</order>
@@ -1803,6 +1833,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
@@ -1878,6 +1909,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
         <order>5</order>
@@ -1914,6 +1946,7 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>loop_count</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>7</order>
@@ -1975,6 +2008,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned>break_out_of_loop,loop_count</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
@@ -2024,6 +2058,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -2099,6 +2134,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
@@ -2147,6 +2183,7 @@
         <flow display_value="PROF - Wait For Approval Creation - R">1e8921c51b45ad108c5143f3cc4bcb2f</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
         <order>8</order>
@@ -2199,6 +2236,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_1e8921c51b45ad108c5143f3cc4bcb2f^id=e68921c51b45ad108c5143f3cc4bcbbe"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e68921c51b45ad108c5143f3cc4bcbbe"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e68921c51b45ad108c5143f3cc4bcbbe"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1e8921c51b45ad108c5143f3cc4bcb2f"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=1e8921c51b45ad108c5143f3cc4bcb2f^sys_idNOT IN7e8921c51b45ad108c5143f3cc4bcbdd,fa8921c51b45ad108c5143f3cc4bcbdd"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>1e8921c51b45ad108c5143f3cc4bcb2f</attached_to>

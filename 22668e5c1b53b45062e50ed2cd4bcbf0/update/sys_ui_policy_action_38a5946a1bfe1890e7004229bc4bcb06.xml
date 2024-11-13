@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>assignment_group</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>kirolos.iskander@cdw.com</sys_created_by>
@@ -18,6 +20,8 @@
         <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <table>sc_req_item</table>
         <ui_policy display_value="Make Assignment Group Mandatory Upon Closure">5665906a1bfe1890e7004229bc4bcbcf</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>ignore</visible>
     </sys_ui_policy_action>
     <sys_claim action="INSERT_OR_UPDATE">

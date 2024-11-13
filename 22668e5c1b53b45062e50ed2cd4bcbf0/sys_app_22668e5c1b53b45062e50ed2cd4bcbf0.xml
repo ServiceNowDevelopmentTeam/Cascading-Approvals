@@ -9,13 +9,14 @@
         <installed_as_dependency>false</installed_as_dependency>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
-        <license display_value="IT Service Management Professional - Fulfiller User v3">4e43cd7c977f2d102e853cf3a253aff9</license>
+        <license display_value="">4e43cd7c977f2d102e853cf3a253aff9</license>
         <license_category>none</license_category>
         <license_definition/>
         <license_model>none</license_model>
         <logo/>
         <menu/>
         <name>Cascading Approvals</name>
+        <package_json/>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>enforcing</runtime_access_tracking>
@@ -23,7 +24,7 @@
         <scoped_administration>false</scoped_administration>
         <short_description>Approvals in order based on a cascading approval group</short_description>
         <source>22668e5c1b53b45062e50ed2cd4bcbf0</source>
-        <store_correlation_id/>
+        <store_correlation_id>REPOAPP0001894006</store_correlation_id>
         <store_url/>
         <subscription_entitlement/>
         <sys_class_name>sys_app</sys_class_name>
@@ -31,15 +32,15 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-24 20:47:24</sys_created_on>
         <sys_id>22668e5c1b53b45062e50ed2cd4bcbf0</sys_id>
-        <sys_mod_count>122</sys_mod_count>
+        <sys_mod_count>126</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-10-03 14:20:19</sys_updated_on>
+        <sys_updated_on>2024-11-13 14:29:52</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor>API Group Inc</vendor>
         <vendor_prefix/>
-        <version>1.3.4</version>
+        <version>1.3.7</version>
     </sys_app>
 </record_update>

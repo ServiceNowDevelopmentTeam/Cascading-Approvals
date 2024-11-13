@@ -581,11 +581,13 @@
   "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <dispatched_events>4d1f1f871b190d508c5143f3cc4bcb9b</dispatched_events>
         <events/>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
+        <form_factors>{}</form_factors>
         <handled_events/>
         <interactions/>
         <interfaces/>
@@ -642,6 +644,7 @@
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
         <state_properties>[ {
   "name" : "hideCreateCatItemApproverRecord",
   "label" : "hideCreateCatItemApproverRecord",

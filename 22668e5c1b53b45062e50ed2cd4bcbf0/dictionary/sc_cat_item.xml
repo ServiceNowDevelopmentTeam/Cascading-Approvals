@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.synch_attachments=true,all_tables.text_index_translations=true,global_search_config_handler=CatalogItem,kagami_csindex_enabled=true,text_wiki_translations=true,update_synch=true" db_object_id="66a868ef1be11010e7004229bc4bcb92" extends="sys_metadata" label="Catalog Item" max_length="40" name="sc_cat_item" read_roles="catalog,itil" text_index="true" type="collection">
+        <element label="Approvals Are Conditional" max_length="40" name="u_conditional_approvals" type="boolean"/>
+        <element label="Contains Approvals" max_length="40" name="u_contains_approvals" type="boolean"/>
+        <element label="Approvals Require Multiple Approvers" max_length="40" name="u_is_multiple_approval" type="boolean"/>
+        <element default="true" label="Multiple Approvers Under Same Conditions As Above" max_length="40" name="u_is_not_multiple_approver_conditional" type="boolean"/>
+        <element dependent="u_table" dependent_on_field="u_table" label="Multiple Approval Condition" max_length="4000" name="u_multiple_approval_condition" type="conditions" use_dependent_field="true"/>
+    </element>
+</database>

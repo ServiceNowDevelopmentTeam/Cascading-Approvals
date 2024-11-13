@@ -3,6 +3,8 @@
         <cleared>true</cleared>
         <disabled>ignore</disabled>
         <field>u_is_multiple_approval</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -18,6 +20,8 @@
         <sys_updated_on>2022-09-29 17:08:42</sys_updated_on>
         <table>sc_cat_item</table>
         <ui_policy display_value="Conditional Approvals">d6c02a871bf089148c5143f3cc4bcb39</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

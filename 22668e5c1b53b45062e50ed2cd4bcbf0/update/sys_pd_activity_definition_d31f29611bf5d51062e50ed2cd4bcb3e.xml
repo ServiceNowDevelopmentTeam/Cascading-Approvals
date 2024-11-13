@@ -12,6 +12,7 @@
         <label>collect user data 3</label>
         <name>collect_user_data_3</name>
         <outputs/>
+        <required_roles/>
         <source>46cde1ad1bb5d51062e50ed2cd4bcbcd</source>
         <source_type>sys_hub_flow</source_type>
         <sys_class_name>sys_pd_activity_definition</sys_class_name>

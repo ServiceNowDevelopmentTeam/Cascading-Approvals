@@ -12,6 +12,7 @@
         <label>Look Up Record</label>
         <name>look_up_record</name>
         <outputs/>
+        <required_roles/>
         <source>b93f42810b30030085c083eb37673a63</source>
         <source_type>sys_hub_action_type_definition</source_type>
         <sys_class_name>sys_pd_activity_definition</sys_class_name>

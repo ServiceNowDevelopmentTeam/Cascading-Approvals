@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>get_task_sys_id_and_table_from_text</internal_name>
         <label_cache>[{"name":"subflow.text","label":"Input➛Text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7eadffdc-e3c8-4795-98da-118af338263a"}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference","attributes":{}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.table_name","label":"1➛Table Table","reference":"sys_db_object","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.answer.name","label":"1➛Table Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_db_object","column_name":"name"},{"name":"6d6a5554-a87a-4a6c-8117-afb7a42b2385.item","label":"1➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <master_snapshot>511d122f1b61c51062e50ed2cd4bcb71</master_snapshot>
+        <master_snapshot_digest/>
         <name>Get Task sys_id and table from text</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-02-14 17:11:44</sys_created_on>
@@ -40,11 +46,11 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2024-05-03 13:43:43</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_variable_value action="delete_multiple" query="document_key=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_fd165e6f1b21c51062e50ed2cd4bcbef^id=fd165e6f1b21c51062e50ed2cd4bcbef"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=fd165e6f1b21c51062e50ed2cd4bcbef^sys_idNOT INf5165e6f1b21c51062e50ed2cd4bcbf1"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -181,6 +187,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>Table</label>
         <mandatory>false</mandatory>
@@ -265,6 +272,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>Document ID</label>
         <mandatory>false</mandatory>
@@ -314,8 +322,8 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d465eaf1b21c51062e50ed2cd4bcb5f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fd165e6f1b21c51062e50ed2cd4bcbef"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef^sys_idNOT IN53269aaf1b21c51062e50ed2cd4bcb33,670816a31b61c51062e50ed2cd4bcb02,7766d2ef1b21c51062e50ed2cd4bcb51,bf8c5aab1b61c51062e50ed2cd4bcb97"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -330,6 +338,7 @@
         <flow display_value="Get Task sys_id and table from text">fd165e6f1b21c51062e50ed2cd4bcbef</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
         <order>1</order>
@@ -421,6 +430,7 @@
         <flow display_value="Get Task sys_id and table from text">fd165e6f1b21c51062e50ed2cd4bcbef</flow>
         <flow_variable/>
         <flow_variables_assigned>table_prefix</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -469,6 +479,7 @@
         <flow display_value="Get Task sys_id and table from text">fd165e6f1b21c51062e50ed2cd4bcbef</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
@@ -531,6 +542,7 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>table_name</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>3</order>
@@ -579,6 +591,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-02-14 17:40:00</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fd165e6f1b21c51062e50ed2cd4bcbef"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fd165e6f1b21c51062e50ed2cd4bcbef^sys_idNOT IN0ebb5e2b1b61c51062e50ed2cd4bcbd5,cebb5e2b1b61c51062e50ed2cd4bcbd5"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>fd165e6f1b21c51062e50ed2cd4bcbef</attached_to>
@@ -860,11 +873,13 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>get_task_sys_id_and_table_from_text</internal_name>
         <label_cache>[{"name":"subflow.text","label":"Input➛Text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7eadffdc-e3c8-4795-98da-118af338263a"}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.answer","label":"1➛Table Record","reference":"sys_db_object","reference_display":"Table","type":"reference","base_type":"reference","attributes":{}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.table_name","label":"1➛Table Table","reference":"sys_db_object","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"6b218745-27e1-4e99-8d87-ad25e005b381.answer.name","label":"1➛Table Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_db_object","column_name":"name"},{"name":"6d6a5554-a87a-4a6c-8117-afb7a42b2385.item","label":"1➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <master>true</master>
@@ -893,11 +908,11 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-02-14 17:43:45</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_variable_value action="delete_multiple" query="document_key=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_511d122f1b61c51062e50ed2cd4bcb71^id=511d122f1b61c51062e50ed2cd4bcb71"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=511d122f1b61c51062e50ed2cd4bcb71^sys_idNOT INdd1d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -1034,6 +1049,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>Table</label>
         <mandatory>false</mandatory>
@@ -1118,6 +1134,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
+        <internal_link/>
         <internal_type display_value="String">string</internal_type>
         <label>Document ID</label>
         <mandatory>false</mandatory>
@@ -1167,8 +1184,8 @@
     </sys_hub_flow_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=511d122f1b61c51062e50ed2cd4bcbac"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=511d122f1b61c51062e50ed2cd4bcb71"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
-    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71^sys_idNOT IN551d122f1b61c51062e50ed2cd4bcbe3,611d522f1b61c51062e50ed2cd4bcb13,691d522f1b61c51062e50ed2cd4bcb0f,ed1d522f1b61c51062e50ed2cd4bcb16"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
@@ -1183,6 +1200,7 @@
         <flow display_value="Get Task sys_id and table from text">511d122f1b61c51062e50ed2cd4bcb71</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Make a decision">578e90270b2313009002cab937673a7d</logic_definition>
         <order>1</order>
@@ -1275,6 +1293,7 @@
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>table_name</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>3</order>
@@ -1335,6 +1354,7 @@
         <flow display_value="Get Task sys_id and table from text">511d122f1b61c51062e50ed2cd4bcb71</flow>
         <flow_variable/>
         <flow_variables_assigned>table_prefix</flow_variables_assigned>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>2</order>
@@ -1383,6 +1403,7 @@
         <flow display_value="Get Task sys_id and table from text">511d122f1b61c51062e50ed2cd4bcb71</flow>
         <flow_variable/>
         <flow_variables_assigned/>
+        <generation_source/>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
         <order>4</order>
@@ -1432,6 +1453,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-02-14 17:43:45</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=511d122f1b61c51062e50ed2cd4bcb71"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=511d122f1b61c51062e50ed2cd4bcb71^sys_idNOT IN2d1d522f1b61c51062e50ed2cd4bcb1a,ad1d522f1b61c51062e50ed2cd4bcb1a"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>511d122f1b61c51062e50ed2cd4bcb71</attached_to>

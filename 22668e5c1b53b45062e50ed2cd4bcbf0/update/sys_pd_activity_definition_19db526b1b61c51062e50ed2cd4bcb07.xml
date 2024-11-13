@@ -12,6 +12,7 @@
         <label>Get Task sys_id and Table From Text</label>
         <name>get_task_sys_id_and_table_from_text</name>
         <outputs/>
+        <required_roles/>
         <source>fd165e6f1b21c51062e50ed2cd4bcbef</source>
         <source_type>sys_hub_flow</source_type>
         <sys_class_name>sys_pd_activity_definition</sys_class_name>

@@ -5,14 +5,19 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>test</internal_name>
         <label_cache>[{"name":"f0c6c443-72a4-480d-b5cc-f396106a9363.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Records","label":"1➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"48e132c6-3e53-414d-9d47-2ac4d0307406"}},{"name":"subflow.partially_approved_item","label":"Input➛Partially Approved Item","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2c267758-b533-4de9-9210-9fb523c6acb9"}}]</label_cache>
         <master_snapshot>9f23ffc51b5201508c5143f3cc4bcb22</master_snapshot>
+        <master_snapshot_digest/>
         <name>Example Partial RITM Approval</name>
         <natlang/>
         <outputs/>
@@ -24,6 +29,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-03-16 12:17:50</sys_created_on>
@@ -40,10 +46,10 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2024-05-03 13:41:37</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_variable_value action="delete_multiple" query="document_key=3082f3c11b5201508c5143f3cc4bcba8"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT IN3482f3c11b5201508c5143f3cc4bcba9"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -229,6 +235,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e084b7411b9201508c5143f3cc4bcbec"/>
     <sys_hub_flow_output action="delete_multiple" query="model=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3082f3c11b5201508c5143f3cc4bcba8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT INfdd2b3451b5201508c5143f3cc4bcbe5"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -239,6 +246,7 @@
         <comment>A query to filter down the approvals you'd ike to show in the comment card</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -307,12 +315,14 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=fdd2b3451b5201508c5143f3cc4bcbe5"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fdd2b3451b5201508c5143f3cc4bcbe5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT INf5d2b3451b5201508c5143f3cc4bcbe9"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment>Partial approval - this will add a comment including the Item(thing that was approved) and the name/state of the approval records provided</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">3082f3c11b5201508c5143f3cc4bcba8</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -547,7 +557,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=f5d2b3451b5201508c5143f3cc4bcbe9"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=3082f3c11b5201508c5143f3cc4bcba8"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3082f3c11b5201508c5143f3cc4bcba8^sys_idNOT INe2f3b38d1b5201508c5143f3cc4bcb1a,ec84b7411b9201508c5143f3cc4bcbf0"/>
@@ -606,11 +615,13 @@
         <active>true</active>
         <annotation/>
         <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>example_partial_approval</internal_name>
         <label_cache>[{"name":"f0c6c443-72a4-480d-b5cc-f396106a9363.context","label":"2➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Records","label":"1➛Approval Records","reference":"sysapproval_approver","reference_display":"Approval","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Table","label":"1➛Approval Table","reference":"sysapproval_approver","reference_display":"Approval","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3211907-3cbb-4c71-8262-b0f63e579142.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.ritm","label":"Input➛RITM","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"48e132c6-3e53-414d-9d47-2ac4d0307406"}},{"name":"subflow.partially_approved_item","label":"Input➛Partially Approved Item","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2c267758-b533-4de9-9210-9fb523c6acb9"}}]</label_cache>
         <master>true</master>
@@ -639,10 +650,10 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-03-16 12:26:38</sys_updated_on>
         <type>subflow</type>
+        <version>1</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_variable_value action="delete_multiple" query="document_key=9f23ffc51b5201508c5143f3cc4bcb22"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT IN9b23ffc51b5201508c5143f3cc4bcb3c"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -828,6 +839,7 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc443bcd1b5201508c5143f3cc4bcbdf"/>
     <sys_hub_flow_output action="delete_multiple" query="model=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9f23ffc51b5201508c5143f3cc4bcb22"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT INe723ffc51b5201508c5143f3cc4bcb45"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -838,6 +850,7 @@
         <comment>A query to filter down the approvals you'd ike to show in the comment card</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">9f23ffc51b5201508c5143f3cc4bcb22</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -906,12 +919,14 @@
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e723ffc51b5201508c5143f3cc4bcb45"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e723ffc51b5201508c5143f3cc4bcb45"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT INe323ffc51b5201508c5143f3cc4bcb48"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <attributes/>
         <comment>Partial approval - this will add a comment including the Item(thing that was approved) and the name/state of the approval records provided</comment>
         <display_text/>
         <flow display_value="Example Partial RITM Approval">9f23ffc51b5201508c5143f3cc4bcb22</flow>
+        <generation_source/>
         <inputs/>
         <inputs/>
         <order>2</order>
@@ -1146,7 +1161,6 @@
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e323ffc51b5201508c5143f3cc4bcb48"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=9f23ffc51b5201508c5143f3cc4bcb22"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9f23ffc51b5201508c5143f3cc4bcb22^sys_idNOT IN30443bcd1b5201508c5143f3cc4bcbfc,b184bb411b9201508c5143f3cc4bcb92"/>

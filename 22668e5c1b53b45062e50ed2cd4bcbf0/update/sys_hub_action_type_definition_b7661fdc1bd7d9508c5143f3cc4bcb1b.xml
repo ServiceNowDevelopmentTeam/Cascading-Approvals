@@ -6,15 +6,19 @@
         <action_template/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>create_autoapproval_record</internal_name>
         <label_cache>[{"name":"{{action.sys_id}}","label":"action➛sys_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record_sys_id}}","label":"action➛Record Sys_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.original_encoded_query}}","label":"action➛Original Encoded Query","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_table}}","label":"action➛Source Table","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_record_document_id}}","label":"action➛Source Record Document ID","type":"action","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id","uiUniqueId":"be92d279-3c65-42fd-8122-8a886d4d61f9"}},{"name":"{{action.approver}}","label":"action➛Approver","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.auto_approved_reason}}","label":"action➛Auto-Approved Reason","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8e4d0f69-28ee-4de1-b999-176bb2fb31ac].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8e4d0f69-28ee-4de1-b999-176bb2fb31ac].query}}","label":"step➛Script step➛Query","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e40f6610-1fb9-455d-b3fc-fabcd1c4f699].record}}","label":"step➛Create or Update Record step➛Approval Record","type":"step","ref":"sysapproval_approver","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>35c81fd01b1bd9508c5143f3cc4bcb1f</master_snapshot>
+        <master_snapshot_digest/>
         <name>Create Auto-Approval Record</name>
         <natlang/>
         <outputs/>
@@ -972,11 +976,14 @@
         <action_status/>
         <action_template/>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>create_autoapproval_record</internal_name>
         <label_cache>[{"name":"{{action.sys_id}}","label":"action➛sys_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.record_sys_id}}","label":"action➛Record Sys_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.original_encoded_query}}","label":"action➛Original Encoded Query","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_table}}","label":"action➛Source Table","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_record_document_id}}","label":"action➛Source Record Document ID","type":"action","ref":"","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id","uiUniqueId":"be92d279-3c65-42fd-8122-8a886d4d61f9"}},{"name":"{{action.approver}}","label":"action➛Approver","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.auto_approved_reason}}","label":"action➛Auto-Approved Reason","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8e4d0f69-28ee-4de1-b999-176bb2fb31ac].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8e4d0f69-28ee-4de1-b999-176bb2fb31ac].query}}","label":"step➛Script step➛Query","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e40f6610-1fb9-455d-b3fc-fabcd1c4f699].record}}","label":"step➛Create or Update Record step➛Approval Record","type":"step","ref":"sysapproval_approver","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>

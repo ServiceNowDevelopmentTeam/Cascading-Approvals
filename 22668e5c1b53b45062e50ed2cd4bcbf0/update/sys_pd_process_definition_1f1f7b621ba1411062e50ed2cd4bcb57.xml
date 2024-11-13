@@ -4,11 +4,16 @@
         <active>true</active>
         <description/>
         <designer_state/>
+        <engine_major_version/>
         <label>Choose a new approver</label>
         <name>choose_a_new_approver</name>
+        <now_assist_prompt/>
+        <process_type/>
+        <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
         <schema_version>2</schema_version>
         <snapshot display_value="choose_a_new_approver">332742611b3dd51062e50ed2cd4bcbc8</snapshot>
+        <start_non_blocking>false</start_non_blocking>
         <status>published</status>
         <sys_class_name>sys_pd_process_definition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -29,11 +34,16 @@
         <active>true</active>
         <description/>
         <designer_state/>
+        <engine_major_version/>
         <label>Choose a new approver</label>
         <name>choose_a_new_approver</name>
+        <now_assist_prompt/>
+        <process_type/>
+        <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
         <schema_version>2</schema_version>
         <snapshot display_value="choose_a_new_approver">332742611b3dd51062e50ed2cd4bcbc8</snapshot>
+        <start_non_blocking>false</start_non_blocking>
         <status>published</status>
         <sys_class_name>sys_pd_process_definition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -59,6 +69,7 @@
         <name>new</name>
         <order>1</order>
         <process_definition display_value="Choose a new approver">1f1f7b621ba1411062e50ed2cd4bcb57</process_definition>
+        <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">b823830967fc41ddb84959d97897b1ae</start_rule>
         <start_rule_vars/>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -86,6 +97,7 @@
         <order>1</order>
         <outputs/>
         <process_definition display_value="Choose a new approver">1f1f7b621ba1411062e50ed2cd4bcb57</process_definition>
+        <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
         <start_rule_vars/>
         <swim_lane/>
@@ -97,6 +109,7 @@
         <sys_updated_on>2022-03-02 18:59:27</sys_updated_on>
         <type_vals/>
         <type_vals/>
+        <variant/>
     </sys_pd_activity>
     <sys_variable_value action="delete_multiple" query="document_key=7cd74b6f1be5c51062e50ed2cd4bcb66"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1295,6 +1308,7 @@
         <order>2</order>
         <outputs/>
         <process_definition display_value="Choose a new approver">1f1f7b621ba1411062e50ed2cd4bcb57</process_definition>
+        <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Previous">eb98b4955ba74acab978af26ad083f61</start_rule>
         <start_rule_vars/>
         <swim_lane/>
@@ -1306,6 +1320,7 @@
         <sys_updated_on>2022-09-07 17:02:45</sys_updated_on>
         <type_vals/>
         <type_vals/>
+        <variant/>
     </sys_pd_activity>
     <sys_variable_value action="delete_multiple" query="document_key=03957e631b65c51062e50ed2cd4bcb85"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2185,6 +2200,140 @@
         <table>var__m_sys_hub_flow_input_30839b4b1b805010affd0e55cc4bcb83</table>
         <value/>
     </sys_element_mapping>
+    <sys_flow_data_definition action="delete_multiple" query="sys_id=9bc31a291bc1891062e50ed2cd4bcb2c^sys_idNOT IN9bc31a291bc1891062e50ed2cd4bcb2c"/>
+    <sys_flow_data_definition action="INSERT_OR_UPDATE">
+        <name>Specify An Approver</name>
+        <process_definition/>
+        <process_snapshot/>
+        <sys_class_name>sys_flow_data_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-14 15:23:09</sys_created_on>
+        <sys_id>9bc31a291bc1891062e50ed2cd4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Specify An Approver</sys_name>
+        <sys_package display_value="Modular Notifications" source="9433631b1bcf30508c5143f3cc4bcbfc">9433631b1bcf30508c5143f3cc4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modular Notifications">9433631b1bcf30508c5143f3cc4bcbfc</sys_scope>
+        <sys_update_name>sys_flow_data_definition_9bc31a291bc1891062e50ed2cd4bcb2c</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 18:04:58</sys_updated_on>
+    </sys_flow_data_definition>
+    <sys_flow_data_var action="delete_multiple" query="model=9bc31a291bc1891062e50ed2cd4bcb2c^sys_idNOT INb20412691bc1891062e50ed2cd4bcb01"/>
+    <sys_flow_data_var action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>User</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Specify An Approver">9bc31a291bc1891062e50ed2cd4bcb2c</model>
+        <model_id>9bc31a291bc1891062e50ed2cd4bcb2c</model_id>
+        <model_table/>
+        <name>var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>active=true^locked_out=false^roles=approver_user^ORroles=business_stakeholder^ORroles=itil^EQ</reference_qual>
+        <reference_qual_condition table="sys_user">active=true^locked_out=false^roles=approver_user^ORroles=business_stakeholder^ORroles=itil^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="locked_out" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="false" field="roles" goto="false" newquery="false" operator="=" or="false" value="approver_user"/>
+            <item endquery="false" field="roles" goto="false" newquery="false" operator="=" or="true" value="business_stakeholder"/>
+            <item endquery="false" field="roles" goto="false" newquery="false" operator="=" or="true" value="itil"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_flow_data_var</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-14 15:24:06</sys_created_on>
+        <sys_id>b20412691bc1891062e50ed2cd4bcb01</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Modular Notifications" source="9433631b1bcf30508c5143f3cc4bcbfc">9433631b1bcf30508c5143f3cc4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modular Notifications">9433631b1bcf30508c5143f3cc4bcbfc</sys_scope>
+        <sys_update_name>sys_flow_data_var_b20412691bc1891062e50ed2cd4bcb01</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 18:04:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_flow_data_var>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c^sys_idNOT INba2412691bc1891062e50ed2cd4bcb85"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>u_user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c</name>
+        <plural>User</plural>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-14 15:24:06</sys_created_on>
+        <sys_id>ba2412691bc1891062e50ed2cd4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Modular Notifications" source="9433631b1bcf30508c5143f3cc4bcbfc">9433631b1bcf30508c5143f3cc4bcbfc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modular Notifications">9433631b1bcf30508c5143f3cc4bcbfc</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c_u_user_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-09-29 18:04:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c"/>
+    <sys_choice_set action="delete_multiple" query="name=var__m_sys_flow_data_var_9bc31a291bc1891062e50ed2cd4bcb2c"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_definition display_value="Automated Update Record">569b840c1bbf0010affd0e55cc4bcbac</activity_definition>
@@ -2200,6 +2349,7 @@
         <order>3</order>
         <outputs/>
         <process_definition display_value="Choose a new approver">1f1f7b621ba1411062e50ed2cd4bcb57</process_definition>
+        <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Previous">eb98b4955ba74acab978af26ad083f61</start_rule>
         <start_rule_vars/>
         <swim_lane/>
@@ -2211,6 +2361,7 @@
         <sys_updated_on>2022-09-07 17:25:27</sys_updated_on>
         <type_vals/>
         <type_vals/>
+        <variant/>
     </sys_pd_activity>
     <sys_variable_value action="delete_multiple" query="document_key=84041fa71b69c51062e50ed2cd4bcb81"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3052,14 +3203,13 @@
         <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
         <value/>
     </sys_element_mapping>
-    <sys_pd_swim_lane action="delete_multiple" query="process_definition=1f1f7b621ba1411062e50ed2cd4bcb57"/>
-    <sys_pd_activity_m2m_app_object action="delete_multiple" query="activity.process_definition=1f1f7b621ba1411062e50ed2cd4bcb57"/>
     <sys_pd_snapshot action="delete_multiple" query="sys_id=332742611b3dd51062e50ed2cd4bcbc8^sys_idNOT IN332742611b3dd51062e50ed2cd4bcbc8"/>
     <sys_pd_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <derivatives>{"table":"sys_pd_snapshot","id":"332742611b3dd51062e50ed2cd4bcbc8","name":"derivatives","type":"com.snc.pd.model.serialization.DerivativeFetcher"}</derivatives>
         <name>choose_a_new_approver</name>
         <process_definition>{"table":"sys_pd_snapshot","id":"332742611b3dd51062e50ed2cd4bcbc8","name":"process_definition","type":"com.snc.pd.model.ProcessDefinition"}</process_definition>
+        <process_dependencies/>
         <process_plan/>
         <source display_value="Choose a new approver">1f1f7b621ba1411062e50ed2cd4bcb57</source>
         <sys_created_by>John.Schwab</sys_created_by>
